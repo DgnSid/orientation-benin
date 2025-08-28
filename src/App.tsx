@@ -10,6 +10,10 @@ import Universities from "./pages/Universities";
 import UniversityDetails from "./pages/UniversityDetails";
 import Filieres from "./pages/Filieres";
 import FiliereDetails from "./pages/FiliereDetails";
+import Concours from "./pages/Concours";
+import Stages from "./pages/Stages";
+import Formations from "./pages/Formations";
+import Conseils from "./pages/Conseils";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +33,10 @@ const App = () => (
               <Route path="/universities/:id" element={<UniversityDetails />} />
               <Route path="/filieres" element={<Filieres />} />
               <Route path="/filieres/:slug" element={<FiliereDetails />} />
+              <Route path="/concours" element={<Concours />} />
+              <Route path="/stages" element={<Stages />} />
+              <Route path="/formations" element={<Formations />} />
+              <Route path="/conseils" element={<Conseils />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

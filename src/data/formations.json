@@ -1,0 +1,103 @@
+[
+  {
+    "id": "formation-1",
+    "title": "Préparation Concours Médecine",
+    "instructor": "Dr. Jean Dupont",
+    "price": 150000,
+    "duration": "3 mois",
+    "level": "Débutant",
+    "description": "Formation intensive pour réussir le concours d'entrée en faculté de médecine. Programme complet couvrant toutes les matières scientifiques.",
+    "objectives": [
+      "Maîtriser le programme de sciences du BAC",
+      "Apprendre les techniques d'examen",
+      "Développer sa rapidité de résolution",
+      "Gérer son stress le jour J"
+    ],
+    "content": [
+      "Module 1: Biologie et physiologie",
+      "Module 2: Chimie organique et minérale",
+      "Module 3: Physique appliquée",
+      "Module 4: Mathématiques et statistiques",
+      "Tests blancs hebdomadaires"
+    ],
+    "image": "/images/formations/medecine.jpg",
+    "category": "Santé",
+    "startDate": "2024-06-01"
+  },
+  {
+    "id": "formation-2",
+    "title": "Formation en Développement Web",
+    "instructor": "Ing. Marie Kouassi",
+    "price": 200000,
+    "duration": "4 mois",
+    "level": "Intermédiaire",
+    "description": "Formation complète pour devenir développeur web full-stack. De zéro à l'employabilité en 4 mois intensifs.",
+    "objectives": [
+      "Maîtriser HTML, CSS et JavaScript",
+      "Apprendre React et Node.js",
+      "Développer des projets concrets",
+      "Préparer aux entretiens techniques"
+    ],
+    "content": [
+      "Module 1: Fondamentaux du web",
+      "Module 2: JavaScript avancé",
+      "Module 3: React et écosystème",
+      "Module 4: Backend avec Node.js",
+      "Projet final et portfolio"
+    ],
+    "image": "/images/formations/web-dev.jpg",
+    "category": "Informatique",
+    "startDate": "2024-05-15"
+  },
+  {
+    "id": "formation-3",
+    "title": "Entrepreneuriat et Business Plan",
+    "instructor": "M. Paul Agbodjan",
+    "price": 75000,
+    "duration": "6 semaines",
+    "level": "Débutant",
+    "description": "Formation pratique pour créer son entreprise au Bénin. Accompagnement personnalisé pour développer votre projet.",
+    "objectives": [
+      "Identifier une opportunité d'affaires",
+      "Rédiger un business plan solide",
+      "Comprendre les démarches administratives",
+      "Trouver des financements"
+    ],
+    "content": [
+      "Semaine 1: Étude de marché",
+      "Semaine 2: Modèle économique",
+      "Semaine 3: Plan financier",
+      "Semaine 4: Stratégie marketing",
+      "Semaine 5: Démarches légales",
+      "Semaine 6: Présentation finale"
+    ],
+    "image": "/images/formations/business.jpg",
+    "category": "Business",
+    "startDate": "2024-06-10"
+  },
+  {
+    "id": "formation-4",
+    "title": "Anglais des Affaires",
+    "instructor": "Mrs. Sandra Johnson",
+    "price": 50000,
+    "duration": "8 semaines",
+    "level": "Intermédiaire",
+    "description": "Formation en anglais professionnel pour améliorer vos opportunités de carrière dans un environnement international.",
+    "objectives": [
+      "Améliorer sa communication orale",
+      "Maîtriser l'anglais des affaires",
+      "Préparer aux certifications",
+      "Développer sa confiance"
+    ],
+    "content": [
+      "Business vocabulary et expressions",
+      "Présentation et négociation",
+      "Email et correspondance",
+      "Entretiens d'embauche",
+      "Tests blancs TOEIC"
+    ],
+    "image": "/images/formations/anglais.jpg",
+    "category": "Langues",
+    "startDate": "2024-05-20"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "stage-1",
+    "title": "Stage en Développement Web",
+    "company": "SOBEBRA",
+    "location": "Cotonou",
+    "duration": "3 mois",
+    "domain": "Informatique",
+    "description": "Stage en développement d'applications web modernes utilisant React, Node.js et les technologies web les plus récentes.",
+    "requirements": [
+      "Étudiant en informatique (L3 ou Master)",
+      "Connaissances en JavaScript",
+      "Bases en React ou Angular",
+      "Motivation et esprit d'équipe"
+    ],
+    "applicationDeadline": "2024-05-30",
+    "contactEmail": "rh@sobebra.bj",
+    "salary": "Indemnité de stage : 75 000 FCFA/mois",
+    "type": "Rémunéré"
+  },
+  {
+    "id": "stage-2",
+    "title": "Stage en Marketing Digital",
+    "company": "MTN Bénin",
+    "location": "Cotonou",
+    "duration": "4 mois",
+    "domain": "Marketing",
+    "description": "Stage dans l'équipe marketing digital pour développer des campagnes publicitaires et gérer les réseaux sociaux.",
+    "requirements": [
+      "Étudiant en marketing ou communication",
+      "Maîtrise des réseaux sociaux",
+      "Créativité et sens de l'initiative",
+      "Français et anglais courants"
+    ],
+    "applicationDeadline": "2024-06-15",
+    "contactEmail": "stages@mtn.bj",
+    "salary": "Indemnité de stage : 80 000 FCFA/mois",
+    "type": "Rémunéré"
+  },
+  {
+    "id": "stage-3",
+    "title": "Stage en Audit Comptable",
+    "company": "Cabinet KPMG Bénin",
+    "location": "Cotonou",
+    "duration": "6 mois",
+    "domain": "Finance",
+    "description": "Stage au sein de l'équipe d'audit pour participer aux missions d'audit comptable et financier des entreprises.",
+    "requirements": [
+      "Étudiant en comptabilité ou finance",
+      "Niveau Master 1 minimum",
+      "Rigueur et sens du détail",
+      "Maîtrise d'Excel avancé"
+    ],
+    "applicationDeadline": "2024-04-30",
+    "contactEmail": "recrutement@kpmg.bj",
+    "salary": "Indemnité de stage : 100 000 FCFA/mois",
+    "type": "Rémunéré"
+  },
+  {
+    "id": "stage-4",
+    "title": "Stage en Génie Civil",
+    "company": "CGTP Bénin",
+    "location": "Porto-Novo",
+    "duration": "3 mois",
+    "domain": "BTP",
+    "description": "Stage sur chantier pour découvrir les métiers du BTP et participer à la supervision de travaux de construction.",
+    "requirements": [
+      "Étudiant en génie civil",
+      "Niveau L3 minimum",
+      "Disponibilité pour travail sur terrain",
+      "Bonne condition physique"
+    ],
+    "applicationDeadline": "2024-07-20",
+    "contactEmail": "stages@cgtp.bj",
+    "salary": "Indemnité de transport : 40 000 FCFA/mois",
+    "type": "Non rémunéré"
+  },
+  {
+    "id": "stage-5",
+    "title": "Stage en Journalisme",
+    "company": "Radio Golfe FM",
+    "location": "Cotonou",
+    "duration": "2 mois",
+    "domain": "Communication",
+    "description": "Stage dans une équipe de rédaction pour apprendre les techniques journalistiques et participer à la production d'émissions.",
+    "requirements": [
+      "Étudiant en journalisme ou communication",
+      "Excellent niveau de français",
+      "Curiosité et sens de l'investigation",
+      "Bonne élocution"
+    ],
+    "applicationDeadline": "2024-05-15",
+    "contactEmail": "redaction@golfefm.bj",
+    "salary": "Stage non rémunéré",
+    "type": "Non rémunéré"
+  }
+]

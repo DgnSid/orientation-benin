@@ -1,0 +1,74 @@
+[
+  {
+    "id": "concours-1",
+    "title": "Concours ENSP",
+    "institution": "École Nationale de la Santé Publique",
+    "deadline": "2024-06-15",
+    "examDate": "2024-07-20",
+    "description": "Concours d'entrée à l'École Nationale de la Santé Publique pour la formation des techniciens supérieurs en santé publique.",
+    "requirements": ["Baccalauréat série C, D ou E", "Dossier médical complet", "Âge maximum 25 ans"],
+    "documentsNeeded": [
+      "Photocopie légalisée du BAC",
+      "Photo d'identité 4x4 (4 exemplaires)",
+      "Certificat médical",
+      "Acte de naissance",
+      "Frais d'inscription : 15 000 FCFA"
+    ],
+    "applicationLink": "#",
+    "domain": "Santé"
+  },
+  {
+    "id": "concours-2",
+    "title": "Concours ENI",
+    "institution": "École Nationale d'Ingénieurs",
+    "deadline": "2024-05-30",
+    "examDate": "2024-07-05",
+    "description": "Concours d'entrée à l'École Nationale d'Ingénieurs pour la formation d'ingénieurs dans diverses spécialités.",
+    "requirements": ["Baccalauréat série C ou D", "Mention Assez Bien minimum", "Nationalité béninoise"],
+    "documentsNeeded": [
+      "Photocopie légalisée du BAC",
+      "Relevé de notes du BAC",
+      "Photo d'identité 4x4 (4 exemplaires)",
+      "Acte de naissance",
+      "Frais d'inscription : 20 000 FCFA"
+    ],
+    "applicationLink": "#",
+    "domain": "Ingénierie"
+  },
+  {
+    "id": "concours-3",
+    "title": "Concours École de Police",
+    "institution": "École Nationale de Police",
+    "deadline": "2024-04-20",
+    "examDate": "2024-06-15",
+    "description": "Concours de recrutement des élèves inspecteurs de police pour intégrer l'École Nationale de Police.",
+    "requirements": ["Baccalauréat toutes séries", "Âge entre 18 et 25 ans", "Aptitude physique"],
+    "documentsNeeded": [
+      "Photocopie légalisée du BAC",
+      "Certificat médical d'aptitude physique",
+      "Extrait de casier judiciaire",
+      "Photo d'identité 4x4 (6 exemplaires)",
+      "Frais d'inscription : 10 000 FCFA"
+    ],
+    "applicationLink": "#",
+    "domain": "Sécurité"
+  },
+  {
+    "id": "concours-4",
+    "title": "Concours ENEAM",
+    "institution": "École Nationale d'Économie Appliquée et de Management",
+    "deadline": "2024-07-10",
+    "examDate": "2024-08-25",
+    "description": "Concours d'entrée à l'ENEAM pour la formation en économie appliquée, gestion et management.",
+    "requirements": ["Baccalauréat série A, B, C ou D", "Note minimum 10/20 au BAC"],
+    "documentsNeeded": [
+      "Photocopie légalisée du BAC",
+      "Relevé de notes du BAC",
+      "Photo d'identité 4x4 (3 exemplaires)",
+      "Acte de naissance",
+      "Frais d'inscription : 25 000 FCFA"
+    ],
+    "applicationLink": "#",
+    "domain": "Économie"
+  }
+]

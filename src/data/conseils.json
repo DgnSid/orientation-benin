@@ -1,0 +1,62 @@
+[
+  {
+    "id": "conseil-1",
+    "title": "Comment choisir sa filière après le bac",
+    "category": "Orientation",
+    "author": "Expert Orientation",
+    "date": "2024-03-15",
+    "readTime": "5 min",
+    "content": "Choisir sa filière après le baccalauréat est une étape cruciale qui déterminera votre avenir professionnel. Voici les critères essentiels à considérer : vos centres d'intérêt, vos aptitudes, les débouchés professionnels et les réalités du marché de l'emploi au Bénin. Il est important de ne pas se laisser influencer uniquement par les attentes familiales ou les préjugés sociaux. Prenez le temps de vous auto-évaluer et de rencontrer des professionnels du secteur qui vous intéresse.",
+    "image": "/images/conseils/choisir-filiere.jpg",
+    "tags": ["orientation", "conseil", "filière"],
+    "summary": "Guide complet pour bien choisir sa voie après le baccalauréat en tenant compte de ses aspirations et des réalités du marché."
+  },
+  {
+    "id": "conseil-2",
+    "title": "Réussir ses candidatures universitaires",
+    "category": "Admission",
+    "author": "Marie Konaté",
+    "date": "2024-03-10",
+    "readTime": "7 min",
+    "content": "La réussite de vos candidatures universitaires dépend de plusieurs facteurs clés. D'abord, soignez votre dossier académique en maintenant de bonnes notes. Ensuite, rédigez une lettre de motivation personnalisée pour chaque établissement. N'oubliez pas de préparer vos entretiens en vous renseignant sur l'université et la formation visée. Enfin, respectez scrupuleusement les délais et constituez un dossier complet avec tous les documents requis.",
+    "image": "/images/conseils/candidatures.jpg",
+    "tags": ["admission", "université", "candidature"],
+    "summary": "Tous les conseils pour maximiser vos chances d'admission dans l'université de votre choix."
+  },
+  {
+    "id": "conseil-3",
+    "title": "Financer ses études supérieures au Bénin",
+    "category": "Financement",
+    "author": "Paul Agbodjinou",
+    "date": "2024-02-28",
+    "readTime": "6 min",
+    "content": "Financer ses études supérieures peut être un défi majeur. Plusieurs options s'offrent à vous : les bourses d'État, les bourses d'excellence, les prêts étudiants, et le travail à temps partiel. Renseignez-vous sur les programmes de bourses disponibles dès votre première année. Explorez aussi les possibilités de stages rémunérés et les jobs étudiants compatibles avec vos études. Une bonne planification financière est essentielle pour réussir vos études sans stress financier.",
+    "image": "/images/conseils/financement.jpg",
+    "tags": ["financement", "bourses", "études"],
+    "summary": "Guide pratique pour trouver les moyens de financer ses études supérieures au Bénin."
+  },
+  {
+    "id": "conseil-4",
+    "title": "Préparer efficacement ses examens",
+    "category": "Études",
+    "author": "Dr. Sylvain Gbénou",
+    "date": "2024-02-20",
+    "readTime": "8 min",
+    "content": "Une préparation efficace aux examens nécessite une méthode rigoureuse. Commencez par établir un planning de révision réaliste en vous accordant du temps pour chaque matière. Utilisez des techniques de mémorisation adaptées : fiches de révision, mind maps, répétition espacée. N'oubliez pas l'importance du sommeil et de l'alimentation. Créez un environnement de travail propice et évitez les distractions. Enfin, pratiquez avec des annales et des examens blancs pour vous familiariser avec le format.",
+    "image": "/images/conseils/examens.jpg",
+    "tags": ["examens", "révisions", "méthodes"],
+    "summary": "Méthodes et techniques pour optimiser sa préparation aux examens et maximiser ses chances de réussite."
+  },
+  {
+    "id": "conseil-5",
+    "title": "S'adapter à la vie universitaire",
+    "category": "Vie étudiante",
+    "author": "Amélie Dossou",
+    "date": "2024-02-15",
+    "readTime": "5 min",
+    "content": "La transition du lycée à l'université peut être déstabilisante. L'autonomie nouvelle, les amphithéâtres bondés, et les méthodes d'enseignement différentes demandent une adaptation. Organisez-vous dès le début : prenez des notes efficaces, participez aux cours, rejoignez des groupes d'études. N'hésitez pas à solliciter l'aide des services d'orientation et de soutien de votre université. Impliquez-vous dans la vie associative pour créer des liens sociaux et développer vos compétences.",
+    "image": "/images/conseils/vie-universitaire.jpg",
+    "tags": ["université", "adaptation", "autonomie"],
+    "summary": "Conseils pratiques pour réussir sa transition vers la vie universitaire et s'épanouir dans ses études."
+  }
+]

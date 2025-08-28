@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X, GraduationCap, Home, Building2, BookOpen, Target, Briefcase, Award, Lightbulb } from 'lucide-react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   const navItems = [
-    { name: 'Accueil', path: '/', icon: '🏠' },
-    { name: 'Universités', path: '/universities', icon: '🏛️' },
-    { name: 'Filières', path: '/filieres', icon: '📚' },
-    { name: 'Concours', path: '/concours', icon: '🎯' },
-    { name: 'Stages', path: '/stages', icon: '💼' },
-    { name: 'Formations', path: '/formations', icon: '🎓' },
-    { name: 'Conseils', path: '/conseils', icon: '💡' },
+    { name: 'Accueil', path: '/', icon: Home },
+    { name: 'Universités', path: '/universities', icon: Building2 },
+    { name: 'Filières', path: '/filieres', icon: BookOpen },
+    { name: 'Concours', path: '/concours', icon: Target },
+    { name: 'Stages', path: '/stages', icon: Briefcase },
+    { name: 'Formations', path: '/formations', icon: Award },
+    { name: 'Conseils', path: '/conseils', icon: Lightbulb },
   ];
 
   const isActivePath = (path: string) => {
@@ -49,7 +49,7 @@ const Navigation = () => {
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
-                <span className="mr-2">{item.icon}</span>
+                <item.icon className="mr-2 h-4 w-4" />
                 {item.name}
               </Link>
             ))}
@@ -83,7 +83,7 @@ const Navigation = () => {
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >
-                <span className="mr-3 text-lg">{item.icon}</span>
+                <item.icon className="mr-3 h-5 w-5" />
                 {item.name}
               </Link>
             ))}
