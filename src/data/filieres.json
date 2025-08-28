@@ -1,0 +1,80 @@
+[
+  {
+    "id": "medecine",
+    "name": "Médecine",
+    "slug": "medecine",
+    "category": "Sciences de la Santé",
+    "description": "La médecine est une science et une pratique étudiant l'organisation du corps humain, son fonctionnement normal, et cherchant à le maintenir en bonne santé par la prévention et le traitement des pathologies.",
+    "duration": "7 ans",
+    "careerOpportunities": ["Médecin généraliste", "Médecin spécialiste", "Chirurgien", "Urgentiste", "Pédiatre"],
+    "averageSalary": "500,000 - 2,000,000 FCFA",
+    "requiredSkills": ["Empathie", "Résistance au stress", "Précision", "Travail d'équipe", "Formation continue"],
+    "universities": ["uac", "uniab", "uac-parakou"],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "droit",
+    "name": "Droit",
+    "slug": "droit",
+    "category": "Sciences Humaines",
+    "description": "Le droit est l'ensemble des règles qui régissent la conduite des personnes, des groupes et des institutions au sein d'une société donnée.",
+    "duration": "4 ans",
+    "careerOpportunities": ["Avocat", "Juge", "Magistrat", "Juriste d'entreprise", "Notaire", "Huissier"],
+    "averageSalary": "300,000 - 800,000 FCFA",
+    "requiredSkills": ["Argumentation", "Rédaction", "Analyse", "Éloquence", "Rigueur"],
+    "universities": ["uac"],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "informatique",
+    "name": "Informatique",
+    "slug": "informatique",
+    "category": "Sciences et Technologies",
+    "description": "L'informatique est un domaine d'activité scientifique, technique et industriel concernant le traitement automatique de l'information numérique par l'exécution de programmes informatiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": ["Développeur web", "Ingénieur logiciel", "Data scientist", "Cybersécurité", "Chef de projet IT"],
+    "averageSalary": "400,000 - 1,200,000 FCFA",
+    "requiredSkills": ["Logique", "Résolution de problèmes", "Créativité", "Travail d'équipe", "Veille technologique"],
+    "universities": ["uac", "uniab"],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "genie-civil",
+    "name": "Génie Civil",
+    "slug": "genie-civil",
+    "category": "Ingénierie",
+    "description": "Le génie civil représente l'ensemble des techniques de construction civile. Il comprend la conception, la réalisation, l'exploitation et la réhabilitation d'ouvrages de construction.",
+    "duration": "5 ans",
+    "careerOpportunities": ["Ingénieur BTP", "Chef de chantier", "Bureau d'études", "Contrôleur technique", "Entrepreneur"],
+    "averageSalary": "450,000 - 1,000,000 FCFA",
+    "requiredSkills": ["Calcul", "Gestion de projet", "Leadership", "Sécurité", "Innovation"],
+    "universities": ["uniab"],
+    "image": "/images/filieres/genie-civil.jpg"
+  },
+  {
+    "id": "agriculture",
+    "name": "Agriculture",
+    "slug": "agriculture",
+    "category": "Sciences Agricoles",
+    "description": "L'agriculture est l'art de cultiver la terre afin de produire des végétaux et d'élever des animaux utiles à l'être humain.",
+    "duration": "3-4 ans",
+    "careerOpportunities": ["Ingénieur agronome", "Conseiller agricole", "Chef d'exploitation", "Technicien agricole"],
+    "averageSalary": "250,000 - 600,000 FCFA",
+    "requiredSkills": ["Observation", "Patience", "Innovation", "Gestion", "Écologie"],
+    "universities": ["ub"],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "economie",
+    "name": "Économie",
+    "slug": "economie",
+    "category": "Sciences Économiques",
+    "description": "L'économie est une science sociale qui étudie la production, la répartition, la distribution et la consommation des richesses d'une société.",
+    "duration": "3-5 ans",
+    "careerOpportunities": ["Économiste", "Analyste financier", "Conseiller en investissement", "Banquier", "Consultant"],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": ["Analyse", "Statistiques", "Communication", "Logique", "Esprit de synthèse"],
+    "universities": ["uac"],
+    "image": "/images/filieres/economie.jpg"
+  }
+]

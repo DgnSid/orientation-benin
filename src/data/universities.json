@@ -1,0 +1,108 @@
+[
+  {
+    "id": "uac",
+    "name": "Université d'Abomey-Calavi",
+    "type": "publique",
+    "city": "Cotonou",
+    "description": "La plus grande université du Bénin, créée en 1970. L'UAC est un établissement public d'enseignement supérieur qui accueille plus de 100 000 étudiants dans diverses filières.",
+    "image": "/images/universities/uac.jpg",
+    "website": "https://www.uac.bj",
+    "established": "1970",
+    "studentCount": "100,000+",
+    "schools": [
+      {
+        "id": "fashs",
+        "name": "Faculté des Arts et Sciences Humaines",
+        "description": "Formation en lettres, philosophie, histoire, géographie et sociologie",
+        "programs": ["lettres-modernes", "philosophie", "histoire", "geographie", "sociologie"]
+      },
+      {
+        "id": "fadesp",
+        "name": "Faculté de Droit et de Science Politique",
+        "description": "Formation juridique et en sciences politiques",
+        "programs": ["droit", "sciences-politiques"]
+      },
+      {
+        "id": "faseg",
+        "name": "Faculté des Sciences Économiques et de Gestion",
+        "description": "Formation en économie, gestion et commerce",
+        "programs": ["economie", "gestion", "commerce"]
+      },
+      {
+        "id": "fast",
+        "name": "Faculté des Sciences et Techniques",
+        "description": "Formation scientifique et technique",
+        "programs": ["mathematiques", "informatique", "physique", "chimie", "biologie"]
+      }
+    ]
+  },
+  {
+    "id": "uniab",
+    "name": "Université de l'Alliance Baptiste",
+    "type": "privee",
+    "city": "Cotonou",
+    "description": "Université privée reconnue pour l'excellence de ses formations dans les domaines de la santé, de l'ingénierie et des sciences appliquées.",
+    "image": "/images/universities/uniab.jpg",
+    "website": "https://www.uniab.edu.bj",
+    "established": "1999",
+    "studentCount": "5,000+",
+    "schools": [
+      {
+        "id": "medecine-uniab",
+        "name": "École de Médecine",
+        "description": "Formation médicale de haut niveau",
+        "programs": ["medecine", "pharmacie", "medecine-dentaire"]
+      },
+      {
+        "id": "ingenierie-uniab",
+        "name": "École d'Ingénierie",
+        "description": "Formation en génie civil, électrique et informatique",
+        "programs": ["genie-civil", "genie-electrique", "informatique"]
+      }
+    ]
+  },
+  {
+    "id": "ub",
+    "name": "Université de Bohicon",
+    "type": "publique",
+    "city": "Bohicon",
+    "description": "Université récente spécialisée dans l'agriculture, l'élevage et les sciences de la vie.",
+    "image": "/images/universities/ub.jpg",
+    "website": "#",
+    "established": "2015",
+    "studentCount": "3,000+",
+    "schools": [
+      {
+        "id": "agriculture-ub",
+        "name": "École d'Agriculture",
+        "description": "Formation en agriculture moderne et durable",
+        "programs": ["agriculture", "elevage", "agronomie"]
+      }
+    ]
+  },
+  {
+    "id": "uac-parakou",
+    "name": "Université de Parakou",
+    "type": "publique",
+    "city": "Parakou",
+    "description": "Campus de l'UAC dans le nord du Bénin, offrant des formations adaptées aux besoins de la région.",
+    "image": "/images/universities/uac-parakou.jpg",
+    "website": "https://www.uac.bj/parakou",
+    "established": "2001",
+    "studentCount": "8,000+",
+    "schools": [
+      {
+        "id": "sciences-parakou",
+        "name": "Faculté des Sciences",
+        "description": "Sciences fondamentales et appliquées",
+        "programs": ["mathematiques", "informatique", "biologie"]
+      },
+      {
+        "id": "medecine-parakou",
+        "name": "Faculté de Médecine",
+        "description": "Formation médicale pour le nord du Bénin",
+        "programs": ["medecine", "pharmacie"]
+      }
+    ]
+  }
+]
