@@ -924,7 +924,90 @@
           "website": "www.una.bj/ipa"
         },
         "description": "Formation en transformation agroalimentaire et nutrition.",
-        "goodToKnow": "L'ESTCTPA forme des spécialistes en transformation et conservation des produits agricoles. Ainsi, si vous voulez innover dans l'agroalimentaire, créer de la valeur ajoutée aux productions locales ou développer des solutions nutritionnelles, cette école vous donne les compétences techniques pour réussir."
+        "goodToKnow": "L'ESTCTPA forme des experts en transformation agroalimentaire, en nutrition humaine et en conditionnement, avec des débouchés dans les industries agroalimentaires, la sécurité alimentaire et l'éducation nutritionnelle."
+      },
+      {
+        "id": "una-5",
+        "name": "Ecole de Génie Rural (EGR)",
+        "admissionRequirements": ["Classement"],
+        "location": "Kétou",
+        "country": "Bénin",
+        "programs": [
+          "Agroéquipement",
+          "Electrification Rurale et Energies Renouvelables",
+          "Infrastructures Rurales et Assainissement"
+        ],
+        "contact": {
+          "email": "scolarité.centrale@una.bj",
+          "phone": "+229 97 719 203",
+          "website": "www.una.bj/ibr"
+        },
+        "description": "Formation en valorisation des bio-ressources.",
+        "goodToKnow": "L'EGR forme des spécialistes en électrification rurale, agroéquipements et infrastructures rurales, avec des débouchés dans les projets de développement, l'ingénierie rurale et les énergies renouvelables."
+      },
+      {
+        "id": "una-6",
+        "name": "Ecole de Gestion et d'Exploitation des Systèmes d'Elevages (EGESE)",
+        "admissionRequirements": ["Classement"],
+        "location": "Kétou",
+        "country": "Bénin",
+        "programs": ["Productions et Santé Animales"],
+        "contact": {
+          "email": "gces@una.bj",
+          "phone": "+229 21 23 45 73",
+          "website": "www.una.bj/gces"
+        },
+        "description": "Formation en conditionnement et stockage des produits alimentaires.",
+        "goodToKnow": "Débouchés dans les exploitations animales, services vétérinaires, entreprises agro-pastorales, et projets de développement rural."
+      },
+      {
+        "id": "una-7",
+        "name": "Ecole d'Agrobusiness et de Politiques Agricoles (EAPA)",
+        "admissionRequirements": ["Classement"],
+        "location": "Porto-Novo",
+        "country": "Bénin",
+        "programs": [
+          "Finance agricole",
+          "Gestion des EXploitations Agricoles et Entreprises Agroalimentaires",
+          "Marketing des Intrants et Produits Agricoles"
+        ],
+        "contact": {
+          "email": "eaq@una.bj",
+          "phone": "+229 21 23 45 74",
+          "website": "www.una.bj/eaq"
+        },
+        "description": "Formation en production aquacole et gestion des élevages.",
+        "goodToKnow": "Débouchés dans les entreprises agroalimentaires, les banques agricoles, les ONG, et les projets de développement agricole."
+      },
+      {
+        "id": "una-8",
+        "name": "Ecole de Socioligie Rurale et de Vulgarisation Agricole (ESRVA)",
+        "admissionRequirements": ["Classement"],
+        "location": "Porto-Novo",
+        "country": "Bénin",
+        "programs": ["Sociologie rurale et Vulgarisation Agricole"],
+        "contact": {
+          "email": "egr@una.bj",
+          "phone": "+229 21 23 45 75",
+          "website": "www.una.bj/egr"
+        },
+        "description": "Formation en machinisme agricole et énergies renouvelables.",
+        "goodToKnow": "Débouchés dans les ONG, les services de vulgarisation agricole, les projets de développement rural et les collectivités locales."
+      },
+      {
+        "id": "una-9",
+        "name": "Ecole de Foresterie Tropicale  (EForT)",
+        "admissionRequirements": ["Classement"],
+        "location": "Idigny",
+        "country": "Bénin",
+        "programs": ["Foresterie Tropicale"],
+        "contact": {
+          "email": "efort@una.bj",
+          "phone": "+229 95414726",
+          "website": "www.una.bj/eger"
+        },
+        "description": "Formation en élevage et santé animale.",
+        "goodToKnow": "Débouchés dans les services forestiers, ONG environnementales, projets de reboisement, et institutions de conservation."
       }
     ]
   }
