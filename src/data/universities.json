@@ -326,6 +326,121 @@
         },
         "description": "Centre spécialisé dans l'étude des populations et l'aménagement du territoire en Afrique.",
         "goodToKnow": "Le CEFORP forme les experts capables d'analyser les évolutions démographiques pour mieux planifier les villes, les politiques sociales et les projets de développement. Ainsi, si vous voulez contribuer à une meilleure organisation des territoires et à des politiques publiques efficaces, vous y trouverez les outils pour agir sur le terrain."
+      },
+      {
+        "id": "uac-19",
+        "name": "Institut National de l'Éducation Physique (INEP) (ex INJEPS)",
+        "admissionRequirements": ["Concours", "Classement"],
+        "location": "Adjarra Docodji",
+        "country": "Bénin",
+        "programs": [
+          "Éducation Physique et Sportive",
+          "Entraînement Sportif",
+          "Développement Communautaire",
+          "Andragogie",
+          "Récréologie",
+          "Entrepreneuriat Social"
+        ],
+        "contact": {
+          "email": "",
+          "phone": "+229 01 20 21 28 28",
+          "website": ""
+        },
+        "description": "Pôle national de formation aux métiers du sport, de l'accompagnement social et de la motricité humaine.",
+        "goodToKnow": "L'INEP forme les professionnels qui encadrent les équipes nationales, les éducateurs sportifs, les acteurs du bien-être collectif, ainsi que les porteurs de projets à impact social. C'est la porte d'entrée vers une carrière dans le sport de haut niveau, l'éducation, ou l'innovation sociale par le mouvement."
+      },
+      {
+        "id": "uac-20",
+        "name": "École Normale Supérieure de Porto-Novo (ENS)",
+        "admissionRequirements": ["Concours"],
+        "location": "Porto-Novo",
+        "country": "Bénin",
+        "programs": [
+          "Histoire et Géographie",
+          "Espagnol",
+          "Allemand",
+          "Anglais",
+          "Français",
+          "Philosophie"
+        ],
+        "contact": {
+          "email": "ens.uac@uac.bj",
+          "phone": "+229 01 97 69 88 73",
+          "website": ""
+        },
+        "description": "Institution pionnière dans la formation des enseignants du supérieur et des cadres pédagogiques depuis 1962.",
+        "goodToKnow": "L'ENS incarne l'excellence académique dans les lettres et sciences humaines. Elle forme des formateurs, des pédagogues de haut niveau et des penseurs engagés, prêts à transmettre, inspirer et transformer le paysage éducatif africain."
+      },
+      {
+        "id": "uac-21",
+        "name": "Faculté de Droit et Science Politique (FADESP)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": ["Droit", "Sciences Politiques"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Berceau stratégique de l'élite juridique et politique du Bénin, formant les esprits appelés à gouverner, défendre et transformer la société.",
+        "goodToKnow": "La FADESP cultive une pédagogie immersive : les étudiants y participent à des procès simulés à la Cour Constitutionnelle, développant ainsi un sens aigu du droit, de l'éthique et de la rhétorique."
+      },
+      {
+        "id": "uac-22",
+        "name": "Faculté des Sciences Économiques (FASEG)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": [
+          "Sciences Economiques et de Gestion (Tronc commun)",
+          "Econométrie et Statistiques Appliquées",
+          "Sciences et Techniques Comptables et Financières (STCF)"
+        ],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": "https://faseg-uac.bj"
+        },
+        "description": "Carrefour académique où se forment les architectes des systèmes économiques de demain.",
+        "goodToKnow": "La FASEG façonne les esprits capables de modéliser les dynamiques macroéconomiques, d'élaborer des politiques publiques et d'optimiser les performances financières des institutions nationales et internationales."
+      },
+      {
+        "id": "uac-23",
+        "name": "Faculté des Sciences et Techniques (FAST)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": [
+          "Sciences de la Vie et de la Terre",
+          "Physique-Chimie",
+          "Mathématiques Informatiques et Applications",
+          "Énergie Renouvelable et Système Énergétique",
+          "Microbiologie et Biotechnologie Alimentaire",
+          "Hydrobiologie Appliquée"
+        ],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Épicentre de la recherche scientifique appliquée aux grands enjeux de demain.",
+        "goodToKnow": "À la FAST, vous apprenez à concevoir des innovations durables : des biotechnologies alimentaires aux énergies vertes, en passant par la modélisation mathématique des systèmes complexes. C'est le lieu idéal pour devenir un acteur de la transition écologique, énergétique et numérique en Afrique."
+      },
+      {
+        "id": "uac-24",
+        "name": "Institut Confucius",
+        "admissionRequirements": [""],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": ["Langue Chinoise", "Didactique du Chinois"],
+        "contact": {
+          "email": "silanickel@gmail.com",
+          "phone": "+229 01 67 53 79 06",
+          "website": ""
+        },
+        "description": "Passerelle culturelle et linguistique entre le Bénin et la Chine.",
+        "goodToKnow": "L'Institut Confucius initie aux subtilités de la langue chinoise tout en facilitant des opportunités concrètes : bourses d'études, échanges culturels, certifications linguistiques officielles. Une réelle immersion dans le monde sinophone pour bâtir des carrières internationales."
       }
     ]
   }
