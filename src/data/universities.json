@@ -833,5 +833,99 @@
         "goodToKnow": "L'ENSTP forme les ingénieurs qui conçoivent les ponts, réseaux d'eau potable et infrastructures urbaines essentielles au développement durable du Bénin et de l'Afrique."
       }
     ]
+  },
+  {
+    "id": "4",
+    "name": "Université Nationale d'Agriculture (UNA)",
+    "location": "Porto-Novo",
+    "type": "Public",
+    "image": "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "L'UNA est dédiée à l'enseignement et à la recherche dans le domaine de l'agriculture.",
+    "slug": "universite-agriculture",
+    "gallery": {
+      "images": [
+        "https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=800&q=80"
+      ],
+      "videos": [
+        "https://example.com/una-video1.mp4",
+        "https://example.com/una-video2.mp4"
+      ],
+      "description": "Découvrez l'Université Nationale d'Agriculture à travers ses fermes pédagogiques, ses laboratoires de recherche agricole et les formations pratiques qui caractérisent cette institution dédiée à l'agriculture moderne."
+    },
+    "schools": [
+      {
+        "id": "una-1",
+        "name": "Ecole d'Aquaculture (EAQ)",
+        "admissionRequirements": ["Classement"],
+        "location": "Adjohou",
+        "country": "Bénin",
+        "programs": ["Aquaculture"],
+        "contact": {
+          "email": "ecole.aquaculture@una.bj",
+          "phone": "+229 97 71 92 03",
+          "website": "ecole.aquaculture@una.bj"
+        },
+        "description": "Formation technique en agriculture et production végétale.",
+        "goodToKnow": "L'École d'Aquaculture forme des experts en élevage aquatique, avec une formation technique pointue et limitée à 39 places. Ainsi, si vous souhaitez travailler dans l'agriculture moderne ou l'enseignement, cette école vous ouvre des portes solides."
+      },
+      {
+        "id": "una-2",
+        "name": "Ecole d'Horticulture et d'Aménagement des Espaces Verts (EHAEV)",
+        "admissionRequirements": ["Classement"],
+        "location": "Idigny",
+        "country": "Bénin",
+        "programs": ["Horticulture et Aménagement des espaces Verts"],
+        "contact": {
+          "email": "ehaev@una.bj",
+          "phone": "+229 20 213 288",
+          "website": "www.una.bj/ehaev"
+        },
+        "description": "Spécialisée dans la production horticole et l'aménagement paysager.",
+        "goodToKnow": "L'EHAEV forme des spécialistes en horticulture et aménagement paysager, avec 68 places disponibles chaque année. Ainsi, si vous aimez créer des espaces verts ou travailler dans la production végétale, cette école vous prépare à de belles carrières."
+      },
+      {
+        "id": "una-3",
+        "name": "Ecole de Gestion et de Production Végétale et Semencière (EGPVS)",
+        "admissionRequirements": ["Classement"],
+        "location": "Idigny",
+        "country": "Bénin",
+        "programs": ["Gestion et Production Végétale et Semencière"],
+        "contact": {
+          "email": "scolarité.centrale@una.bj",
+          "phone": "+229 97 719 203",
+          "website": "www.una.bj/egpvs"
+        },
+        "description": "Formation en production végétale et gestion des semences.",
+        "goodToKnow": "L'EGPVS prépare aux métiers de la recherche agricole, de la production végétale et de l'entrepreneuriat semencier, en formant des experts capables de répondre aux enjeux agricoles actuels."
+      },
+      {
+        "id": "una-4",
+        "name": "Ecole des Sciences et Techniques de Conservations et de Transformations des Produits Agricoles (ESTCTPA)",
+        "admissionRequirements": ["Classement"],
+        "location": "Sakété",
+        "country": "Bénin",
+        "programs": [
+          "Industrie des Produits Agro-Alimentaires et Nutrition Humaine",
+          "Industrie des Bio-Ressources",
+          "Génie de Conditionnement Emballage et Stockage des Produits Alimentaires"
+        ],
+        "contact": {
+          "email": "estctpa2@yahoo.com",
+          "phone": "+229 62 985 466",
+          "website": "www.una.bj/ipa"
+        },
+        "description": "Formation en transformation agroalimentaire et nutrition.",
+        "goodToKnow": "L'ESTCTPA forme des spécialistes en transformation et conservation des produits agricoles. Ainsi, si vous voulez innover dans l'agroalimentaire, créer de la valeur ajoutée aux productions locales ou développer des solutions nutritionnelles, cette école vous donne les compétences techniques pour réussir."
+      }
+    ]
   }
 ]
