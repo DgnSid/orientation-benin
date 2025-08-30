@@ -521,7 +521,7 @@
   },
   {
     "id": "20",
-    "name": "Gestion des EXploitations Agricoles et Entreprises Agroalimentaires",
+    "name": "Gestion des Exploitations Agricoles et Entreprises Agroalimentaires",
     "slug": "gestion-exploitations-agricoles-entreprises-agroalimentaires",
     "category": "Sciences Économiques et de Gestion",
     "description": "Formation managériale spécialisée dans la gestion d'exploitations agricoles modernes et d'entreprises agroalimentaires. Développe l'entrepreneuriat agricole et agroalimentaire.",
@@ -856,72 +856,774 @@
       "Éditeur littéraire",
       "Correcteur professionnel",
       "Attaché culturel",
-      "Consultant en communication"
+      "Consultant linguistique"
     ],
-    "averageSalary": "250,000 - 650,000 FCFA",
+    "averageSalary": "280,000 - 700,000 FCFA",
     "requiredSkills": [
       "Excellence linguistique",
       "Analyse littéraire",
-      "Expression créative",
+      "Créativité écrite",
       "Culture francophone",
-      "Pédagogie",
-      "Correction de textes",
-      "Créativité rédactionnelle"
+      "Pédagogie du français",
+      "Correction professionnelle",
+      "Édition littéraire"
     ],
     "image": "/images/filieres/droit.jpg"
   },
   {
     "id": "33",
+    "name": "Sciences de l'Éducation",
+    "slug": "sciences-education",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en pédagogie, didactique et sciences cognitives appliquées à l'éducation. Prépare aux métiers de l'enseignement et de la formation professionnelle.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur formateur",
+      "Conseiller pédagogique",
+      "Concepteur de formation",
+      "Chercheur en éducation",
+      "Responsable formation",
+      "Consultant éducatif"
+    ],
+    "averageSalary": "300,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Pédagogie différenciée",
+      "Didactique disciplinaire",
+      "Psychologie cognitive",
+      "Animation de groupe",
+      "Conception pédagogique",
+      "Évaluation formative",
+      "Innovation éducative"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "34",
     "name": "Psychologie",
     "slug": "psychologie",
     "category": "Lettres, Arts et Sciences Humaines",
-    "description": "Formation en sciences du comportement humain, psychologie clinique et psychologie du développement. Prépare à l'accompagnement psychologique et à la recherche en sciences humaines.",
+    "description": "Formation en sciences psychologiques, comprenant psychologie clinique, cognitive, sociale et développementale. Développe la compréhension du comportement humain.",
     "duration": "5 ans",
     "careerOpportunities": [
       "Psychologue clinicien",
-      "Psychologue scolaire",
-      "Conseiller en orientation",
+      "Conseiller d'orientation",
       "Psychologue du travail",
-      "Thérapeute",
-      "Chercheur en psychologie"
+      "Chercheur en psychologie",
+      "Formateur en ressources humaines",
+      "Consultant en développement personnel"
     ],
-    "averageSalary": "320,000 - 750,000 FCFA",
+    "averageSalary": "300,000 - 800,000 FCFA",
     "requiredSkills": [
-      "Empathie développée",
       "Écoute active",
+      "Empathie professionnelle",
       "Analyse comportementale",
-      "Éthique professionnelle",
-      "Thérapeutique",
-      "Observation clinique",
-      "Communication thérapeutique"
+      "Éthique clinique",
+      "Communication thérapeutique",
+      "Observation scientifique",
+      "Bienveillance"
     ],
     "image": "/images/filieres/medecine.jpg"
   },
   {
-    "id": "34",
+    "id": "35",
     "name": "Sociologie",
     "slug": "sociologie",
     "category": "Lettres, Arts et Sciences Humaines",
-    "description": "Formation en analyse des phénomènes sociaux, enquêtes sociologiques et compréhension des dynamiques sociétales. Développe l'expertise en sciences sociales appliquées.",
+    "description": "Formation en analyse des sociétés, des institutions et des comportements collectifs. Développe la compréhension des dynamiques sociales et des transformations contemporaines.",
     "duration": "3-5 ans",
     "careerOpportunities": [
       "Sociologue chercheur",
+      "Conseiller en politiques publiques",
       "Chargé d'études sociales",
       "Consultant en développement",
-      "Animateur social",
-      "Responsable politique sociale",
-      "Analyste social"
+      "Médiateur social",
+      "Enquêteur sociologique"
     ],
-    "averageSalary": "280,000 - 650,000 FCFA",
+    "averageSalary": "280,000 - 700,000 FCFA",
     "requiredSkills": [
-      "Analyse sociale",
-      "Enquêtes qualitatives",
-      "Statistiques sociales",
-      "Observation participante",
-      "Synthèse sociologique",
-      "Médiation sociale",
-      "Innovation sociale"
+      "Enquête sociologique",
+      "Analyse institutionnelle",
+      "Méthodes qualitatives",
+      "Pensée systémique",
+      "Observation sociale",
+      "Écriture analytique",
+      "Objectivité scientifique"
     ],
     "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "36",
+    "name": "Archéologie",
+    "slug": "archeologie",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en fouilles archéologiques, analyse du patrimoine matériel et reconstitution historique. Développe l'expertise en conservation et valorisation du patrimoine.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Archéologue de terrain",
+      "Conservateur de musée",
+      "Chercheur en patrimoine",
+      "Expert en conservation",
+      "Médiateur culturel",
+      "Consultant archéologique"
+    ],
+    "averageSalary": "250,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Fouille archéologique",
+      "Analyse stratigraphique",
+      "Documentation scientifique",
+      "Patience minutieuse",
+      "Conservation préventive",
+      "Histoire matérielle",
+      "Méthode scientifique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "37",
+    "name": "Arts Plastiques",
+    "slug": "arts-plastiques",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en création artistique, histoire de l'art et techniques plastiques. Développe l'expression artistique personnelle et la compréhension des mouvements artistiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Artiste plasticien",
+      "Professeur d'arts plastiques",
+      "Animateur artistique",
+      "Critique d'art",
+      "Commissaire d'exposition",
+      "Consultant culturel"
+    ],
+    "averageSalary": "250,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Créativité artistique",
+      "Techniques plastiques",
+      "Sens esthétique",
+      "Culture artistique",
+      "Expression personnelle",
+      "Innovation visuelle",
+      "Pédagogie artistique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "38",
+    "name": "Musique",
+    "slug": "musique",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en pratique musicale, théorie musicale et histoire de la musique. Développe l'excellence instrumentale ou vocale et la culture musicale approfondie.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Musicien professionnel",
+      "Professeur de musique",
+      "Compositeur",
+      "Chef d'orchestre",
+      "Ingénieur du son",
+      "Programmateur musical"
+    ],
+    "averageSalary": "250,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Pratique instrumentale",
+      "Théorie musicale",
+      "Oreille musicale",
+      "Créativité sonore",
+      "Culture musicale",
+      "Pédagogie musicale",
+      "Expression artistique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "39",
+    "name": "Théâtre",
+    "slug": "theatre",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en art dramatique, mise en scène et histoire du théâtre. Développe l'expression scénique, l'interprétation et la direction d'acteurs.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Comédien professionnel",
+      "Metteur en scène",
+      "Professeur d'art dramatique",
+      "Animateur théâtral",
+      "Critique théâtral",
+      "Directeur de troupe"
+    ],
+    "averageSalary": "250,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Expression corporelle",
+      "Interprétation dramatique",
+      "Improvisation",
+      "Culture théâtrale",
+      "Direction d'acteurs",
+      "Créativité scénique",
+      "Pédagogie théâtrale"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "40",
+    "name": "Communication",
+    "slug": "communication",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en stratégies de communication, médias et relations publiques. Développe l'expertise en création de messages et gestion de l'image organisationnelle.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable communication",
+      "Chargé de relations publiques",
+      "Journaliste",
+      "Attaché de presse",
+      "Concepteur-rédacteur",
+      "Consultant en communication"
+    ],
+    "averageSalary": "300,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Stratégie de communication",
+      "Rédaction professionnelle",
+      "Relations médias",
+      "Créativité publicitaire",
+      "Analyse d'audience",
+      "Gestion de crise",
+      "Adaptabilité médiatique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "41",
+    "name": "Journalisme",
+    "slug": "journalisme",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en techniques journalistiques, éthique de l'information et investigation. Développe l'expertise en collecte, vérification et diffusion de l'information.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Journaliste reporter",
+      "Rédacteur en chef",
+      "Correspondant étranger",
+      "Chroniqueur spécialisé",
+      "Documentariste",
+      "Consultant médias"
+    ],
+    "averageSalary": "280,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Enquête journalistique",
+      "Écriture rapide",
+      "Vérification des faits",
+      "Éthique professionnelle",
+      "Curiosité intellectuelle",
+      "Adaptabilité rédactionnelle",
+      "Culture générale"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "42",
+    "name": "Sciences Politiques",
+    "slug": "sciences-politiques",
+    "category": "Sciences Juridiques et Politiques",
+    "description": "Formation en analyse politique, relations internationales et théories du pouvoir. Développe la compréhension des systèmes politiques et des enjeux géopolitiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Conseiller politique",
+      "Analyste géopolitique",
+      "Diplomate",
+      "Chargé d'études politiques",
+      "Consultant international",
+      "Enseignant en sciences politiques"
+    ],
+    "averageSalary": "320,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Analyse politique",
+      "Négociation",
+      "Culture géopolitique",
+      "Argumentation stratégique",
+      "Veille politique",
+      "Diplomatie",
+      "Pensée critique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "43",
+    "name": "Relations Internationales",
+    "slug": "relations-internationales",
+    "category": "Sciences Juridiques et Politiques",
+    "description": "Formation en diplomatie, coopération internationale et résolution de conflits. Développe l'expertise en négociation internationale et gestion des relations entre États.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Diplomate",
+      "Fonctionnaire international",
+      "Consultant en coopération",
+      "Analyste international",
+      "Négociateur",
+      "Chargé de mission ONG"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Négociation internationale",
+      "Diplomatie",
+      "Langues étrangères",
+      "Analyse géopolitique",
+      "Adaptabilité culturelle",
+      "Résolution de conflits",
+      "Communication interculturelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "44",
+    "name": "Droit des Affaires",
+    "slug": "droit-affaires",
+    "category": "Sciences Juridiques et Politiques",
+    "description": "Spécialisation en droit commercial, fiscalité des entreprises et droit des sociétés. Développe l'expertise juridique appliquée au monde des affaires et de l'entreprise.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Juriste d'entreprise",
+      "Avocat d'affaires",
+      "Conseiller fiscal",
+      "Responsable juridique",
+      "Consultant en droit des affaires",
+      "Médiateur commercial"
+    ],
+    "averageSalary": "400,000 - 1,200,000 FCFA",
+    "requiredSkills": [
+      "Droit commercial",
+      "Fiscalité des entreprises",
+      "Négociation contractuelle",
+      "Analyse juridique",
+      "Conseil stratégique",
+      "Éthique des affaires",
+      "Veille réglementaire"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "45",
+    "name": "Droit International",
+    "slug": "droit-international",
+    "category": "Sciences Juridiques et Politiques",
+    "description": "Spécialisation en droit international public, droit des organisations internationales et droit humanitaire. Développe l'expertise en régulation des relations internationales.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Juriste international",
+      "Diplomate",
+      "Fonctionnaire d'organisation internationale",
+      "Consultant en droit international",
+      "Chercheur en droit international",
+      "Avocat international"
+    ],
+    "averageSalary": "380,000 - 1,100,000 FCFA",
+    "requiredSkills": [
+      "Droit international public",
+      "Négociation multilatérale",
+      "Langues étrangères",
+      "Analyse comparative",
+      "Rédaction de traités",
+      "Diplomatie juridique",
+      "Arbitrage international"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "46",
+    "name": "Sciences Infirmières",
+    "slug": "sciences-infirmieres",
+    "category": "Sciences de la Santé",
+    "description": "Formation en soins infirmiers, gestion des soins et santé communautaire. Développe l'expertise clinique et relationnelle pour des soins de qualité aux patients.",
+    "duration": "4 ans",
+    "careerOpportunities": [
+      "Infirmier diplômé",
+      "Cadre de santé",
+      "Infirmier spécialisé",
+      "Formateur en soins",
+      "Coordinateur de soins",
+      "Infirmier en santé publique"
+    ],
+    "averageSalary": "250,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Soins techniques",
+      "Relation d'aide",
+      "Gestion du stress",
+      "Travail en équipe",
+      "Empathie professionnelle",
+      "Organisation des soins",
+      "Urgence médicale"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "47",
+    "name": "Pharmacie",
+    "slug": "pharmacie",
+    "category": "Sciences de la Santé",
+    "description": "Formation en sciences pharmaceutiques, pharmacologie et dispensation des médicaments. Développe l'expertise en médicaments et produits de santé.",
+    "duration": "6 ans",
+    "careerOpportunities": [
+      "Pharmacien d'officine",
+      "Pharmacien hospitalier",
+      "Industriel pharmaceutique",
+      "Chercheur en pharmacologie",
+      "Inspecteur de santé",
+      "Responsable réglementaire"
+    ],
+    "averageSalary": "400,000 - 1,000,000 FCFA",
+    "requiredSkills": [
+      "Connaissance médicamenteuse",
+      "Dispensation sécurisée",
+      "Conseil pharmaceutique",
+      "Chimie pharmaceutique",
+      "Gestion de stock",
+      "Éthique pharmaceutique",
+      "Veille thérapeutique"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "48",
+    "name": "Odontologie",
+    "slug": "odontologie",
+    "category": "Sciences de la Santé",
+    "description": "Formation en santé bucco-dentaire, soins dentaires et chirurgie orale. Développe l'expertise en diagnostic et traitement des pathologies dentaires.",
+    "duration": "6 ans",
+    "careerOpportunities": [
+      "Chirurgien-dentiste",
+      "Orthodontiste",
+      "Pédodontiste",
+      "Enseignant en odontologie",
+      "Chercheur en santé dentaire",
+      "Consultant en santé buccale"
+    ],
+    "averageSalary": "450,000 - 1,100,000 FCFA",
+    "requiredSkills": [
+      "Habileté manuelle",
+      "Précision extrême",
+      "Relation patient",
+      "Anatomie dentaire",
+      "Chirurgie orale",
+      "Gestion de cabinet",
+      "Hygiène stricte"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "49",
+    "name": "Sage-Femme",
+    "slug": "sage-femme",
+    "category": "Sciences de la Santé",
+    "description": "Formation spécialisée en suivi de grossesse, accouchement et santé reproductive. Développe l'expertise en périnatalité et accompagnement des femmes.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Sage-femme clinicienne",
+      "Cadre sage-femme",
+      "Enseignante en maïeutique",
+      "Consultante en périnatalité",
+      "Responsable de maternité",
+      "Sage-femme libérale"
+    ],
+    "averageSalary": "300,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Accompagnement global",
+      "Urgence obstétricale",
+      "Écoute active",
+      "Soutien psychologique",
+      "Techniques d'accouchement",
+      "Prévention périnatale",
+      "Relation de confiance"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "50",
+    "name": "Kinésithérapie",
+    "slug": "kinesitherapie",
+    "category": "Sciences de la Santé",
+    "description": "Formation en rééducation fonctionnelle, massothérapie et thérapies manuelles. Développe l'expertise en réadaptation physique et traitement des troubles musculo-squelettiques.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Kinésithérapeute libéral",
+      "Kinésithérapeute hospitalier",
+      "Kinésithérapeute du sport",
+      "Enseignant en kinésithérapie",
+      "Ergothérapeute",
+      "Consultant en rééducation"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Techniques de rééducation",
+      "Anatomie fonctionnelle",
+      "Massothérapie",
+      "Évaluation physique",
+      "Relation thérapeutique",
+      "Créativité rééducative",
+      "Gestion de cabinet"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "51",
+    "name": "Génie Mécanique",
+    "slug": "genie-mecanique",
+    "category": "Sciences et Technologies",
+    "description": "Formation en conception mécanique, fabrication et maintenance industrielle. Développe l'expertise en systèmes mécaniques et procédés de fabrication.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur mécanique",
+      "Concepteur mécanique",
+      "Responsable maintenance",
+      "Chef de production",
+      "Chercheur en mécanique",
+      "Consultant industriel"
+    ],
+    "averageSalary": "380,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Conception mécanique",
+      "Calcul de structures",
+      "Fabrication industrielle",
+      "Maintenance prédictive",
+      "Innovation technique",
+      "Gestion de projet",
+      "CAO/DAO"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "52",
+    "name": "Génie Chimique",
+    "slug": "genie-chimique",
+    "category": "Sciences et Technologies",
+    "description": "Formation en procédés chimiques industriels, génie des réacteurs et transformation de la matière. Développe l'expertise en conception et optimisation d'unités de production.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur procédés",
+      "Responsable production",
+      "Ingénieur sécurité industrielle",
+      "Chercheur en génie chimique",
+      "Consultant en transformation",
+      "Responsable qualité industrielle"
+    ],
+    "averageSalary": "400,000 - 1,000,000 FCFA",
+    "requiredSkills": [
+      "Procédés chimiques",
+      "Génie des réacteurs",
+      "Sécurité industrielle",
+      "Optimisation de production",
+      "Modélisation chimique",
+      "Gestion des risques",
+      "Innovation industrielle"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "53",
+    "name": "Génie des Télécommunications",
+    "slug": "genie-telecommunications",
+    "category": "Sciences et Technologies",
+    "description": "Formation en réseaux de communication, transmission de données et systèmes numériques. Développe l'expertise en technologies de l'information et de la communication.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur télécoms",
+      "Architecte réseaux",
+      "Responsable infrastructure",
+      "Consultant en télécoms",
+      "Chercheur en communications",
+      "Chef de projet numérique"
+    ],
+    "averageSalary": "400,000 - 1,100,000 FCFA",
+    "requiredSkills": [
+      "Réseaux de communication",
+      "Transmission de données",
+      "Sécurité informatique",
+      "Innovation numérique",
+      "Gestion de projet TIC",
+      "Veille technologique",
+      "Architecture systèmes"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "54",
+    "name": "Architecture",
+    "slug": "architecture",
+    "category": "Sciences et Technologies",
+    "description": "Formation en conception architecturale, urbanisme et construction durable. Développe l'expertise en création d'espaces habitables fonctionnels et esthétiques.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Architecte concepteur",
+      "Urbaniste",
+      "Architecte d'intérieur",
+      "Enseignant en architecture",
+      "Consultant en urbanisme",
+      "Architecte paysagiste"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Création spatiale",
+      "Dessin technique",
+      "Conception durable",
+      "Gestion de projet",
+      "Sens esthétique",
+      "Innovation constructive",
+      "Maquettisme"
+    ],
+    "image": "/images/filieres/genie-civil.jpg"
+  },
+  {
+    "id": "55",
+    "name": "Urbanisme",
+    "slug": "urbanisme",
+    "category": "Sciences et Technologies",
+    "description": "Formation en aménagement du territoire, planification urbaine et développement durable des villes. Développe l'expertise en conception d'espaces urbains fonctionnels et durables.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Urbaniste planificateur",
+      "Aménageur territorial",
+      "Consultant en développement urbain",
+      "Enseignant en urbanisme",
+      "Chargé d'études urbaines",
+      "Expert en mobilité urbaine"
+    ],
+    "averageSalary": "350,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Planification urbaine",
+      "Aménagement territorial",
+      "Développement durable",
+      "Concertation citoyenne",
+      "Prospective territoriale",
+      "Gestion de projet urbain",
+      "Innovation urbaine"
+    ],
+    "image": "/images/filieres/genie-civil.jpg"
+  },
+  {
+    "id": "56",
+    "name": "Design Industriel",
+    "slug": "design-industriel",
+    "category": "Sciences et Technologies",
+    "description": "Formation en conception de produits industriels, ergonomie et design thinking. Développe l'expertise en création d'objets industriels fonctionnels, esthétiques et innovants.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Designer industriel",
+      "Ergonome",
+      "Concepteur de produits",
+      "Consultant en innovation",
+      "Chef de projet design",
+      "Enseignant en design"
+    ],
+    "averageSalary": "320,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Création industrielle",
+      "Ergonomie produit",
+      "Design thinking",
+      "Prototypage",
+      "Sens esthétique",
+      "Innovation produit",
+      "Maîtrise des matériaux"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "57",
+    "name": "Marketing Digital",
+    "slug": "marketing-digital",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en stratégies digitales, e-commerce et communication en ligne. Développe l'expertise en acquisition et fidélisation de clients par les canaux numériques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable marketing digital",
+      "Community manager",
+      "Spécialiste SEO/SEA",
+      "Analyste web",
+      "Consultant e-commerce",
+      "Chef de projet digital"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Stratégie digitale",
+      "Analyse de données",
+      "Réseaux sociaux",
+      "Création de contenu",
+      "Veille technologique",
+      "Innovation digitale",
+      "Mesure de performance"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "58",
+    "name": "Intelligence Artificielle",
+    "slug": "intelligence-artificielle",
+    "category": "Sciences et Technologies",
+    "description": "Formation en algorithmes intelligents, machine learning et systèmes autonomes. Développe l'expertise en conception de systèmes capables d'apprendre et de prendre des décisions.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur IA",
+      "Data scientist",
+      "Chercheur en IA",
+      "Développeur machine learning",
+      "Consultant en transformation digitale",
+      "Architecte de systèmes intelligents"
+    ],
+    "averageSalary": "450,000 - 1,200,000 FCFA",
+    "requiredSkills": [
+      "Algorithmes intelligents",
+      "Machine learning",
+      "Traitement du langage",
+      "Vision par ordinateur",
+      "Mathématiques avancées",
+      "Innovation algorithmique",
+      "Éthique de l'IA"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "59",
+    "name": "Cybersécurité",
+    "slug": "cybersecurite",
+    "category": "Sciences et Technologies",
+    "description": "Formation en sécurité informatique, protection des données et lutte contre la cybercriminalité. Développe l'expertise en protection des systèmes d'information contre les menaces numériques.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Expert en cybersécurité",
+      "Analyste SOC",
+      "Consultant en sécurité",
+      "Auditeur sécurité",
+      "Responsable de la sécurité des systèmes",
+      "Chercheur en sécurité informatique"
+    ],
+    "averageSalary": "450,000 - 1,300,000 FCFA",
+    "requiredSkills": [
+      "Sécurité des réseaux",
+      "Cryptographie",
+      "Forensique numérique",
+      "Analyse de vulnérabilités",
+      "Veille des menaces",
+      "Innovation sécuritaire",
+      "Éthique du hacking"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "60",
+    "name": "Développement Durable",
+    "slug": "developpement-durable",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation en gestion environnementale, responsabilité sociétale et économie verte. Développe l'expertise en conception de projets équilibrant performance économique, équité sociale et préservation environnementale.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable RSE",
+      "Consultant en développement durable",
+      "Chargé de mission environnement",
+      "Éco-conseiller",
+      "Analyste de politiques durables",
+      "Coordinateur de projets verts"
+    ],
+    "averageSalary": "350,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Analyse environnementale",
+      "Gestion de projet durable",
+      "Économie circulaire",
+      "RSE et reporting",
+      "Concertation multi-acteurs",
+      "Innovation durable",
+      "Bilan carbone"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
   }
 ]
