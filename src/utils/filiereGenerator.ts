@@ -185,8 +185,83 @@ function generateRequiredSkills(programName: string, category: string): string[]
   return [...baseSkills, 'Adaptabilité', 'Curiosité'];
 }
 
-// Cette fonction n'est plus utilisée mais gardée pour compatibilité
-// Les filières sont maintenant définies dans filieres-details.json
+// Fonction pour normaliser les noms et créer des correspondances
+function normalizeString(str: string): string {
+  return str
+    .toLowerCase()
+    .replace(/[àáâãäåæ]/g, 'a')
+    .replace(/[èéêë]/g, 'e')
+    .replace(/[ìíîï]/g, 'i')
+    .replace(/[òóôõöø]/g, 'o')
+    .replace(/[ùúûü]/g, 'u')
+    .replace(/[ýÿ]/g, 'y')
+    .replace(/[ç]/g, 'c')
+    .replace(/[ñ]/g, 'n')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Fonction pour vérifier si deux noms correspondent
+function namesMatch(filiereName: string, programName: string): boolean {
+  const normalizedFiliere = normalizeString(filiereName);
+  const normalizedProgram = normalizeString(programName);
+  
+  // Correspondance exacte
+  if (normalizedFiliere === normalizedProgram) {
+    return true;
+  }
+  
+  // Correspondances spéciales pour les filières
+  const specialMatches: { [key: string]: string[] } = {
+    'medecine generale': ['medecine generale', 'medecine humaine', 'medecine'],
+    'genie civil': ['genie civil'],
+    'informatique': ['informatique', 'genie informatique et telecom', 'mathematiques et informatique'],
+    'genie electrique': ['genie electrique', 'genie electrotechnique'],
+    'economie': ['economie', 'sciences economiques'],
+    'droit': ['droit', 'droit prive', 'droit public'],
+    'agriculture': ['agriculture', 'agronomie'],
+    'gestion': ['gestion', 'sciences de gestion'],
+    'aquaculture': ['aquaculture'],
+    'horticulture et amenagement des espaces verts': ['horticulture et amenagement des espaces verts'],
+    'gestion et production vegetale et semenciere': ['gestion et production vegetale et semenciere'],
+    'industrie des produits agro-alimentaires et nutrition humaine': ['industrie des produits agro-alimentaires et nutrition humaine'],
+    'industrie des bio-ressources': ['industrie des bio-ressources'],
+    'genie de conditionnement emballage et stockage des produits alimentaires': ['genie de conditionnement emballage et stockage des produits alimentaires'],
+    'agroequipement': ['agroequipement', 'machinisme agricole'],
+    'electrification rurale et energies renouvelables': ['electrification rurale et energies renouvelables'],
+    'infrastructures rurales et assainissement': ['infrastructures rurales et assainissement'],
+    'productions et sante animales': ['productions et sante animales', 'production et sante animale'],
+    'finance agricole': ['finance agricole'],
+    'gestion des exploitations agricoles et entreprises agroalimentaires': ['gestion des exploitations agricoles et entreprises agroalimentaires'],
+    'marketing des intrants et produits agricoles': ['marketing des intrants et produits agricoles'],
+    'sociologie rurale et vulgarisation agricole': ['sociologie rurale et vulgarisation agricole'],
+    'foresterie tropicale': ['foresterie tropicale'],
+    'mathematiques': ['mathematiques', 'mathematiques et informatique'],
+    'physique': ['physique', 'physique-chimie'],
+    'chimie': ['chimie', 'physique-chimie', 'genie chimique procedes'],
+    'biologie': ['biologie', 'sciences de la vie'],
+    'philosophie': ['philosophie'],
+    'histoire': ['histoire'],
+    'geographie': ['geographie', 'geographie et amenagement du territoire'],
+    'anglais': ['anglais'],
+    'francais': ['francais', 'lettres modernes'],
+    'psychologie': ['psychologie'],
+    'sociologie': ['sociologie', 'socio-anthropologie']
+  };
+  
+  // Vérifier les correspondances spéciales
+  const specialKey = specialMatches[normalizedFiliere];
+  if (specialKey && specialKey.some(match => normalizedProgram.includes(match))) {
+    return true;
+  }
+  
+  // Correspondance partielle (si le nom de la filière est contenu dans le programme)
+  if (normalizedProgram.includes(normalizedFiliere) || normalizedFiliere.includes(normalizedProgram)) {
+    return true;
+  }
+  
+  return false;
+}
 
 // Fonction pour obtenir le nombre d'écoles proposant une filière
 export function getSchoolsOfferingFiliere(filiereName: string): Array<{universityName: string, schoolName: string}> {
@@ -195,7 +270,11 @@ export function getSchoolsOfferingFiliere(filiereName: string): Array<{universit
 
   universities.forEach(university => {
     university.schools.forEach(school => {
-      if (school.programs.includes(filiereName)) {
+      const hasMatchingProgram = school.programs.some(program => 
+        namesMatch(filiereName, program)
+      );
+      
+      if (hasMatchingProgram) {
         schools.push({
           universityName: university.name,
           schoolName: school.name
@@ -214,7 +293,7 @@ export function getUniversitiesOfferingFiliere(filiereName: string): string[] {
 
   universities.forEach(university => {
     const hasProgram = university.schools.some(school => 
-      school.programs.includes(filiereName)
+      school.programs.some(program => namesMatch(filiereName, program))
     );
     if (hasProgram && !universityIds.includes(university.id)) {
       universityIds.push(university.id);
