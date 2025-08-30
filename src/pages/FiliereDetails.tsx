@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Clock, TrendingUp, GraduationCap, ArrowLeft, Users, Target, CheckCircle } from 'lucide-react';
-import filieresData from '@/data/filieres.json';
+import { generateAllFilieres, getSchoolsOfferingFiliere } from '@/utils/filiereGenerator';
 import universitiesData from '@/data/universities.json';
 import { Filiere, University } from '@/types/data';
 
 const FiliereDetails = () => {
   const { slug } = useParams<{ slug: string }>();
-  const filiere = filieresData.find(f => f.slug === slug) as Filiere | undefined;
+  
+  // Générer toutes les filières et trouver celle qui correspond au slug
+  const allFilieres = useMemo(() => generateAllFilieres(), []);
+  const filiere = allFilieres.find(f => f.slug === slug) as Filiere | undefined;
   
   // Get universities offering this filiere
   const universities = universitiesData.filter(uni => 
     filiere?.universities.includes(uni.id)
   ) as University[];
+
+  // Get schools offering this filiere
+  const schoolsOffering = useMemo(() => {
+    if (!filiere) return [];
+    return getSchoolsOfferingFiliere(filiere.name);
+  }, [filiere]);
 
   if (!filiere) {
     return (
@@ -132,6 +141,26 @@ const FiliereDetails = () => {
               </CardContent>
             </Card>
 
+            {/* Schools offering this filiere */}
+            <Card className="shadow-elegant-md border">
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <GraduationCap className="h-5 w-5 mr-2 text-primary" />
+                  Écoles proposant cette filière ({schoolsOffering.length})
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid gap-3">
+                  {schoolsOffering.map((school, index) => (
+                    <div key={index} className="border rounded-lg p-3 bg-muted/30">
+                      <h4 className="font-medium text-sm mb-1">{school.schoolName}</h4>
+                      <p className="text-xs text-muted-foreground">{school.universityName}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Universities */}
             <Card className="shadow-elegant-md border">
               <CardHeader>
@@ -188,6 +217,10 @@ const FiliereDetails = () => {
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Universités disponibles</p>
                   <p className="font-semibold">{filiere.universities.length} établissement{filiere.universities.length > 1 ? 's' : ''}</p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Écoles proposant cette filière</p>
+                  <p className="font-semibold">{schoolsOffering.length} école{schoolsOffering.length > 1 ? 's' : ''}</p>
                 </div>
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Débouchés</p>

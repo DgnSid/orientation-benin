@@ -4,14 +4,15 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Search, Filter } from 'lucide-react';
 import FiliereCard from '@/components/cards/FiliereCard';
-import filieresData from '@/data/filieres.json';
+import { generateAllFilieres } from '@/utils/filiereGenerator';
 import { Filiere } from '@/types/data';
 
 const Filieres = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
-  const filieres: Filiere[] = filieresData;
+  // Générer toutes les filières automatiquement
+  const filieres: Filiere[] = useMemo(() => generateAllFilieres(), []);
 
   // Get unique categories
   const categories = useMemo(() => {

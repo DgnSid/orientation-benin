@@ -1,15 +1,19 @@
 import { useParams, Link } from 'react-router-dom';
+import { useMemo } from 'react';
 import { University } from '@/types/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, MapPin, Phone, Mail, Globe, GraduationCap, Users, BookOpen } from 'lucide-react';
 import universitiesData from '@/data/universities.json';
-import filieresData from '@/data/filieres.json';
+import { generateAllFilieres } from '@/utils/filiereGenerator';
 
 const UniversityDetails = () => {
   const { id } = useParams<{ id: string }>();
   const university = universitiesData.find(uni => uni.id === id) as University | undefined;
+  
+  // Générer toutes les filières
+  const allFilieres = useMemo(() => generateAllFilieres(), []);
 
   if (!university) {
     return (
@@ -29,12 +33,7 @@ const UniversityDetails = () => {
 
   // Créer un mapping des programmes vers les filières
   const getFiliereLinkForProgram = (programName: string) => {
-    const normalizedProgram = programName.toLowerCase();
-    const matchingFiliere = filieresData.find(filiere => 
-      filiere.name.toLowerCase().includes(normalizedProgram) ||
-      normalizedProgram.includes(filiere.name.toLowerCase()) ||
-      filiere.slug.includes(normalizedProgram.replace(/\s+/g, '-'))
-    );
+    const matchingFiliere = allFilieres.find(filiere => filiere.name === programName);
     return matchingFiliere ? `/filieres/${matchingFiliere.slug}` : null;
   };
 
