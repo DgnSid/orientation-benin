@@ -4,32 +4,38 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Search, Filter } from 'lucide-react';
 import FiliereCard from '@/components/cards/FiliereCard';
-import { generateAllFilieres } from '@/utils/filiereGenerator';
+import filieresData from '@/data/filieres-details.json';
+import { getSchoolsOfferingFiliere, getUniversitiesOfferingFiliere } from '@/utils/filiereGenerator';
 import { Filiere } from '@/types/data';
 
 const Filieres = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
-  // Générer toutes les filières automatiquement
-  const filieres: Filiere[] = useMemo(() => generateAllFilieres(), []);
+  // Get all unique filieres from the static data
+  const allFilieres = useMemo(() => {
+    return filieresData.map(filiere => ({
+      ...filiere,
+      universities: getUniversitiesOfferingFiliere(filiere.name)
+    }));
+  }, []);
 
   // Get unique categories
   const categories = useMemo(() => {
-    const categorySet = new Set(filieres.map(filiere => filiere.category));
+    const categorySet = new Set(allFilieres.map(filiere => filiere.category));
     return Array.from(categorySet).sort();
-  }, [filieres]);
+  }, [allFilieres]);
 
   // Filter filieres
   const filteredFilieres = useMemo(() => {
-    return filieres.filter(filiere => {
+    return allFilieres.filter(filiere => {
       const matchesSearch = filiere.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           filiere.description.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesCategory = selectedCategory === 'all' || filiere.category === selectedCategory;
       
       return matchesSearch && matchesCategory;
     });
-  }, [filieres, searchTerm, selectedCategory]);
+  }, [allFilieres, searchTerm, selectedCategory]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
@@ -113,7 +119,7 @@ const Filieres = () => {
               <div className="text-xs font-medium">
                 {category}
                 <div className="text-xs opacity-70 mt-1">
-                  {filieres.filter(f => f.category === category).length} filière{filieres.filter(f => f.category === category).length > 1 ? 's' : ''}
+                  {allFilieres.filter(f => f.category === category).length} filière{allFilieres.filter(f => f.category === category).length > 1 ? 's' : ''}
                 </div>
               </div>
             </Button>

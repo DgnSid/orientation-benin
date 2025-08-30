@@ -1,5 +1,5 @@
 import universitiesData from '@/data/universities.json';
-import { Filiere, University } from '@/types/data';
+import { University } from '@/types/data';
 
 // Fonction pour créer un slug à partir d'un nom
 function createSlug(name: string): string {
@@ -185,63 +185,8 @@ function generateRequiredSkills(programName: string, category: string): string[]
   return [...baseSkills, 'Adaptabilité', 'Curiosité'];
 }
 
-// Fonction principale pour générer toutes les filières
-export function generateAllFilieres(): Filiere[] {
-  const universities = universitiesData as University[];
-  const programsMap = new Map<string, {
-    category: string;
-    universities: string[];
-    schoolsOffering: Array<{universityId: string, schoolName: string}>;
-  }>();
-
-  // Collecter tous les programmes uniques
-  universities.forEach(university => {
-    university.schools.forEach(school => {
-      school.programs.forEach(program => {
-        const trimmedProgram = program.trim();
-        if (!programsMap.has(trimmedProgram)) {
-          const category = categorizeProgram(trimmedProgram);
-          programsMap.set(trimmedProgram, {
-            category,
-            universities: [],
-            schoolsOffering: []
-          });
-        }
-        
-        const programData = programsMap.get(trimmedProgram)!;
-        if (!programData.universities.includes(university.id)) {
-          programData.universities.push(university.id);
-        }
-        programData.schoolsOffering.push({
-          universityId: university.id,
-          schoolName: school.name
-        });
-      });
-    });
-  });
-
-  // Convertir en filières
-  const filieres: Filiere[] = Array.from(programsMap.entries()).map(([programName, data], index) => {
-    const slug = createSlug(programName);
-    const category = data.category;
-    
-    return {
-      id: `generated-${index + 1}`,
-      name: programName,
-      slug,
-      category,
-      description: generateDescription(programName, category),
-      duration: '3-5 ans', // Durée par défaut
-      careerOpportunities: generateCareerOpportunities(programName, category),
-      averageSalary: '250,000 - 800,000 FCFA', // Salaire par défaut
-      requiredSkills: generateRequiredSkills(programName, category),
-      universities: data.universities,
-      image: '/placeholder.svg' // Image par défaut
-    };
-  });
-
-  return filieres.sort((a, b) => a.name.localeCompare(b.name));
-}
+// Cette fonction n'est plus utilisée mais gardée pour compatibilité
+// Les filières sont maintenant définies dans filieres-details.json
 
 // Fonction pour obtenir le nombre d'écoles proposant une filière
 export function getSchoolsOfferingFiliere(filiereName: string): Array<{universityName: string, schoolName: string}> {

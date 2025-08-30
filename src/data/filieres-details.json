@@ -1,0 +1,927 @@
+[
+  {
+    "id": "1",
+    "name": "Médecine Générale",
+    "slug": "medecine-generale",
+    "category": "Sciences de la Santé",
+    "description": "La formation en Médecine Générale prépare des praticiens polyvalents capables de diagnostiquer, traiter et prévenir les maladies. Cette formation de 7 ans combine sciences fondamentales, clinique et stages hospitaliers pour former des médecins compétents et humains.",
+    "duration": "7 ans",
+    "careerOpportunities": [
+      "Médecin généraliste",
+      "Médecin de famille",
+      "Médecin urgentiste",
+      "Médecin de santé publique",
+      "Médecin chercheur",
+      "Médecin administrateur"
+    ],
+    "averageSalary": "400,000 - 1,200,000 FCFA",
+    "requiredSkills": [
+      "Excellente mémoire",
+      "Empathie et humanité",
+      "Résistance au stress",
+      "Esprit d'analyse",
+      "Communication",
+      "Rigueur scientifique",
+      "Disponibilité"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Droit",
+    "slug": "droit",
+    "category": "Sciences Juridiques et Politiques",
+    "description": "La formation en Droit développe une expertise approfondie du système juridique, des institutions et des procédures légales. Cette filière forme des juristes capables d'analyser, interpréter et appliquer le droit dans diverses situations professionnelles.",
+    "duration": "4-5 ans",
+    "careerOpportunities": [
+      "Avocat",
+      "Magistrat",
+      "Notaire",
+      "Juriste d'entreprise",
+      "Conseiller juridique",
+      "Huissier de justice",
+      "Greffier"
+    ],
+    "averageSalary": "300,000 - 1,000,000 FCFA",
+    "requiredSkills": [
+      "Rhétorique et éloquence",
+      "Esprit d'analyse",
+      "Rigueur intellectuelle",
+      "Mémoire excellente",
+      "Sens de l'équité",
+      "Communication orale",
+      "Rédaction juridique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Informatique",
+    "slug": "informatique",
+    "category": "Sciences et Technologies",
+    "description": "La formation en Informatique couvre la programmation, les systèmes d'information, les réseaux et l'intelligence artificielle. Cette filière prépare aux métiers du numérique en forte croissance, alliant théorie informatique et applications pratiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Développeur logiciel",
+      "Ingénieur système",
+      "Administrateur réseau",
+      "Chef de projet IT",
+      "Consultant informatique",
+      "Data scientist",
+      "Architecte logiciel"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Logique mathématique",
+      "Résolution de problèmes",
+      "Créativité technique",
+      "Apprentissage continu",
+      "Travail en équipe",
+      "Patience et persévérance",
+      "Anglais technique"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Génie Civil",
+    "slug": "genie-civil",
+    "category": "Sciences et Technologies",
+    "description": "Le Génie Civil forme des ingénieurs spécialisés dans la conception, la construction et la maintenance d'infrastructures. Cette formation couvre les bâtiments, ponts, routes, barrages et autres ouvrages d'art essentiels au développement.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur BTP",
+      "Chef de chantier",
+      "Bureau d'études",
+      "Contrôleur technique",
+      "Entrepreneur en BTP",
+      "Urbaniste",
+      "Expert en structures"
+    ],
+    "averageSalary": "400,000 - 1,100,000 FCFA",
+    "requiredSkills": [
+      "Calcul et mathématiques",
+      "Vision spatiale",
+      "Leadership",
+      "Gestion de projet",
+      "Résistance physique",
+      "Sécurité",
+      "Innovation technique"
+    ],
+    "image": "/images/filieres/genie-civil.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Économie",
+    "slug": "economie",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "La formation en Économie développe la compréhension des mécanismes économiques, des politiques publiques et des marchés financiers. Cette filière forme des analystes capables d'interpréter et d'influencer les dynamiques économiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Économiste",
+      "Analyste financier",
+      "Conseiller économique",
+      "Chargé d'études",
+      "Planificateur économique",
+      "Consultant en développement",
+      "Statisticien économique"
+    ],
+    "averageSalary": "300,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Analyse quantitative",
+      "Esprit de synthèse",
+      "Curiosité économique",
+      "Maîtrise des statistiques",
+      "Communication écrite",
+      "Veille économique",
+      "Modélisation"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Agriculture",
+    "slug": "agriculture",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "La formation en Agriculture moderne intègre les techniques traditionnelles et les innovations technologiques pour optimiser la production agricole. Cette filière prépare aux défis de la sécurité alimentaire et du développement rural durable.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Ingénieur agronome",
+      "Conseiller agricole",
+      "Chef d'exploitation",
+      "Technicien agricole",
+      "Entrepreneur agricole",
+      "Responsable qualité agroalimentaire",
+      "Formateur agricole"
+    ],
+    "averageSalary": "250,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Observation de la nature",
+      "Innovation technique",
+      "Gestion d'exploitation",
+      "Adaptabilité climatique",
+      "Sens pratique",
+      "Durabilité environnementale",
+      "Communication rurale"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Gestion",
+    "slug": "gestion",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "La formation en Gestion développe les compétences managériales, financières et stratégiques nécessaires à la direction d'organisations. Cette filière polyvalente ouvre sur de nombreux secteurs d'activité.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Manager d'équipe",
+      "Directeur administratif",
+      "Consultant en organisation",
+      "Contrôleur de gestion",
+      "Chef d'entreprise",
+      "Responsable ressources humaines",
+      "Analyste de gestion"
+    ],
+    "averageSalary": "320,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Leadership naturel",
+      "Prise de décision",
+      "Communication interpersonnelle",
+      "Analyse financière",
+      "Gestion du stress",
+      "Négociation",
+      "Vision stratégique"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Génie Électrique",
+    "slug": "genie-electrique",
+    "category": "Sciences et Technologies",
+    "description": "Le Génie Électrique forme des spécialistes en systèmes électriques, électroniques et énergétiques. Cette formation couvre la production, transport et utilisation de l'énergie électrique dans tous les secteurs.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur électricien",
+      "Technicien en électronique",
+      "Responsable maintenance",
+      "Chef de projet énergétique",
+      "Consultant en énergie",
+      "Automaticien",
+      "Ingénieur télécommunications"
+    ],
+    "averageSalary": "380,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Mathématiques appliquées",
+      "Logique électronique",
+      "Sécurité électrique",
+      "Innovation technologique",
+      "Diagnostic technique",
+      "Précision et minutie",
+      "Mise à jour technologique"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Aquaculture",
+    "slug": "aquaculture",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "L'Aquaculture forme des experts en élevage aquatique, gestion des ressources halieutiques et développement de la pisciculture. Cette spécialité technique répond aux enjeux de sécurité alimentaire et de développement côtier.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Aquaculteur professionnel",
+      "Technicien en pisciculture",
+      "Conseiller en aquaculture",
+      "Gestionnaire d'écloserie",
+      "Responsable ferme aquacole",
+      "Formateur en aquaculture"
+    ],
+    "averageSalary": "280,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Biologie aquatique",
+      "Gestion d'élevage",
+      "Observation environnementale",
+      "Techniques d'élevage",
+      "Qualité de l'eau",
+      "Innovation aquacole",
+      "Durabilité écologique"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Horticulture et Aménagement des espaces Verts",
+    "slug": "horticulture-amenagement-espaces-verts",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Cette formation spécialisée développe l'expertise en production horticole, aménagement paysager et gestion des espaces verts urbains et ruraux. Une filière qui allie esthétique, écologie et techniques culturales.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Paysagiste concepteur",
+      "Horticulteur spécialisé",
+      "Gestionnaire d'espaces verts",
+      "Entrepreneur paysagiste",
+      "Technicien en aménagement",
+      "Conseiller en horticulture"
+    ],
+    "averageSalary": "250,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Sens esthétique",
+      "Botanique appliquée",
+      "Techniques culturales",
+      "Créativité paysagère",
+      "Gestion d'équipe",
+      "Écologie urbaine",
+      "Connaissance des végétaux"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Gestion et Production Végétale et Semencière",
+    "slug": "gestion-production-vegetale-semenciere",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation spécialisée dans la production végétale, la recherche semencière et l'amélioration des variétés cultivées. Cette filière stratégique contribue à la sécurité alimentaire et à l'innovation agricole.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Sélectionneur de variétés",
+      "Producteur de semences",
+      "Conseiller en production végétale",
+      "Chercheur en amélioration",
+      "Responsable qualité semencière",
+      "Entrepreneur semencier"
+    ],
+    "averageSalary": "300,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Génétique végétale",
+      "Techniques de sélection",
+      "Contrôle qualité",
+      "Innovation variétale",
+      "Recherche appliquée",
+      "Gestion de production",
+      "Analyse scientifique"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Industrie des Produits Agro-Alimentaires et Nutrition Humaine",
+    "slug": "industrie-produits-agro-alimentaires-nutrition",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Cette formation polyvalente couvre la transformation agroalimentaire, la sécurité sanitaire et la nutrition humaine. Elle prépare aux enjeux modernes de l'industrie alimentaire et de la santé nutritionnelle.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Ingénieur agroalimentaire",
+      "Nutritionniste industriel",
+      "Responsable qualité alimentaire",
+      "Chef de production",
+      "Consultant en nutrition",
+      "Responsable R&D alimentaire"
+    ],
+    "averageSalary": "350,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Sciences alimentaires",
+      "Nutrition appliquée",
+      "Contrôle qualité",
+      "Sécurité sanitaire",
+      "Innovation produit",
+      "Gestion industrielle",
+      "Réglementation alimentaire"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Industrie des Bio-Ressources",
+    "slug": "industrie-bio-ressources",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation innovante axée sur la valorisation des ressources biologiques et le développement de bio-produits. Cette filière d'avenir combine biotechnologies et développement durable.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Ingénieur en biotechnologies",
+      "Spécialiste bio-ressources",
+      "Responsable valorisation",
+      "Conseiller en bioéconomie",
+      "Entrepreneur biotechnologique",
+      "Chercheur en valorisation"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Biotechnologies",
+      "Chimie verte",
+      "Innovation durable",
+      "Valorisation biologique",
+      "Recherche appliquée",
+      "Développement produit",
+      "Économie circulaire"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Génie de Conditionnement Emballage et Stockage des Produits Alimentaires",
+    "slug": "genie-conditionnement-emballage-stockage",
+    "category": "Sciences et Technologies",
+    "description": "Spécialisation technique dans les technologies d'emballage, de conservation et de stockage des produits alimentaires. Formation essentielle pour la chaîne agroalimentaire moderne.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Ingénieur packaging",
+      "Responsable logistique alimentaire",
+      "Spécialiste conservation",
+      "Chef de projet emballage",
+      "Consultant en stockage",
+      "Responsable chaîne du froid"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Technologies d'emballage",
+      "Conservation alimentaire",
+      "Logistique industrielle",
+      "Qualité packaging",
+      "Innovation matériaux",
+      "Optimisation stockage",
+      "Sécurité alimentaire"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Agroéquipement",
+    "slug": "agroequipement",
+    "category": "Sciences et Technologies",
+    "description": "Formation spécialisée dans la conception, la maintenance et l'utilisation des machines agricoles modernes. Cette filière technique répond à la mécanisation croissante de l'agriculture.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Technicien en machinisme",
+      "Conseiller en agroéquipement",
+      "Mécanicien agricole",
+      "Vendeur technique agricole",
+      "Entrepreneur en services",
+      "Formateur en machinisme"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Mécanique agricole",
+      "Hydraulique",
+      "Électronique embarquée",
+      "Diagnostic technique",
+      "Maintenance préventive",
+      "Innovation technologique",
+      "Conseil technique"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Electrification Rurale et Energies Renouvelables",
+    "slug": "electrification-rurale-energies-renouvelables",
+    "category": "Sciences et Technologies",
+    "description": "Formation spécialisée dans le développement de l'accès à l'électricité en milieu rural et l'implémentation de solutions énergétiques durables. Filière stratégique pour le développement.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Ingénieur énergies renouvelables",
+      "Technicien en électrification",
+      "Chef de projet énergie",
+      "Consultant en développement",
+      "Entrepreneur énergétique",
+      "Formateur en énergie"
+    ],
+    "averageSalary": "350,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Énergies renouvelables",
+      "Électrotechnique",
+      "Gestion de projet",
+      "Développement rural",
+      "Innovation énergétique",
+      "Économie de l'énergie",
+      "Technologies vertes"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Infrastructures Rurales et Assainissement",
+    "slug": "infrastructures-rurales-assainissement",
+    "category": "Sciences et Technologies",
+    "description": "Formation en conception et gestion des infrastructures rurales, systèmes d'assainissement et accès à l'eau potable. Filière essentielle pour le développement des zones rurales.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Ingénieur en infrastructures",
+      "Spécialiste assainissement",
+      "Chef de projet rural",
+      "Consultant en développement",
+      "Responsable WASH",
+      "Entrepreneur en BTP rural"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Génie rural",
+      "Hydraulique",
+      "Assainissement",
+      "Gestion de projet",
+      "Développement communautaire",
+      "Innovation technique",
+      "Durabilité"
+    ],
+    "image": "/images/filieres/genie-civil.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Productions et Santé Animales",
+    "slug": "productions-sante-animales",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation complète en élevage moderne, santé animale et gestion des systèmes pastoraux. Cette filière stratégique contribue à la sécurité alimentaire et au développement de l'élevage.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Zootechnicien",
+      "Conseiller en élevage",
+      "Technicien vétérinaire",
+      "Gestionnaire d'élevage",
+      "Entrepreneur pastoral",
+      "Formateur en élevage"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Zootechnie",
+      "Santé animale",
+      "Nutrition animale",
+      "Gestion d'élevage",
+      "Reproduction animale",
+      "Prophylaxie",
+      "Innovation pastorale"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Finance agricole",
+    "slug": "finance-agricole",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Spécialisation en financement du secteur agricole, microfinance rurale et gestion des risques agricoles. Formation essentielle pour le développement économique rural.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Conseiller en crédit agricole",
+      "Gestionnaire de microfinance",
+      "Analyste risques agricoles",
+      "Entrepreneur financier rural",
+      "Consultant en développement",
+      "Responsable banque agricole"
+    ],
+    "averageSalary": "350,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Finance rurale",
+      "Analyse de crédit",
+      "Gestion des risques",
+      "Microfinance",
+      "Économie agricole",
+      "Développement rural",
+      "Innovation financière"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Gestion des EXploitations Agricoles et Entreprises Agroalimentaires",
+    "slug": "gestion-exploitations-agricoles-entreprises-agroalimentaires",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation managériale spécialisée dans la gestion d'exploitations agricoles modernes et d'entreprises agroalimentaires. Développe l'entrepreneuriat agricole et agroalimentaire.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Chef d'exploitation agricole",
+      "Manager agroalimentaire",
+      "Consultant en gestion",
+      "Entrepreneur agricole",
+      "Responsable coopérative",
+      "Directeur d'agribusiness"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Management agricole",
+      "Gestion d'entreprise",
+      "Entrepreneuriat",
+      "Marketing agricole",
+      "Finance d'exploitation",
+      "Leadership",
+      "Innovation managériale"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "21",
+    "name": "Marketing des Intrants et Produits Agricoles",
+    "slug": "marketing-intrants-produits-agricoles",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Spécialisation en commercialisation des produits agricoles, distribution d'intrants et développement de marchés agricoles. Formation clé pour l'économie agricole.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Responsable marketing agricole",
+      "Commercial en intrants",
+      "Gestionnaire de marché",
+      "Entrepreneur commercial",
+      "Consultant en commercialisation",
+      "Responsable approvisionnement"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Marketing spécialisé",
+      "Techniques commerciales",
+      "Connaissance des marchés",
+      "Négociation",
+      "Réseau commercial",
+      "Innovation commerciale",
+      "Analyse de marché"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "22",
+    "name": "Sociologie rurale et Vulgarisation Agricole",
+    "slug": "sociologie-rurale-vulgarisation-agricole",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation unique combinant sociologie rurale et techniques de vulgarisation agricole. Prépare aux métiers du développement rural participatif et de l'accompagnement des communautés.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Agent de développement rural",
+      "Vulgarisateur agricole",
+      "Animateur rural",
+      "Consultant en développement",
+      "Responsable ONG rurale",
+      "Formateur en développement"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Communication rurale",
+      "Animation sociale",
+      "Développement participatif",
+      "Sociologie appliquée",
+      "Pédagogie adulte",
+      "Médiation sociale",
+      "Innovation sociale"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "23",
+    "name": "Foresterie Tropicale",
+    "slug": "foresterie-tropicale",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation spécialisée en gestion durable des forêts tropicales, conservation de la biodiversité et exploitation raisonnée des ressources forestières. Filière environnementale stratégique.",
+    "duration": "3 ans",
+    "careerOpportunities": [
+      "Ingénieur forestier",
+      "Gestionnaire de forêt",
+      "Conseiller en conservation",
+      "Entrepreneur forestier",
+      "Chercheur forestier",
+      "Responsable reboisement"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Écologie forestière",
+      "Gestion durable",
+      "Conservation",
+      "Biodiversité",
+      "Aménagement forestier",
+      "Recherche appliquée",
+      "Innovation environnementale"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "24",
+    "name": "Mathématiques",
+    "slug": "mathematiques",
+    "category": "Sciences Exactes et Naturelles",
+    "description": "Formation fondamentale en mathématiques pures et appliquées, développant l'abstraction, la logique et la résolution de problèmes complexes. Base solide pour de nombreuses carrières scientifiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur de mathématiques",
+      "Chercheur mathématicien",
+      "Statisticien",
+      "Actuaire",
+      "Analyste quantitatif",
+      "Consultant scientifique"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Abstraction mathématique",
+      "Logique rigoureuse",
+      "Raisonnement déductif",
+      "Précision analytique",
+      "Créativité mathématique",
+      "Persévérance",
+      "Communication scientifique"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "25",
+    "name": "Physique",
+    "slug": "physique",
+    "category": "Sciences Exactes et Naturelles",
+    "description": "Formation en physique fondamentale et appliquée, explorant les lois de l'univers depuis l'infiniment petit jusqu'à l'infiniment grand. Développe l'esprit scientifique et la modélisation.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Physicien chercheur",
+      "Professeur de physique",
+      "Ingénieur R&D",
+      "Consultant scientifique",
+      "Technicien spécialisé",
+      "Analyste technique"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Modélisation physique",
+      "Expérimentation",
+      "Mathématiques avancées",
+      "Instrumentation",
+      "Analyse de données",
+      "Curiosité scientifique",
+      "Rigueur expérimentale"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "26",
+    "name": "Chimie",
+    "slug": "chimie",
+    "category": "Sciences Exactes et Naturelles",
+    "description": "Formation en sciences chimiques, de la chimie fondamentale aux applications industrielles. Développe l'expertise en synthèse, analyse et transformation de la matière.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Chimiste industriel",
+      "Professeur de chimie",
+      "Chercheur en chimie",
+      "Technicien de laboratoire",
+      "Consultant qualité",
+      "Ingénieur procédés"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Synthèse chimique",
+      "Analyse qualitative",
+      "Sécurité laboratoire",
+      "Instrumentation",
+      "Précision manipulatoire",
+      "Innovation chimique",
+      "Rigueur expérimentale"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "27",
+    "name": "Biologie",
+    "slug": "biologie",
+    "category": "Sciences Exactes et Naturelles",
+    "description": "Formation complète en sciences de la vie, de la biologie cellulaire à l'écologie. Développe la compréhension du vivant et prépare aux biotechnologies modernes.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Biologiste de recherche",
+      "Professeur de biologie",
+      "Technicien biotechnologies",
+      "Consultant environnement",
+      "Analyste laboratoire",
+      "Ingénieur biomédical"
+    ],
+    "averageSalary": "300,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Observation microscopique",
+      "Expérimentation biologique",
+      "Analyse statistique",
+      "Biotechnologies",
+      "Éthique scientifique",
+      "Curiosité naturelle",
+      "Précision technique"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "28",
+    "name": "Philosophie",
+    "slug": "philosophie",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en pensée critique, éthique et réflexion fondamentale sur l'existence humaine. Développe l'argumentation, l'analyse conceptuelle et la sagesse pratique.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur de philosophie",
+      "Chercheur en philosophie",
+      "Conseiller éthique",
+      "Médiateur culturel",
+      "Écrivain philosophe",
+      "Consultant en éthique"
+    ],
+    "averageSalary": "250,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Pensée critique",
+      "Argumentation rigoureuse",
+      "Culture générale",
+      "Expression écrite",
+      "Écoute empathique",
+      "Sagesse pratique",
+      "Créativité conceptuelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "29",
+    "name": "Histoire",
+    "slug": "histoire",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en recherche historique, analyse des sources et compréhension des évolutions sociétales. Développe l'esprit critique et la méthode scientifique appliquée au passé.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur d'histoire",
+      "Historien chercheur",
+      "Archiviste",
+      "Conservateur patrimoine",
+      "Journaliste spécialisé",
+      "Consultant culturel"
+    ],
+    "averageSalary": "250,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Recherche documentaire",
+      "Analyse critique",
+      "Synthèse historique",
+      "Chronologie",
+      "Objectivité scientifique",
+      "Curiosité culturelle",
+      "Écriture académique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "30",
+    "name": "Géographie",
+    "slug": "geographie",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en analyse spatiale, aménagement du territoire et géomatique. Combine sciences humaines et outils techniques pour comprendre l'organisation de l'espace.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Géographe aménageur",
+      "Professeur de géographie",
+      "Cartographe",
+      "Urbaniste",
+      "Consultant territorial",
+      "Analyste spatial"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Analyse spatiale",
+      "Cartographie",
+      "SIG et géomatique",
+      "Aménagement",
+      "Observation terrain",
+      "Synthèse géographique",
+      "Technologies spatiales"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "31",
+    "name": "Anglais",
+    "slug": "anglais",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation approfondie en langue, littérature et civilisation anglophone. Développe une maîtrise experte de l'anglais et une compréhension interculturelle.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur d'anglais",
+      "Traducteur professionnel",
+      "Interprète",
+      "Attaché culturel",
+      "Journaliste international",
+      "Consultant linguistique"
+    ],
+    "averageSalary": "280,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Maîtrise linguistique",
+      "Culture anglo-saxonne",
+      "Traduction littéraire",
+      "Communication interculturelle",
+      "Analyse littéraire",
+      "Pédagogie des langues",
+      "Adaptabilité culturelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "32",
+    "name": "Français",
+    "slug": "francais",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en langue française, littérature francophone et sciences du langage. Développe l'excellence en expression écrite et orale, ainsi que l'analyse littéraire.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur de français",
+      "Écrivain professionnel",
+      "Éditeur littéraire",
+      "Correcteur professionnel",
+      "Attaché culturel",
+      "Consultant en communication"
+    ],
+    "averageSalary": "250,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Excellence linguistique",
+      "Analyse littéraire",
+      "Expression créative",
+      "Culture francophone",
+      "Pédagogie",
+      "Correction de textes",
+      "Créativité rédactionnelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "33",
+    "name": "Psychologie",
+    "slug": "psychologie",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en sciences du comportement humain, psychologie clinique et psychologie du développement. Prépare à l'accompagnement psychologique et à la recherche en sciences humaines.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Psychologue clinicien",
+      "Psychologue scolaire",
+      "Conseiller en orientation",
+      "Psychologue du travail",
+      "Thérapeute",
+      "Chercheur en psychologie"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Empathie développée",
+      "Écoute active",
+      "Analyse comportementale",
+      "Éthique professionnelle",
+      "Thérapeutique",
+      "Observation clinique",
+      "Communication thérapeutique"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "34",
+    "name": "Sociologie",
+    "slug": "sociologie",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en analyse des phénomènes sociaux, enquêtes sociologiques et compréhension des dynamiques sociétales. Développe l'expertise en sciences sociales appliquées.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Sociologue chercheur",
+      "Chargé d'études sociales",
+      "Consultant en développement",
+      "Animateur social",
+      "Responsable politique sociale",
+      "Analyste social"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Analyse sociale",
+      "Enquêtes qualitatives",
+      "Statistiques sociales",
+      "Observation participante",
+      "Synthèse sociologique",
+      "Médiation sociale",
+      "Innovation sociale"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  }
+]

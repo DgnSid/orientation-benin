@@ -6,14 +6,14 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, MapPin, Phone, Mail, Globe, GraduationCap, Users, BookOpen } from 'lucide-react';
 import universitiesData from '@/data/universities.json';
-import { generateAllFilieres } from '@/utils/filiereGenerator';
+import filieresData from '@/data/filieres-details.json';
 
 const UniversityDetails = () => {
   const { id } = useParams<{ id: string }>();
   const university = universitiesData.find(uni => uni.id === id) as University | undefined;
   
   // Générer toutes les filières
-  const allFilieres = useMemo(() => generateAllFilieres(), []);
+  const allFilieres = useMemo(() => filieresData, []);
 
   if (!university) {
     return (
