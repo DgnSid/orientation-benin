@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, MapPin, Phone, Mail, Globe, GraduationCap, Users, BookOpen } from 'lucide-react';
 import universitiesData from '@/data/universities.json';
 import filieresData from '@/data/filieres-details.json';
+import { getSchoolsOfferingFiliere } from '@/utils/filiereGenerator';
 
 const UniversityDetails = () => {
   const { id } = useParams<{ id: string }>();
@@ -31,9 +32,87 @@ const UniversityDetails = () => {
     );
   }
 
+  // Fonction pour normaliser les noms et créer des correspondances
+  function normalizeString(str: string): string {
+    return str
+      .toLowerCase()
+      .replace(/[àáâãäåæ]/g, 'a')
+      .replace(/[èéêë]/g, 'e')
+      .replace(/[ìíîï]/g, 'i')
+      .replace(/[òóôõöø]/g, 'o')
+      .replace(/[ùúûü]/g, 'u')
+      .replace(/[ýÿ]/g, 'y')
+      .replace(/[ç]/g, 'c')
+      .replace(/[ñ]/g, 'n')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  // Fonction pour vérifier si deux noms correspondent
+  function namesMatch(filiereName: string, programName: string): boolean {
+    const normalizedFiliere = normalizeString(filiereName);
+    const normalizedProgram = normalizeString(programName);
+    
+    // Correspondance exacte
+    if (normalizedFiliere === normalizedProgram) {
+      return true;
+    }
+    
+    // Correspondances spéciales pour les filières
+    const specialMatches: { [key: string]: string[] } = {
+      'medecine generale': ['medecine generale', 'medecine humaine', 'medecine'],
+      'genie civil': ['genie civil'],
+      'informatique': ['informatique', 'genie informatique et telecom', 'mathematiques et informatique'],
+      'genie electrique': ['genie electrique', 'genie electrotechnique'],
+      'economie': ['economie', 'sciences economiques'],
+      'droit': ['droit', 'droit prive', 'droit public'],
+      'agriculture': ['agriculture', 'agronomie'],
+      'gestion': ['gestion', 'sciences de gestion'],
+      'aquaculture': ['aquaculture'],
+      'horticulture et amenagement des espaces verts': ['horticulture et amenagement des espaces verts'],
+      'gestion et production vegetale et semenciere': ['gestion et production vegetale et semenciere'],
+      'industrie des produits agro-alimentaires et nutrition humaine': ['industrie des produits agro-alimentaires et nutrition humaine'],
+      'industrie des bio-ressources': ['industrie des bio-ressources'],
+      'genie de conditionnement emballage et stockage des produits alimentaires': ['genie de conditionnement emballage et stockage des produits alimentaires'],
+      'agroequipement': ['agroequipement', 'machinisme agricole'],
+      'electrification rurale et energies renouvelables': ['electrification rurale et energies renouvelables'],
+      'infrastructures rurales et assainissement': ['infrastructures rurales et assainissement'],
+      'productions et sante animales': ['productions et sante animales', 'production et sante animale'],
+      'finance agricole': ['finance agricole'],
+      'gestion des exploitations agricoles et entreprises agroalimentaires': ['gestion des exploitations agricoles et entreprises agroalimentaires'],
+      'marketing des intrants et produits agricoles': ['marketing des intrants et produits agricoles'],
+      'sociologie rurale et vulgarisation agricole': ['sociologie rurale et vulgarisation agricole'],
+      'foresterie tropicale': ['foresterie tropicale'],
+      'mathematiques': ['mathematiques', 'mathematiques et informatique'],
+      'physique': ['physique', 'physique-chimie'],
+      'chimie': ['chimie', 'physique-chimie', 'genie chimique procedes'],
+      'biologie': ['biologie', 'sciences de la vie'],
+      'philosophie': ['philosophie'],
+      'histoire': ['histoire'],
+      'geographie': ['geographie', 'geographie et amenagement du territoire'],
+      'anglais': ['anglais'],
+      'francais': ['francais', 'lettres modernes'],
+      'psychologie': ['psychologie'],
+      'sociologie': ['sociologie', 'socio-anthropologie']
+    };
+    
+    // Vérifier les correspondances spéciales
+    const specialKey = specialMatches[normalizedFiliere];
+    if (specialKey && specialKey.some(match => normalizedProgram.includes(match))) {
+      return true;
+    }
+    
+    // Correspondance partielle (si le nom de la filière est contenu dans le programme)
+    if (normalizedProgram.includes(normalizedFiliere) || normalizedFiliere.includes(normalizedProgram)) {
+      return true;
+    }
+    
+    return false;
+  }
+
   // Créer un mapping des programmes vers les filières
   const getFiliereLinkForProgram = (programName: string) => {
-    const matchingFiliere = allFilieres.find(filiere => filiere.name === programName);
+    const matchingFiliere = allFilieres.find(filiere => namesMatch(filiere.name, programName));
     return matchingFiliere ? `/filieres/${matchingFiliere.slug}` : null;
   };
 
