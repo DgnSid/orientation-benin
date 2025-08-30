@@ -1,107 +1,331 @@
 [
   {
-    "id": "uac",
-    "name": "Université d'Abomey-Calavi",
-    "type": "publique",
-    "city": "Cotonou",
-    "description": "La plus grande université du Bénin, créée en 1970. L'UAC est un établissement public d'enseignement supérieur qui accueille plus de 100 000 étudiants dans diverses filières.",
-    "image": "/images/universities/uac.jpg",
-    "website": "https://www.uac.bj",
+    "id": "1",
+    "name": "Université d'Abomey-Calavi (UAC)",
+    "location": "Abomey-Calavi",
+    "type": "Public",
+    "image": "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "L'UAC est la plus grande université du Bénin, offrant une large gamme de programmes dans diverses disciplines.",
+    "slug": "universite-abomey-calavi",
     "established": "1970",
     "studentCount": "100,000+",
+    "website": "https://www.uac.bj",
+    "gallery": {
+      "images": [
+        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80", 
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80"
+      ],
+      "videos": [
+        "https://example.com/video1.mp4",
+        "https://example.com/video2.mp4"
+      ],
+      "description": "Découvrez l'environnement d'apprentissage exceptionnel de l'Université d'Abomey-Calavi à travers nos campus modernes, nos laboratoires de pointe et la vie étudiante dynamique qui caractérise notre établissement."
+    },
     "schools": [
       {
-        "id": "fashs",
-        "name": "Faculté des Arts et Sciences Humaines",
-        "description": "Formation en lettres, philosophie, histoire, géographie et sociologie",
-        "programs": ["lettres-modernes", "philosophie", "histoire", "geographie", "sociologie"]
+        "id": "uac-1",
+        "name": "Institut Régional de Santé Publique (IRSP)",
+        "admissionRequirements": ["Classement"],
+        "location": "Ouidah",
+        "country": "Bénin",
+        "programs": ["Santé publique polyvalente"],
+        "contact": {
+          "email": "irsp@irsp-ouidah.org",
+          "phone": "+229 55 99 20 20",
+          "website": "https://irsp-ouidah.org"
+        },
+        "description": "Formation en santé publique et épidémiologie pour répondre aux enjeux sanitaires locaux.",
+        "goodToKnow": "L'IRSP forme des professionnels polyvalents en santé publique, capables de répondre aux défis sanitaires complexes. Ainsi, si vous souhaitez œuvrer dans la gestion de programmes de vaccination, l'analyse des politiques de santé, la surveillance épidémiologique ou la sensibilisation communautaire, cette formation vous préparera à intervenir sur le terrain comme dans les instances décisionnelles, en Afrique et au-delà. Opportunités : Ses diplômés intègrent des organisations internationales (OMS, UNICEF), des ministères de la Santé, des ONG spécialisées ou des structures de recherche, avec des missions allant de la réponse aux crises sanitaires à l'optimisation des systèmes de soins."
       },
       {
-        "id": "fadesp",
-        "name": "Faculté de Droit et de Science Politique",
-        "description": "Formation juridique et en sciences politiques",
-        "programs": ["droit", "sciences-politiques"]
+        "id": "uac-2",
+        "name": "Faculté des Lettres, Arts et Sciences Humaines-Adjarra (FLASH-Adjarra)",
+        "admissionRequirements": ["Classement"],
+        "location": "Adjarra",
+        "country": "Bénin",
+        "programs": ["Géographie et Aménagement du Territoire", "Socio-Anthropologie", "Anglais"],
+        "contact": {
+          "email": "flash@uac.bj",
+          "phone": "+229 22 44 66 88",
+          "website": ""
+        },
+        "description": "Formation pluridisciplinaire en sciences humaines avec une forte dimension terrain.",
+        "goodToKnow": "La FLASH-Adjarra propose des formations en sciences humaines qui étudient la société sous différents angles. Que ce soit en géographie (pour comprendre l'espace et l'aménagement), en socio-anthropologie (pour analyser les comportements sociaux) ou en anglais (pour la communication internationale), l'accent est mis sur l'application pratique des connaissances. Une bonne option si vous aimez réfléchir aux questions de société et travailler sur le terrain."
       },
       {
-        "id": "faseg",
-        "name": "Faculté des Sciences Économiques et de Gestion",
-        "description": "Formation en économie, gestion et commerce",
-        "programs": ["economie", "gestion", "commerce"]
+        "id": "uac-3",
+        "name": "Institut de Mathématiques et de Sciences Physiques (IMSP)",
+        "admissionRequirements": ["Classement"],
+        "location": "Porto-Novo",
+        "country": "Bénin",
+        "programs": ["Cycle préparatoire: Maths, Physique et Sciences de l'ingénieur", "Physique-Chimie et Science de l'Ingénieur (PCSI)"],
+        "contact": {
+          "email": "secretariat@imsp-uac.org",
+          "phone": "+229 20 22 24 55",
+          "website": "https://www.imsp-benin.com"
+        },
+        "description": "Pôle d'excellence pour les sciences fondamentales préparant aux grandes écoles d'ingénieurs.",
+        "goodToKnow": "L'IMSP forme des esprits scientifiques en physique et mathématiques pures. Ainsi, si vous visez les grandes écoles d'ingénieurs ou la recherche fondamentale, vous y apprendrez à modéliser les lois de l'univers tout en travaillant sur des cas concrets africains."
       },
       {
-        "id": "fast",
-        "name": "Faculté des Sciences et Techniques",
-        "description": "Formation scientifique et technique",
-        "programs": ["mathematiques", "informatique", "physique", "chimie", "biologie"]
-      }
-    ]
-  },
-  {
-    "id": "uniab",
-    "name": "Université de l'Alliance Baptiste",
-    "type": "privee",
-    "city": "Cotonou",
-    "description": "Université privée reconnue pour l'excellence de ses formations dans les domaines de la santé, de l'ingénierie et des sciences appliquées.",
-    "image": "/images/universities/uniab.jpg",
-    "website": "https://www.uniab.edu.bj",
-    "established": "1999",
-    "studentCount": "5,000+",
-    "schools": [
-      {
-        "id": "medecine-uniab",
-        "name": "École de Médecine",
-        "description": "Formation médicale de haut niveau",
-        "programs": ["medecine", "pharmacie", "medecine-dentaire"]
+        "id": "uac-4",
+        "name": "Faculté des Lettres, Langues, Arts et Communications (FLLAC)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": ["Allemand", "Anglais", "Espagnol", "Lettres Modernes", "Science du Langage et de la Communication"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Centre d'excellence en langues étrangères et communication interculturelle.",
+        "goodToKnow": "La FLLAC forme des passeurs de cultures en langues et littératures. Ainsi, si vous rêvez de devenir traducteur, diplomate ou professeur, vous y développerez une maîtrise exceptionnelle des langues couplée à une profonde intelligence interculturelle."
       },
       {
-        "id": "ingenierie-uniab",
-        "name": "École d'Ingénierie",
-        "description": "Formation en génie civil, électrique et informatique",
-        "programs": ["genie-civil", "genie-electrique", "informatique"]
-      }
-    ]
-  },
-  {
-    "id": "ub",
-    "name": "Université de Bohicon",
-    "type": "publique",
-    "city": "Bohicon",
-    "description": "Université récente spécialisée dans l'agriculture, l'élevage et les sciences de la vie.",
-    "image": "/images/universities/ub.jpg",
-    "website": "#",
-    "established": "2015",
-    "studentCount": "3,000+",
-    "schools": [
-      {
-        "id": "agriculture-ub",
-        "name": "École d'Agriculture",
-        "description": "Formation en agriculture moderne et durable",
-        "programs": ["agriculture", "elevage", "agronomie"]
-      }
-    ]
-  },
-  {
-    "id": "uac-parakou",
-    "name": "Université de Parakou",
-    "type": "publique",
-    "city": "Parakou",
-    "description": "Campus de l'UAC dans le nord du Bénin, offrant des formations adaptées aux besoins de la région.",
-    "image": "/images/universities/uac-parakou.jpg",
-    "website": "https://www.uac.bj/parakou",
-    "established": "2001",
-    "studentCount": "8,000+",
-    "schools": [
-      {
-        "id": "sciences-parakou",
-        "name": "Faculté des Sciences",
-        "description": "Sciences fondamentales et appliquées",
-        "programs": ["mathematiques", "informatique", "biologie"]
+        "id": "uac-5",
+        "name": "Institut National des Métiers d'Arts (INMAAC)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": ["Arts dramatiques", "Arts Plastiques", "Musique et Musicologie","Administration Culturelle", "Cinéma et Audiovisuel"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Formation aux métiers des arts vivants et visuels ancrée dans le patrimoine béninois.",
+        "goodToKnow": "L'INMAAC forme des créateurs engagés en arts visuels et scéniques. Ainsi, si vous voulez réinventer le patrimoine béninois à travers le théâtre, la peinture ou le cinéma, vous y trouverez un cadre unique au cœur des palais royaux d'Abomey."
       },
       {
-        "id": "medecine-parakou",
-        "name": "Faculté de Médecine",
-        "description": "Formation médicale pour le nord du Bénin",
-        "programs": ["medecine", "pharmacie"]
+        "id": "uac-6",
+        "name": "Centre Inter Facultaire de Formation et de Recherche en Environnement pour le Développement Durable (CIFRED)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": ["Environnement, Hygiène et Santé publique"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Expertise en gestion durable des écosystèmes et santé environnementale.",
+        "goodToKnow": "Le CIFRED forme des gardiens des écosystèmes en sciences environnementales. Ainsi, si vous souhaitez lutter contre la pollution ou concevoir des villes durables, vous y acquerrez des solutions pratiques testées dans le bassin du Niger."
+      },
+      {
+        "id": "uac-7",
+        "name": "Institut de Cadre de Vie (ex-IGATE)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": ["Gestion des cadres de vie", "Gestion des changements climatiques et des écosystèmes", "Géomatique et environnement", "Planification et Gestion des espaces urbains et ruraux"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Formation en aménagement durable des territoires et résilience climatique.",
+        "goodToKnow": "L'Institut du Cadre de Vie forme des spécialistes du territoire en géomatique, planification urbaine et climat. Ainsi, si vous souhaitez transformer nos villes face aux défis environnementaux, vous y apprendrez à cartographier, modéliser et réorganiser les espaces de demain."
+      },
+      {
+        "id": "uac-8",
+        "name": "Institut National Médico-Sanitaire (INMeS)",
+        "admissionRequirements": ["Concours"],
+        "location": "Cotonou",
+        "country": "Bénin",
+        "programs": ["Sciences Obstétricales", "Sciences infirmières"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Formation pratique aux métiers de la santé avec équipements haute-fidélité.",
+        "goodToKnow": "L'INMeS forme des professionnels de la santé en soins infirmiers et en obstétrique. Ainsi, si vous voulez aider les mamans et leurs bébés à rester en bonne santé, vous y apprendrez les bons gestes et les bons réflexes pour faire la différence dès les premiers instants."
+      },
+      {
+        "id": "uac-9",
+        "name": "Institut National de l'Eau (INE)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": [
+          "Hydrologie quantitative et Gestion intégrée des Ressources", 
+          "Hydrogéologie et Gestion intégrée des Ressources", 
+          "Ecohydrologie et Gestion intégrée des Ressources", 
+          "Gestion des crises et risques liés à l'eau et au climat", 
+          "Génie rural et Maîtrise de l'Eau", 
+          "Hydraulique et Assainissement", 
+          "Eau Hygiène et Assainissement (EHA)"
+        ],
+        "contact": {
+          "email": "info@c2ea.ine-uac.net",
+          "phone": "+229 0141552764 / 0196638124",
+          "website": "https://c2ea.ine-uac.net"
+        },
+        "description": "Centre africain de référence pour la gestion intégrée des ressources en eau.",
+        "goodToKnow": "L'INE forme des spécialistes de l'eau capables de prévenir les pénuries, d'assainir les villes et de protéger les populations. Ainsi, si vous voulez avoir un métier utile et recherché pour relever les défis climatiques, c'est l'endroit idéal pour apprendre à faire la différence."
+      },
+      {
+        "id": "uac-10",
+        "name": "École Nationale d'Économie Appliquée (ENEAM)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": [
+          "Administration des Réseaux informatiques", 
+          "Analyse Informatique et Programmation", 
+          "Assurance", 
+          "Banque et Finance de Marché", 
+          "Banque et Institutions des Micro finances", 
+          "Marketing", 
+          "Gestion des Ressources Humaines", 
+          "Gestion des Transports", 
+          "Gestion de Logistique", 
+          "Statistique Economique et Sectorielle", 
+          "Statistique Démographique et Sociale", 
+          "Planification et Gestion des Projets", 
+          "Planification et Economie du Développement Durable", 
+          "Développement Local et Régional", 
+          "Gestion Financière et Comptable"
+        ],
+        "contact": {
+          "email": "eneam@uac.bj",
+          "phone": "+229 21-30-41-68",
+          "website": "www.eneam.uac.bj"
+        },
+        "description": "Leader en formation managériale avec accréditation internationale CAMES.",
+        "goodToKnow": "L'ENEAM est l'une des meilleures écoles qui forment dans les métiers les plus recherchés de notre siècle, comme la finance, l'informatique, la logistique ou encore les statistiques. Ainsi, si vous voulez trouver un bon travail, aider au développement du pays ou même créer votre propre entreprise, c'est une école qui vous donne des bases solides pour réussir."
+      },
+      {
+        "id": "uac-11",
+        "name": "École du Patrimoine Africain (EPA)",
+        "admissionRequirements": ["Classement"],
+        "location": "Porto-Novo",
+        "country": "Bénin",
+        "programs": ["Gestion du patrimoine Culturel"],
+        "contact": {
+          "email": "epa@epa-prema.net",
+          "phone": "+229 01 96 04 46 02",
+          "website": "https://www.epa-prema.net"
+        },
+        "description": "Unique en Afrique francophone pour la muséologie et l'archivage des traditions.",
+        "goodToKnow": "L'EPA est une école unique qui forme à la sauvegarde de la culture africaine, à travers la gestion des musées, des archives et des traditions. Ainsi, si vous aimez l'histoire, l'art ou l'identité de nos peuples, c'est l'endroit idéal pour apprendre à protéger ce que l'Afrique a de plus précieux."
+      },
+      {
+        "id": "uac-12",
+        "name": "Faculté des Sciences Humaines et Sociales (FASHS)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": [
+          "Géographie et Aménagement du Territoire",
+          "Psychologie", 
+          "Sciences de l'Éducation", 
+          "Philosophie", 
+          "Socio-Anthropologie", 
+          "Histoire et Archéologie", 
+          "Psychologie du travail et des Organisations"
+        ],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Approche interdisciplinaire des enjeux sociaux et médiatiques contemporains.",
+        "goodToKnow": "La FASHS forme des experts capables de décrypter les comportements humains, gérer les territoires et transmettre le savoir. Ainsi, si vous voulez comprendre les défis sociaux actuels et travailler dans l'éducation, la recherche, la communication ou le développement, cette faculté vous ouvre des portes solides pour bâtir votre avenir."
+      },
+      {
+        "id": "uac-13",
+        "name": "École Nationale des Sciences et Techniques de l'Information et de la Communication (ENSTIC)",
+        "admissionRequirements": ["Concours"],
+        "location": "Porto-Novo",
+        "country": "Bénin",
+        "programs": ["Journalisme", "Métiers de l'Audiovisuel et du Multimédia"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": ""
+        },
+        "description": "Formation aux métiers de l'information et de la communication digitale.",
+        "goodToKnow": "L'ENSTIC forme les journalistes et communicants de demain dans l'ère du numérique. Ainsi, si vous voulez informer, créer des contenus multimédias ou développer des stratégies de communication, cette école vous prépare aux défis actuels des médias."
+      },
+      {
+        "id": "uac-15",
+        "name": "Faculté des Sciences Agronomiques (FSA)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": [
+          "Sciences et Techniques de Production Végétale", 
+          "Sciences et Techniques de Production Animale", 
+          "Aménagement et Gestion des Forêts et Parcours Naturels", 
+          "Génie Rural, Mécanisation Agricole, Pêche et Aquaculture", 
+          "Nutrition et Technologie Alimentaires", 
+          "Agroéconomie, Sociologie et Vulgarisation Rurales", 
+          "Entreprenariat Agricole"
+        ],
+        "contact": {
+          "email": "fsa.uac@uac.bj",
+          "phone": "229 01 41 78 71 70",
+          "website": "https://fsa-uac.bj"
+        },
+        "description": "Référence régionale pour l'agriculture durable et la sécurité alimentaire.",
+        "goodToKnow": "La FSA est l'école qui prépare ceux qui nourriront le monde de demain. On y apprend à produire mieux, à protéger les forêts, à élever durablement, à transformer les aliments et à innover dans l'agriculture. Ainsi, si vous voulez contribuer à la sécurité alimentaire, entreprendre dans l'agro-business ou rendre nos systèmes agricoles plus résilients face au climat, la FSA vous forme aux métiers les plus essentiels de notre avenir."
+      },
+      {
+        "id": "uac-16",
+        "name": "Faculté des Sciences de la Santé (FSS)",
+        "admissionRequirements": ["Classement"],
+        "location": "Cotonou",
+        "country": "Bénin",
+        "programs": ["Médecine Générale", "Pharmacie", "Kinésithérapie", "Assistance sociale", "Nutrition et Diététique"],
+        "contact": {
+          "email": "fss@uac.bj",
+          "phone": "+229 21 77 88 99",
+          "website": "www.fss.uac.bj"
+        },
+        "description": "Formation médicale complète avec hôpital universitaire de référence.",
+        "goodToKnow": "La FSS forme les soignants et spécialistes qui prennent soin de la vie à chaque étape. On y étudie la médecine, la pharmacie, la kinésithérapie, la nutrition ou encore l'assistance sociale, avec des équipements de pointe comme un simulateur de patient unique en Afrique de l'Ouest. Ainsi, si vous rêvez d'aider, de soigner ou d'innover dans le domaine de la santé, la FSS vous offre un cadre solide pour apprendre, pratiquer et faire la différence."
+      },
+      {
+        "id": "uac-17",
+        "name": "École Polytechnique d'Abomey-Calavi (EPAC)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey-Calavi",
+        "country": "Bénin",
+        "programs": ["Analyse Biomédicale", "Génie de Technologie Alimentaire", "Production et Santé animale", "Génie de l'Environnement", "Génie d'Imagerie médicale et de Radiothérapie", "Génie Civil", "Génie Electrique", "Génie Mécanique et Energétique", "Génie Informatique et Télécom", "Génie Chimique procédés", "Machinisme Agricole", "Génie Biomédical (Maintenance Biomédicale et Hospitalière)"],
+        "contact": {
+          "email": "",
+          "phone": "",
+          "website": "https://epac.eacademia.bj"
+        },
+        "description": "Formation d'ingénieurs orientée vers les défis industriels africains.",
+        "goodToKnow": "L'EPAC forme les ingénieurs qui construisent l'Afrique de demain, dans des domaines clés comme l'énergie, la santé, l'alimentation, l'environnement ou le numérique. Ainsi, si vous voulez concevoir des infrastructures, créer des solutions technologiques ou améliorer la vie des populations à travers l'ingénierie, l'EPAC vous ouvre les portes des secteurs les plus stratégiques et recherchés du continent."
+      },
+      {
+        "id": "uac-18",
+        "name": "Centre de Formation et de Recherche en matière de Population (CEFORP)",
+        "admissionRequirements": ["Classement"],
+        "location": "Cotonou",
+        "country": "Bénin",
+        "programs": ["Dynamique de Population et Planification Régionale"],
+        "contact": {
+          "email": "",
+          "phone": "+229 63 41 92 10",
+          "website": ""
+        },
+        "description": "Centre spécialisé dans l'étude des populations et l'aménagement du territoire en Afrique.",
+        "goodToKnow": "Le CEFORP forme les experts capables d'analyser les évolutions démographiques pour mieux planifier les villes, les politiques sociales et les projets de développement. Ainsi, si vous voulez contribuer à une meilleure organisation des territoires et à des politiques publiques efficaces, vous y trouverez les outils pour agir sur le terrain."
       }
     ]
   }

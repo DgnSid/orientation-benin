@@ -145,11 +145,11 @@ const FiliereDetails = () => {
                   {universities.map((university) => (
                     <div key={university.id} className="border rounded-lg p-4 hover:shadow-elegant-sm transition-shadow">
                       <div className="flex justify-between items-start">
-                        <div className="flex-1">
+                      <div className="flex-1">
                           <h3 className="font-semibold text-lg mb-1">{university.name}</h3>
-                          <p className="text-muted-foreground text-sm mb-2">{university.city}</p>
-                          <Badge variant={university.type === 'publique' ? 'default' : 'secondary'} className="text-xs">
-                            {university.type === 'publique' ? 'Publique' : 'Privée'}
+                          <p className="text-muted-foreground text-sm mb-2">{university.location}</p>
+                          <Badge variant={university.type === 'Public' ? 'default' : 'secondary'} className="text-xs">
+                            {university.type === 'Public' ? 'Publique' : 'Privée'}
                           </Badge>
                         </div>
                         <Button variant="outline" size="sm" asChild>

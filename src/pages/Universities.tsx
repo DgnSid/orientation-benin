@@ -9,14 +9,14 @@ import { University } from '@/types/data';
 
 const Universities = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedType, setSelectedType] = useState<'all' | 'publique' | 'privee'>('all');
+  const [selectedType, setSelectedType] = useState<'all' | 'Public' | 'Privé'>('all');
   const [selectedCity, setSelectedCity] = useState<string>('all');
 
   const universities = universitiesData as University[];
 
   // Get unique cities
   const cities = useMemo(() => {
-    const citySet = new Set(universities.map(uni => uni.city));
+    const citySet = new Set(universities.map(uni => uni.location));
     return Array.from(citySet).sort();
   }, [universities]);
 
@@ -26,7 +26,7 @@ const Universities = () => {
       const matchesSearch = university.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           university.description.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesType = selectedType === 'all' || university.type === selectedType;
-      const matchesCity = selectedCity === 'all' || university.city === selectedCity;
+      const matchesCity = selectedCity === 'all' || university.location === selectedCity;
       
       return matchesSearch && matchesType && matchesCity;
     });
@@ -70,15 +70,15 @@ const Universities = () => {
                 Toutes
               </Button>
               <Button
-                variant={selectedType === 'publique' ? 'default' : 'outline'}
-                onClick={() => setSelectedType('publique')}
+                variant={selectedType === 'Public' ? 'default' : 'outline'}
+                onClick={() => setSelectedType('Public')}
                 size="sm"
               >
                 Publiques
               </Button>
               <Button
-                variant={selectedType === 'privee' ? 'default' : 'outline'}
-                onClick={() => setSelectedType('privee')}
+                variant={selectedType === 'Privé' ? 'default' : 'outline'}
+                onClick={() => setSelectedType('Privé')}
                 size="sm"
               >
                 Privées
@@ -102,7 +102,7 @@ const Universities = () => {
           <div className="flex flex-wrap gap-2 mt-4">
             {selectedType !== 'all' && (
               <Badge variant="secondary" className="flex items-center gap-1">
-                {selectedType === 'publique' ? 'Publiques' : 'Privées'}
+                {selectedType === 'Public' ? 'Publiques' : 'Privées'}
                 <button onClick={() => setSelectedType('all')} className="ml-1 hover:bg-muted-foreground/20 rounded-full p-0.5">
                   ×
                 </button>

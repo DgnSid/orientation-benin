@@ -1,21 +1,36 @@
-export interface University {
-  id: string;
-  name: string;
-  type: "publique" | "privee";
-  city: string;
-  description: string;
-  image: string;
-  website: string;
-  established: string;
-  studentCount: string;
-  schools: School[];
-}
-
 export interface School {
   id: string;
   name: string;
-  description: string;
+  admissionRequirements: string[];
+  location: string;
+  country: string;
   programs: string[];
+  contact: {
+    email: string;
+    phone: string;
+    website: string;
+  };
+  description: string;
+  goodToKnow: string;
+}
+
+export interface University {
+  id: string;
+  name: string;
+  location: string;
+  type: "Public" | "Privé";
+  image: string;
+  description: string; 
+  slug: string;
+  schools: School[];
+  established?: string;
+  studentCount?: string;
+  website?: string;
+  gallery?: {
+    images: string[];
+    videos?: string[];
+    description?: string;
+  };
 }
 
 export interface Filiere {

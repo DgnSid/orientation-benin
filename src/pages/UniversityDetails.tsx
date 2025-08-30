@@ -52,25 +52,25 @@ const UniversityDetails = () => {
             <div className="absolute bottom-6 left-6 right-6 text-white">
               <div className="flex items-center gap-2 mb-2">
                 <Badge 
-                  variant={university.type === 'publique' ? 'default' : 'secondary'}
+                  variant={university.type === 'Public' ? 'default' : 'secondary'}
                   className="bg-background/90 text-foreground"
                 >
-                  {university.type === 'publique' ? 'Publique' : 'Privée'}
+                  {university.type === 'Public' ? 'Publique' : 'Privée'}
                 </Badge>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-2">{university.name}</h1>
               <div className="flex flex-wrap items-center gap-4 text-sm">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-1" />
-                  {university.city}
+                  {university.location}
                 </div>
                 <div className="flex items-center">
                   <Users className="h-4 w-4 mr-1" />
-                  {university.studentCount} étudiants
+                  {university.studentCount || 'Non spécifié'} étudiants
                 </div>
                 <div className="flex items-center">
                   <Calendar className="h-4 w-4 mr-1" />
-                  Fondée en {university.established}
+                  Fondée en {university.established || 'Non spécifié'}
                 </div>
               </div>
             </div>
@@ -133,11 +133,11 @@ const UniversityDetails = () => {
               <CardContent className="space-y-4">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Type</p>
-                  <p className="font-semibold">{university.type === 'publique' ? 'Université publique' : 'Université privée'}</p>
+                  <p className="font-semibold">{university.type === 'Public' ? 'Université publique' : 'Université privée'}</p>
                 </div>
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Localisation</p>
-                  <p className="font-semibold">{university.city}, Bénin</p>
+                  <p className="font-semibold">{university.location}, Bénin</p>
                 </div>
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Année de création</p>

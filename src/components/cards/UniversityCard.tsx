@@ -31,11 +31,11 @@ const UniversityCard: React.FC<UniversityCardProps> = ({ university }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         <div className="absolute top-4 right-4">
           <Badge 
-            className={`${university.type === 'publique' 
+            className={`${university.type === 'Public' 
               ? 'bg-primary text-white' 
               : 'bg-secondary text-white'} font-medium`}
           >
-            {university.type === 'publique' ? 'Publique' : 'Privée'}
+            {university.type === 'Public' ? 'Publique' : 'Privée'}
           </Badge>
         </div>
         <div className="absolute bottom-4 left-4 right-4">
@@ -44,7 +44,7 @@ const UniversityCard: React.FC<UniversityCardProps> = ({ university }) => {
           </h3>
           <div className="flex items-center text-white/90 text-sm">
             <MapPin className="h-4 w-4 mr-1" />
-            {university.city}
+            {university.location}
           </div>
         </div>
       </div>
@@ -62,14 +62,14 @@ const UniversityCard: React.FC<UniversityCardProps> = ({ university }) => {
               <Users className="h-4 w-4 mr-1" />
             </div>
             <p className="text-xs text-muted-foreground">Étudiants</p>
-            <p className="font-semibold text-sm">{university.studentCount}</p>
+            <p className="font-semibold text-sm">{university.studentCount || 'Non spécifié'}</p>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center text-primary mb-1">
               <Calendar className="h-4 w-4 mr-1" />
             </div>
             <p className="text-xs text-muted-foreground">Fondée en</p>
-            <p className="font-semibold text-sm">{university.established}</p>
+            <p className="font-semibold text-sm">{university.established || 'Non spécifié'}</p>
           </div>
         </div>
 
@@ -122,7 +122,7 @@ const UniversityCard: React.FC<UniversityCardProps> = ({ university }) => {
             Voir détails
           </Link>
         </Button>
-        {university.website !== '#' && (
+        {university.website && university.website !== '#' && (
           <Button variant="outline" size="sm" asChild className="border-primary text-primary hover:bg-primary hover:text-white">
             <a href={university.website} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="h-4 w-4" />
