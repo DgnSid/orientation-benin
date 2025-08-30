@@ -96,11 +96,14 @@ const Index = () => {
             </div>
             
             <div className="relative flex justify-center">
-              <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
+              <div className="bg-card rounded-2xl p-8 shadow-lg border border-primary/20">
                 <img
-                  src="/lovable-uploads/8e981fb4-6b4d-4a64-b757-e383aa1750a4.png"
+                  src="/logo-apres-mon-bac.png"
                   alt="Après mon Bac - Logo officiel"
                   className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain mx-auto"
+                  onError={(e) => {
+                    e.currentTarget.src = '/placeholder.svg';
+                  }}
                 />
               </div>
             </div>

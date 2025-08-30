@@ -1,18 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { University } from '@/types/data';
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { MapPin, Users, Calendar, ExternalLink } from 'lucide-react';
+import { MapPin, Users, Calendar, ExternalLink, GraduationCap, BookOpen, Building } from 'lucide-react';
+import filieresData from '@/data/filieres.json';
 
 interface UniversityCardProps {
   university: University;
 }
 
 const UniversityCard: React.FC<UniversityCardProps> = ({ university }) => {
+  // Obtenir les filières disponibles dans cette université
+  const availableFilieres = filieresData.filter(filiere => 
+    filiere.universities.includes(university.id)
+  );
+
   return (
-    <Card className="group hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0 overflow-hidden">
+    <Card className="group hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-1 bg-white border border-primary/20 overflow-hidden h-full flex flex-col">
       <div className="relative">
         <img
           src={university.image}
@@ -22,68 +28,102 @@ const UniversityCard: React.FC<UniversityCardProps> = ({ university }) => {
             e.currentTarget.src = '/placeholder.svg';
           }}
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         <div className="absolute top-4 right-4">
           <Badge 
-            variant={university.type === 'publique' ? 'default' : 'secondary'}
-            className="bg-background/90 backdrop-blur-sm"
+            className={`${university.type === 'publique' 
+              ? 'bg-primary text-white' 
+              : 'bg-secondary text-white'} font-medium`}
           >
             {university.type === 'publique' ? 'Publique' : 'Privée'}
           </Badge>
         </div>
-      </div>
-      
-      <CardContent className="p-6 space-y-4">
-        <div>
-          <h3 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors duration-300">
+        <div className="absolute bottom-4 left-4 right-4">
+          <h3 className="font-bold text-xl text-white mb-1">
             {university.name}
           </h3>
-          <p className="text-muted-foreground text-sm mt-2 line-clamp-3">
+          <div className="flex items-center text-white/90 text-sm">
+            <MapPin className="h-4 w-4 mr-1" />
+            {university.city}
+          </div>
+        </div>
+      </div>
+      
+      <CardContent className="p-6 space-y-4 flex-1">
+        <div>
+          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
             {university.description}
           </p>
         </div>
 
-        <div className="space-y-2">
-          <div className="flex items-center text-sm text-muted-foreground">
-            <MapPin className="h-4 w-4 mr-2 text-primary" />
-            {university.city}
+        <div className="grid grid-cols-2 gap-4 py-3 bg-muted/30 rounded-lg px-3">
+          <div className="text-center">
+            <div className="flex items-center justify-center text-primary mb-1">
+              <Users className="h-4 w-4 mr-1" />
+            </div>
+            <p className="text-xs text-muted-foreground">Étudiants</p>
+            <p className="font-semibold text-sm">{university.studentCount}</p>
           </div>
-          <div className="flex items-center text-sm text-muted-foreground">
-            <Users className="h-4 w-4 mr-2 text-primary" />
-            {university.studentCount} étudiants
-          </div>
-          <div className="flex items-center text-sm text-muted-foreground">
-            <Calendar className="h-4 w-4 mr-2 text-primary" />
-            Fondée en {university.established}
+          <div className="text-center">
+            <div className="flex items-center justify-center text-primary mb-1">
+              <Calendar className="h-4 w-4 mr-1" />
+            </div>
+            <p className="text-xs text-muted-foreground">Fondée en</p>
+            <p className="font-semibold text-sm">{university.established}</p>
           </div>
         </div>
 
-        <div className="pt-2">
-          <p className="text-sm font-medium text-foreground mb-2">
-            {university.schools.length} école{university.schools.length > 1 ? 's' : ''} disponible{university.schools.length > 1 ? 's' : ''}
-          </p>
-          <div className="flex flex-wrap gap-1">
-            {university.schools.slice(0, 2).map((school) => (
-              <Badge key={school.id} variant="outline" className="text-xs">
-                {school.name.split(' ')[0]}
-              </Badge>
+        <div className="space-y-3">
+          <div className="flex items-center justify-between">
+            <p className="text-sm font-medium text-foreground flex items-center">
+              <Building className="h-4 w-4 mr-2 text-primary" />
+              Écoles ({university.schools.length})
+            </p>
+          </div>
+          <div className="space-y-2 max-h-24 overflow-y-auto">
+            {university.schools.map((school) => (
+              <div key={school.id} className="text-xs bg-muted/50 rounded p-2">
+                <p className="font-medium text-foreground">{school.name}</p>
+                <p className="text-muted-foreground line-clamp-1">{school.description}</p>
+              </div>
             ))}
-            {university.schools.length > 2 && (
-              <Badge variant="outline" className="text-xs">
-                +{university.schools.length - 2}
-              </Badge>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <div className="flex items-center justify-between">
+            <p className="text-sm font-medium text-foreground flex items-center">
+              <GraduationCap className="h-4 w-4 mr-2 text-primary" />
+              Filières disponibles ({availableFilieres.length})
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2 max-h-20 overflow-y-auto">
+            {availableFilieres.map((filiere) => (
+              <Link key={filiere.id} to={`/filieres/${filiere.slug}`}>
+                <Badge 
+                  variant="outline" 
+                  className="text-xs hover:bg-primary hover:text-white transition-colors cursor-pointer border-primary/50"
+                >
+                  {filiere.name}
+                </Badge>
+              </Link>
+            ))}
+            {availableFilieres.length === 0 && (
+              <span className="text-xs text-muted-foreground italic">Aucune filière répertoriée</span>
             )}
           </div>
         </div>
       </CardContent>
 
       <CardFooter className="p-6 pt-0 flex gap-2">
-        <Button asChild className="flex-1" variant="default">
+        <Button asChild className="flex-1 bg-primary hover:bg-primary-dark text-white" variant="default">
           <Link to={`/universities/${university.id}`}>
+            <BookOpen className="h-4 w-4 mr-2" />
             Voir détails
           </Link>
         </Button>
         {university.website !== '#' && (
-          <Button variant="outline" size="sm" asChild>
+          <Button variant="outline" size="sm" asChild className="border-primary text-primary hover:bg-primary hover:text-white">
             <a href={university.website} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="h-4 w-4" />
             </a>
