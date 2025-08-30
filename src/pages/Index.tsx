@@ -98,7 +98,7 @@ const Index = () => {
             <div className="relative flex justify-center">
               <div className="bg-card rounded-2xl p-8 shadow-lg border border-primary/20">
                 <img
-                  src="/logo-apres-mon-bac.png"
+                  src="/lovable-uploads/885f13f1-a25a-4445-9468-2fb37844853b.png"
                   alt="Après mon Bac - Logo officiel"
                   className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain mx-auto"
                   onError={(e) => {

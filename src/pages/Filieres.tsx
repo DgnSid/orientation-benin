@@ -3,20 +3,14 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Search, Filter } from 'lucide-react';
 import FiliereCard from '@/components/cards/FiliereCard';
-import filieresData from '@/data/filieres-details.json';
-import { getUniversitiesOfferingFiliere } from '@/utils/filiereGenerator';
+import { generateAllFilieres } from '@/utils/filiereGenerator';
 import { Filiere } from '@/types/data';
 
 const Filieres = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Get all unique filieres from the static data
-  const allFilieres = useMemo(() => {
-    return filieresData.map(filiere => ({
-      ...filiere,
-      universities: getUniversitiesOfferingFiliere(filiere.name)
-    }));
-  }, []);
+  // Get all unique filieres from the universities data
+  const allFilieres = useMemo(() => generateAllFilieres(), []);
 
   // Filter filieres by search term only
   const filteredFilieres = useMemo(() => {

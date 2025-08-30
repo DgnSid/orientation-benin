@@ -4,24 +4,16 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Clock, TrendingUp, GraduationCap, ArrowLeft, Users, Target, CheckCircle } from 'lucide-react';
-import { getSchoolsOfferingFiliere, getUniversitiesOfferingFiliere } from '@/utils/filiereGenerator';
-import filieresData from '@/data/filieres-details.json';
+import { generateAllFilieres, getSchoolsOfferingFiliere } from '@/utils/filiereGenerator';
 import universitiesData from '@/data/universities.json';
 import { Filiere, University } from '@/types/data';
 
 const FiliereDetails = () => {
   const { slug } = useParams<{ slug: string }>();
   
-  // Find the filiere from static data
-  const filiere = useMemo(() => {
-    const staticFiliere = filieresData.find(f => f.slug === slug);
-    if (!staticFiliere) return undefined;
-    
-    return {
-      ...staticFiliere,
-      universities: getUniversitiesOfferingFiliere(staticFiliere.name)
-    } as Filiere;
-  }, [slug]);
+  // Generate all filieres and find the one matching the slug
+  const allFilieres = useMemo(() => generateAllFilieres(), []);
+  const filiere = allFilieres.find(f => f.slug === slug) as Filiere | undefined;
   
   // Get universities offering this filiere
   const universities = universitiesData.filter(uni => 
