@@ -443,5 +443,395 @@
         "goodToKnow": "L'Institut Confucius initie aux subtilités de la langue chinoise tout en facilitant des opportunités concrètes : bourses d'études, échanges culturels, certifications linguistiques officielles. Une réelle immersion dans le monde sinophone pour bâtir des carrières internationales."
       }
     ]
+  },
+  {
+    "id": "2",
+    "name": "Université de Parakou (UP)",
+    "location": "Parakou",
+    "type": "Public",
+    "image": "https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "L'Université de Parakou est un pôle académique majeur du nord du Bénin, reconnue pour ses formations de qualité en agriculture, santé, droit et sciences économiques.",
+    "slug": "universite-parakou",
+    "gallery": {
+      "images": [
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+      ],
+      "videos": [
+        "https://example.com/up-video1.mp4",
+        "https://example.com/up-video2.mp4"
+      ],
+      "description": "Découvrez l'Université de Parakou à travers ses campus modernes, ses laboratoires spécialisés et la dynamique vie étudiante qui caractérise cette institution du nord du Bénin."
+    },
+    "schools": [
+      {
+        "id": "up-1",
+        "name": "Faculté d'Agronomie (FA)",
+        "admissionRequirements": ["Classement"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": [
+          "Sciences et Techniques de Production Végétale",
+          "Sciences et Techniques de Production Animale et Halieutique",
+          "Aménagement et Gestion des Ressources Naturelles",
+          "Sociologie et Economie Rurale",
+          "Nutrition et Sciences Agro-alimentaires"
+        ],
+        "contact": {
+          "email": "fa@up.bj",
+          "phone": "+229 23 61 00 00",
+          "website": "www.fa.up.bj"
+        },
+        "description": "Formation d'excellence en agronomie et développement rural.",
+        "goodToKnow": "La FA de Parakou forme des technicien·ne·s et des ingénieur·e·s agricoles. Ainsi, si vous visez un métier utile dans la production végétale, l'élevage, la nutrition ou la gestion des ressources naturelles, cette école vous propose une formation solide et recherchée."
+      },
+      {
+        "id": "up-2",
+        "name": "Faculté de Médecine (FM)",
+        "admissionRequirements": ["Classement"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": ["Médecine Humaine"],
+        "contact": {
+          "email": "fm@up.bj",
+          "phone": "+229 23 61 01 01",
+          "website": "www.fm.up.bj"
+        },
+        "description": "Formation complète de médecins généralistes avec pratique hospitalière.",
+        "goodToKnow": "La FM de Parakou forme des médecins généralistes à travers un enseignement rigoureux et une forte immersion clinique. Ainsi, si vous souhaitez soigner, accompagner et répondre aux besoins de santé des populations, vous y développerez des compétences solides pour exercer avec responsabilité et efficacité."
+      },
+      {
+        "id": "up-3",
+        "name": "ENATSE (École Nationale de Formation des Techniciens Supérieurs en Santé Publique et Surveillance Epidémiologique)",
+        "admissionRequirements": ["Classement"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": ["Santé Publique et Surveillance Epidémiologique"],
+        "contact": {
+          "email": "enfts@up.bj",
+          "phone": "+229 23 61 02 02",
+          "website": "www.enfts.up.bj"
+        },
+        "description": "Spécialisation en lutte contre les épidémies et politiques sanitaires.",
+        "goodToKnow": "L'ENATSE forme des spécialistes capables de repérer et stopper les épidémies avant qu'elles ne se propagent. Ainsi, si vous voulez protéger des vies, prévenir les maladies et aider le pays à mieux réagir face aux crises sanitaires, c'est ici que ça commence."
+      },
+      {
+        "id": "up-4",
+        "name": "Institut de Formation en Soins Infirmiers et Obstétricaux (IFSIO)",
+        "admissionRequirements": ["Concours"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": ["Soins Infirmiers", "Soins Obstétricaux"],
+        "contact": {
+          "email": "ifsi@up.bj",
+          "phone": "+229 23 61 03 03",
+          "website": "www.ifsi.up.bj"
+        },
+        "description": "Formation pratique aux métiers de nursing et d'accouchement.",
+        "goodToKnow": "L'IFSIO forme celles et ceux qui veillent sur la vie, du lit d'hôpital à la salle d'accouchement. Ainsi, si vous voulez apprendre un métier concret, utile chaque jour, et qui touche directement la santé des familles, cette école vous donne les gestes et le cœur pour le faire bien."
+      },
+      {
+        "id": "up-5",
+        "name": "Institut Universitaire de Technologie (IUT)",
+        "admissionRequirements": ["Classement"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": [
+          "Gestion des Banques",
+          "Gestion Commerciale",
+          "Gestion des Entreprises",
+          "Gestion des Transports et Logistique",
+          "Informatique de Gestion",
+          "Gestion des Ressources Humaines"
+        ],
+        "contact": {
+          "email": "iut@up.bj",
+          "phone": " +229 01 68 12 89 42",
+          "website": "www.iut.up.bj"
+        },
+        "description": "Formation professionnalisante en gestion et technologies appliquées.",
+        "goodToKnow": "L'IUT forme des professionnels en gestion et informatique prêts à rejoindre le monde du travail. Ainsi, si vous voulez apprendre un métier concret, avec des liens directs avec les entreprises locales, cette école vous prépare à réussir rapidement."
+      },
+      {
+        "id": "up-6",
+        "name": "Faculté des Sciences Economiques et de Gestion (FASEG)",
+        "admissionRequirements": ["Classement"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": [
+          "Analyse et Politique Economique",
+          "Économie Agricole",
+          "Economie et Finance des collectivités Locales",
+          "Economie et Finance Internationales",
+          "Finance et Comptabilité",
+          "Marketing et Management des Organisations",
+          "Entrepreneuriat et Gestion"
+        ],
+        "contact": {
+          "email": "contact.faseg-up@.gouv.bj",
+          "phone": "+229 0123610712",
+          "website": "www.fasegup.com"
+        },
+        "description": "Expertise en économie du développement et gestion d'entreprise.",
+        "goodToKnow": "La FASEG forme des experts en économie et gestion, essentiels au développement local et international. Ainsi, si vous souhaitez travailler dans les entreprises, les institutions ou lancer votre propre projet, cette faculté vous donne les bases solides pour réussir."
+      },
+      {
+        "id": "up-7",
+        "name": "Faculté de Droit et Sciences Politiques (FDSP)",
+        "admissionRequirements": ["Classement"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": ["Droit Privé", "Droit Public", "Sciences Politiques et Relation Internationales"],
+        "contact": {
+          "email": "fdsp@up.bj",
+          "phone": "+229 23 61 06 06",
+          "website": "www.fdsp.up.bj"
+        },
+        "description": "Formation juridique adaptée aux enjeux du Nord-Bénin.",
+        "goodToKnow": "La FDSP forme des juristes et politologues capables d'agir pour la justice et le développement. Ainsi, si vous voulez défendre les droits, comprendre les lois ou contribuer aux décisions publiques, cette faculté vous donne les outils pour devenir un acteur clé de la société."
+      },
+      {
+        "id": "up-8",
+        "name": "Faculté des Lettres, Arts et Sciences Humaines (FLASH)",
+        "admissionRequirements": ["Classement"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": [
+          "Allemand",
+          "Anglais",
+          "Espagnol",
+          "Géographie et Aménagement du Territoire",
+          "Sociologie Anthropogie",
+          "Lettres Modernes"
+        ],
+        "contact": {
+          "email": "flash@up.bj",
+          "phone": "+229 23 61 07 07",
+          "website": "www.flash.up.bj"
+        },
+        "description": "Centre d'excellence en langues et sciences sociales.",
+        "goodToKnow": "La FLASH forme des passionnés de langues, de cultures et de sciences humaines. Ainsi, si vous aimez comprendre les sociétés, parler plusieurs langues, ou analyser les grands enjeux du monde, c'est l'école idéale pour développer votre pensée et construire une carrière dans l'enseignement, la recherche, la coopération ou la culture."
+      },
+      {
+        "id": "up-9",
+        "name": "Ecole Nationale de Statistique, de Planification et de Démographie (ENSPD)",
+        "admissionRequirements": ["Concours"],
+        "location": "Parakou",
+        "country": "Bénin",
+        "programs": [
+          "Statistique Appliquées",
+          "Planification et Suivi-Evaluation"  
+        ],
+        "contact": {
+          "email": "flash@up.bj",
+          "phone": "+229 23 61 07 07",
+          "website": "www.flash.up.bj"
+        },
+        "description": "Formation en statistiques, planification et évaluation.",
+        "goodToKnow": "L'ENSPD forme des spécialistes des chiffres et des plans d'action pour le développement. Ainsi, si vous voulez aider à prendre de bonnes décisions pour le pays, suivre l'impact des projets ou résoudre des problèmes concrets avec des données, c'est l'école parfaite pour vous lancer."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques (UNSTIM)",
+    "location": "Abomey",
+    "type": "Public",
+    "image": "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "description": "L'UNSTIM est une université de pointe au Bénin, dédiée aux formations technologiques, scientifiques et d'ingénierie, avec un fort accent sur l'innovation et les solutions pratiques aux défis du développement.",
+    "slug": "universite-unstim",
+    "gallery": {
+      "images": [
+        "https://images.unsplash.com/photo-1581092795442-48684803115d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581092916314-68e5e4d1b687?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581092786450-0b9b24b6f3ad?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=800&q=80"
+      ],
+      "videos": [
+        "https://example.com/unstim-video1.mp4",
+        "https://example.com/unstim-video2.mp4"
+      ],
+      "description": "Explorez l'UNSTIM et ses installations technologiques de pointe, ses laboratoires d'ingénierie moderne et l'environnement d'apprentissage innovant dédié aux sciences et technologies."
+    },
+    "schools": [
+      {
+        "id": "unstim-1",
+        "name": "Ecole Normale Supérieure de l'Enseignement Technique (ENSET)",
+        "admissionRequirements": ["Concours"],
+        "location": "LOKOSSA",
+        "country": "Bénin",
+        "programs": [
+          "Electrotechnique",
+          "Electronique",
+          "Comptabilité",
+          "Secrétariat",
+          "Génie Civil",
+          "Economie",
+          "Mécanique Automobile",
+          "Fabrication Mécanique",
+          "Economie Familiale et Sociale",
+          "Hôtellerie-Restauration",
+          "Froid et Climatisation",
+          "Energies Renouvelables",
+          "Production Animale",
+          "Production Végétale",
+          "Métiers des Modes et Vetements"
+        ],
+        "contact": {
+          "email": "enset@unstim.bj",
+          "phone": "+229 22 10 10 10",
+          "website": "www.enset.unstim.bj"
+        },
+        "description": "Formation des enseignants et techniciens supérieurs pour les lycées techniques.",
+        "goodToKnow": "L'ENSET forme les enseignants et techniciens qui font tourner les ateliers, les chantiers, les cuisines ou les fermes. Ainsi, si vous voulez maîtriser un vrai métier, transmettre votre savoir et contribuer au développement technique du pays, cette école est faite pour vous."
+      },
+      {
+        "id": "unstim-2",
+        "name": "Institut National Supérieur de Technologie Industrielle (INSTI)",
+        "admissionRequirements": ["Classement"],
+        "location": "LOKOSSA",
+        "country": "Bénin",
+        "programs": [
+          "Génie Civil",
+          "Génie Energétique",
+          "Génie Electrique et Informatique (Electronique et Electrotechnique)",
+          "Génie Électrique et Informatique (Informatique et Télécom)",
+          "Maintenance Industrielle",
+          "Maintenance Automobile",
+          "Génie Mécanique et Productique"
+        ],
+        "contact": {
+          "email": "insti@unstim.bj",
+          "phone": "+229 22 20 20 20",
+          "website": "www.insti.unstim.bj"
+        },
+        "description": "Formation d'ingénieurs technologues immédiatement opérationnels.",
+        "goodToKnow": "L'INSTI forme des ingénieurs capables de concevoir, entretenir ou moderniser les machines et les infrastructures du pays. Ainsi, si vous aimez la technologie, les systèmes industriels et les solutions concrètes, c'est l'école parfaite pour construire l'avenir avec vos mains et votre tête."
+      },
+      {
+        "id": "unstim-3",
+        "name": "Institut National Supérieur des Classes Préparatoires au Etudes d'Ingénieurs (INSPEI)",
+        "admissionRequirements": ["Concours"],
+        "location": "Abomey",
+        "country": "Bénin",
+        "programs": ["Sciences et Techniques de l'Ingénieur"],
+        "contact": {
+          "email": "inspei@unstim.bj",
+          "phone": "+229 22 30 30 30",
+          "website": "www.inspei.unstim.bj"
+        },
+        "description": "Préparation intensive aux grandes écoles d'ingénieurs africaines et internationales.",
+        "goodToKnow": "L'INSPEI prépare les meilleurs talents aux grandes écoles d'ingénieurs en Afrique et dans le monde. Ainsi, si vous aimez les sciences, les défis et que vous visez l'excellence, c'est l'étape idéale pour vous hisser au sommet."
+      },
+      {
+        "id": "unstim-4",
+        "name": "Ecole Normale Supérieure de Natitingou (ENS/Nati)",
+        "admissionRequirements": ["Concours"],
+        "location": "Natitingou",
+        "country": "Bénin",
+        "programs": [
+          "Mathématiques et Informatique (MI)",
+          "Physique, Chimie et Technologie",
+          "Sciences de Vie et de la Terre"
+        ],
+        "contact": {
+          "email": "ensnati@unstim.bj",
+          "phone": "+229 23 40 40 40",
+          "website": "www.ensnati.unstim.bj"
+        },
+        "description": "Centre d'excellence en biosciences appliquées aux enjeux du Nord-Bénin.",
+        "goodToKnow": "L'ENS/Nati forme des enseignants et chercheurs en sciences exactes, avec une attention particulière aux réalités du Nord-Bénin. Ainsi, si vous aimez les maths, la nature ou la science utile au quotidien, vous y apprendrez à transmettre et à explorer ce qui fait avancer nos communautés."
+      },
+      {
+        "id": "unstim-5",
+        "name": "Ecole Nationale Supérieure des Biosciences et Biotechnologies Appliquées (ENSBBA)",
+        "admissionRequirements": ["Classement"],
+        "location": "Dassa-Zoumè",
+        "country": "Bénin",
+        "programs": [
+          "Biotechnologie Pharmaceutique",
+          "Génétique Biotechnologies et Applications",
+          "Génie Biologique et Bioprocédés",
+          "Diététique des aliments et Nutrition"
+        ],
+        "contact": {
+          "email": "ensbba@unstim.bj",
+          "phone": "+229 22 50 50 50",
+          "website": "www.ensbba.unstim.bj"
+        },
+        "description": "Formation aux biotechnologies pour la santé et l'agro-industrie.",
+        "goodToKnow": "L'ENSBBA vous plonge au cœur des biotechnologies de la santé, de l'alimentation et des bio-industries. Si vous rêvez de produire des médicaments, de comprendre les gènes ou d'innover dans l'agroalimentaire, c'est ici que ça commence."
+      },
+      {
+        "id": "unstim-6",
+        "name": "Faculté des Sciences et Techniques de Natitingou (FAST/Nati)",
+        "admissionRequirements": ["Baccalauréat série C, D, E", "Classement", "Maths, PCT"],
+        "location": "Natitingou",
+        "country": "Bénin",
+        "programs": [
+          "Mathématiques Informatiques",
+          "Physique Chimie"
+        ],
+        "contact": {
+          "email": "fastnati@unstim.bj",
+          "phone": "+229 23 60 60 60",
+          "website": "www.fastnati.unstim.bj"
+        },
+        "description": "Formation adaptée aux défis techniques des zones montagneuses.",
+        "goodToKnow": "La FAST/Nati forme aux sciences exactes avec un focus sur les technologies adaptées aux environnements montagneux, comme les constructions antisismiques et les solutions énergétiques durables."
+      },
+      {
+        "id": "unstim-7",
+        "name": "Ecole Nationale Supérieure de Génie Energétique et Procédés (ENSGEP)",
+        "admissionRequirements": ["Classement"],
+        "location": "Abomey",
+        "country": "Bénin",
+        "programs": [
+          "Froid et Climatisation",
+          "Equipements motorisés"
+        ],
+        "contact": {
+          "email": "ensgep@unstim.bj",
+          "phone": "+229 22 70 70 70",
+          "website": "www.ensgep.unstim.bj"
+        },
+        "description": "Expertise en solutions énergétiques durables pour l'Afrique.",
+        "goodToKnow": "L'ENSGEP innove dans les systèmes énergétiques adaptés à l'Afrique, notamment à travers la conception de centrales solaires hybrides et de solutions techniques pour l'efficacité énergétique locale."
+      },
+      {
+        "id": "unstim-8",
+        "name": "Ecole Nationale Supérieure des Travaux Publics (ENSTP)",
+        "admissionRequirements": ["Baccalauréat série C, D, F", "Classement", "Maths, PCT"],
+        "location": "Abomey",
+        "country": "Bénin",
+        "programs": [
+          "Génie Civil",
+          "Génie Géomatique Appliquée",
+          "Architecture et Urbanisme",
+          "Hydraulique et Assainissement"
+        ],
+        "contact": {
+          "email": "enstp@unstim.bj",
+          "phone": "+229 22 80 80 80",
+          "website": "www.enstp.unstim.bj"
+        },
+        "description": "Référence pour les infrastructures urbaines et hydrauliques.",
+        "goodToKnow": "L'ENSTP forme les ingénieurs qui conçoivent les ponts, réseaux d'eau potable et infrastructures urbaines essentielles au développement durable du Bénin et de l'Afrique."
+      }
+    ]
   }
 ]
