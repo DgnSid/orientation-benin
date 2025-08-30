@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import stagesData from '@/data/stages.json';
+import heroImage from '@/assets/hero-education.jpg';
 
 interface Stage {
   id: string;
@@ -59,8 +60,16 @@ const Stages = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-muted/30">
       {/* Hero Section */}
-      <section className="bg-gradient-hero text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-hero text-white py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={heroImage} 
+            alt="Offres de stages" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             <Briefcase className="h-16 w-16 mx-auto mb-6 animate-bounce-in" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
