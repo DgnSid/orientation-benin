@@ -414,33 +414,34 @@ const Index = () => {
 
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Contact</h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex items-start">
-                  <MapPin className="h-4 w-4 mt-0.5 mr-3 text-primary flex-shrink-0" />
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start">
+                  <MapPin className="h-4 w-4 mt-0.5 mr-2 text-primary" />
                   <span className="text-muted-foreground">Cotonou, Bénin</span>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="h-4 w-4 mr-3 text-primary flex-shrink-0" />
+                </li>
+                <li className="flex items-start">
+                  <Phone className="h-4 w-4 mt-0.5 mr-2 text-primary" />
                   <span className="text-muted-foreground">+229 XX XX XX XX</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="h-4 w-4 mr-3 text-primary flex-shrink-0" />
+                </li>
+                <li className="flex items-start">
+                  <Mail className="h-4 w-4 mt-0.5 mr-2 text-primary" />
                   <span className="text-muted-foreground">contact@apresmonbac.bj</span>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
-
+          
           <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground mb-4 md:mb-0 flex items-center">
+            <p className="text-sm text-muted-foreground mb-4 md:mb-0">
               © {new Date().getFullYear()} Après mon Bac. Tous droits réservés.
-              <span className="mx-2">•</span>
-              Fait avec <Heart className="h-3 w-3 mx-1 text-red-500 inline" /> pour les étudiants béninois
             </p>
             <div className="flex space-x-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors">Mentions légales</a>
-              <a href="#" className="hover:text-primary transition-colors">Politique de confidentialité</a>
-              <a href="#" className="hover:text-primary transition-colors">Conditions d'utilisation</a>
+              <Link to="/privacy" className="hover:text-primary transition-colors">
+                Confidentialité
+              </Link>
+              <Link to="/terms" className="hover:text-primary transition-colors">
+                Conditions d'utilisation
+              </Link>
             </div>
           </div>
         </div>
@@ -450,4 +451,3 @@ const Index = () => {
 };
 
 export default Index;
-              
