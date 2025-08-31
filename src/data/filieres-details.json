@@ -3273,6 +3273,33 @@
     "image": "/images/filieres/medecine.jpg"
   },
   {
+    "id": "122",
+    "name": "Entraînement Sportif",
+    "slug": "entrainement-sportif",
+    "category": "Sciences du Sport",
+    "description": "Formation spécialisée en préparation physique, coaching sportif et optimisation de la performance. Expertise en méthodologie de l'entraînement et suivi des athlètes.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Entraîneur sportif",
+      "Préparateur physique",
+      "Coach professionnel",
+      "Conseiller en performance",
+      "Responsable de centre sportif",
+      "Formateur en entraînement"
+    ],
+    "averageSalary": "350,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Méthodologie d'entraînement",
+      "Préparation physique",
+      "Physiologie sportive",
+      "Psychologie du sport",
+      "Analyse de performance",
+      "Gestion de carrière",
+      "Leadership sportif"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
     "id": "123",
     "name": "Développement Communautaire",
     "slug": "developpement-communautaire",
