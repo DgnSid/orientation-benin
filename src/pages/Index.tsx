@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Building2, GraduationCap, Briefcase, Trophy, Users, ArrowRight, BookOpen, Target, TrendingUp } from 'lucide-react';
+import { Building2, GraduationCap, Briefcase, Trophy, Users, ArrowRight, BookOpen, Target, TrendingUp, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Heart, Calendar, MessageSquare, FileText } from 'lucide-react';
 
 // Animation de texte simple et fiable
 const TextAnimation = ({ texts }: { texts: string[] }) => {
@@ -291,6 +291,160 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Newsletter Section */}
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="flex justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <Mail className="h-6 w-6 text-primary" />
+              </div>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Restez informé</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Inscrivez-vous à notre newsletter pour recevoir les dernières actualités sur les filières, 
+              les concours et les opportunités d'études au Bénin.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <input 
+                type="email" 
+                placeholder="Votre adresse email" 
+                className="flex-1 px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <Button className="bg-primary hover:bg-primary-dark whitespace-nowrap">
+                S'inscrire
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-card border-t border-border">
+        <div className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <img 
+                  src="/lovable-uploads/885f13f1-a25a-4445-9468-2fb37844853b.png" 
+                  alt="Après mon Bac" 
+                  className="h-10 mr-2"
+                  onError={(e) => {
+                    e.currentTarget.src = '/placeholder.svg';
+                  }}
+                />
+                <span className="text-xl font-bold text-foreground">Après mon Bac</span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Votre guide complet pour choisir la meilleure filière après le baccalauréat au Bénin.
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Facebook size={20} />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Twitter size={20} />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Instagram size={20} />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Linkedin size={20} />
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">Explorer</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link to="/universities" className="text-muted-foreground hover:text-primary transition-colors">
+                    Universités
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/filieres" className="text-muted-foreground hover:text-primary transition-colors">
+                    Filières & Débouchés
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/stages" className="text-muted-foreground hover:text-primary transition-colors">
+                    Stages & Opportunités
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/concours" className="text-muted-foreground hover:text-primary transition-colors">
+                    Concours & Hackathons
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/formations" className="text-muted-foreground hover:text-primary transition-colors">
+                    Formations Pratiques
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">Ressources</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link to="/conseils" className="text-muted-foreground hover:text-primary transition-colors">
+                    Conseils d'orientation
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">Contact</h3>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-start">
+                  <MapPin className="h-4 w-4 mt-0.5 mr-3 text-primary flex-shrink-0" />
+                  <span className="text-muted-foreground">Cotonou, Bénin</span>
+                </div>
+                <div className="flex items-center">
+                  <Phone className="h-4 w-4 mr-3 text-primary flex-shrink-0" />
+                  <span className="text-muted-foreground">+229 XX XX XX XX</span>
+                </div>
+                <div className="flex items-center">
+                  <Mail className="h-4 w-4 mr-3 text-primary flex-shrink-0" />
+                  <span className="text-muted-foreground">contact@apresmonbac.bj</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-muted-foreground mb-4 md:mb-0 flex items-center">
+              © {new Date().getFullYear()} Après mon Bac. Tous droits réservés.
+              <span className="mx-2">•</span>
+              Fait avec <Heart className="h-3 w-3 mx-1 text-red-500 inline" /> pour les étudiants béninois
+            </p>
+            <div className="flex space-x-6 text-sm text-muted-foreground">
+              <a href="#" className="hover:text-primary transition-colors">Mentions légales</a>
+              <a href="#" className="hover:text-primary transition-colors">Politique de confidentialité</a>
+              <a href="#" className="hover:text-primary transition-colors">Conditions d'utilisation</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
