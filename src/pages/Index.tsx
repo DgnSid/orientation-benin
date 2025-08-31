@@ -200,7 +200,7 @@ const Index = () => {
                 </Button>
               </Link>
             </div>
-
+      
             <div className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
               <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
                 <BookOpen className="h-7 w-7 text-primary" />
@@ -450,3 +450,4 @@ const Index = () => {
 };
 
 export default Index;
+              
