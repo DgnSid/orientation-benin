@@ -1625,5 +1625,1813 @@
       "Bilan carbone"
     ],
     "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "61",
+    "name": "Santé publique polyvalente",
+    "slug": "sante-publique-polyvalente",
+    "category": "Sciences de la Santé",
+    "description": "Formation en santé publique et épidémiologie pour répondre aux enjeux sanitaires locaux. Cette filière prépare des professionnels polyvalents capables de gérer des programmes de vaccination, d'analyser des politiques de santé, de surveiller les épidémies et de sensibiliser les communautés.",
+    "duration": "4-5 ans",
+    "careerOpportunities": [
+      "Spécialiste en santé publique",
+      "Épidémiologiste",
+      "Responsable de programmes de vaccination",
+      "Analyste de politiques de santé",
+      "Chargé de surveillance épidémiologique",
+      "Consultant en santé communautaire"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Analyse épidémiologique",
+      "Gestion de programmes de santé",
+      "Communication en santé publique",
+      "Surveillance sanitaire",
+      "Planification stratégique",
+      "Sensibilisation communautaire",
+      "Évaluation des politiques de santé"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "62",
+    "name": "Géographie et Aménagement du Territoire",
+    "slug": "geographie-amenagement-territoire",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en analyse spatiale, aménagement du territoire et développement régional. Cette filière combine sciences humaines et outils techniques pour comprendre et organiser l'espace géographique.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Géographe-aménageur",
+      "Urbaniste",
+      "Cartographe",
+      "Consultant en développement territorial",
+      "Analyste spatial",
+      "Chargé d'études en aménagement"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Analyse spatiale",
+      "Cartographie et SIG",
+      "Planification territoriale",
+      "Diagnostic territorial",
+      "Concertation publique",
+      "Prospective territoriale",
+      "Gestion de projet d'aménagement"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "63",
+    "name": "Socio-Anthropologie",
+    "slug": "socio-anthropologie",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation interdisciplinaire combinant sociologie et anthropologie pour analyser les comportements sociaux et les dynamiques culturelles. Cette filière étudie la société sous différents angles avec une forte dimension terrain.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Sociologue-anthropologue",
+      "Chargé d'études sociales",
+      "Consultant en développement communautaire",
+      "Chercheur en sciences sociales",
+      "Médiateur culturel",
+      "Animateur socio-culturel"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Enquête de terrain",
+      "Observation participante",
+      "Analyse des systèmes sociaux",
+      "Méthodes qualitatives",
+      "Interculturalité",
+      "Ethnographie",
+      "Animation de groupes"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "64",
+    "name": "Mathématiques, Physique et Sciences de l'ingénieur",
+    "slug": "mathematiques-physique-sciences-ingenieur",
+    "category": "Sciences Exactes et Naturelles",
+    "description": "Cycle préparatoire intensif en sciences fondamentales destiné à préparer aux grandes écoles d'ingénieurs. Cette formation développe des compétences solides en modélisation mathématique et physique.",
+    "duration": "2 ans",
+    "careerOpportunities": [
+      "Élève-ingénieur",
+      "Assistant de recherche",
+      "Technicien supérieur en sciences",
+      "Préparateur aux concours d'ingénieurs",
+      "Professeur de sciences en lycée"
+    ],
+    "averageSalary": "300,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Modélisation mathématique",
+      "Raisonnement physique",
+      "Abstraction scientifique",
+      "Résolution de problèmes complexes",
+      "Rigueur analytique",
+      "Méthodologie expérimentale",
+      "Préparation aux concours"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "65",
+    "name": "Physique-Chimie et Science de l'Ingénieur (PCSI)",
+    "slug": "physique-chimie-science-ingenieur",
+    "category": "Sciences Exactes et Naturelles",
+    "description": "Formation préparatoire en physique, chimie et sciences de l'ingénieur visant l'intégration des grandes écoles d'ingénieurs. Approche équilibrée entre théorie et applications pratiques.",
+    "duration": "2 ans",
+    "careerOpportunities": [
+      "Élève-ingénieur",
+      "Technicien en laboratoire de recherche",
+      "Assistant en développement industriel",
+      "Préparateur aux concours scientifiques",
+      "Professeur de sciences physiques"
+    ],
+    "averageSalary": "320,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Expérimentation physique-chimique",
+      "Modélisation des systèmes",
+      "Analyse dimensionnelle",
+      "Méthodologie scientifique",
+      "Synthèse documentaire",
+      "Travail en laboratoire",
+      "Préparation intensive"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "66",
+    "name": "Allemand",
+    "slug": "allemand",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation approfondie en langue, littérature et civilisation allemande. Développe une maîtrise experte de l'allemand et une compréhension interculturelle des pays germanophones.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur d'allemand",
+      "Traducteur allemand-français",
+      "Interprète",
+      "Attaché culturel",
+      "Chargé de relations internationales",
+      "Guide touristique spécialisé"
+    ],
+    "averageSalary": "280,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Maîtrise linguistique avancée",
+      "Culture germanophone",
+      "Traduction technique et littéraire",
+      "Communication interculturelle",
+      "Analyse littéraire",
+      "Pédagogie des langues",
+      "Adaptabilité culturelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "67",
+    "name": "Espagnol",
+    "slug": "espagnol",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en langue espagnole, littérature hispanique et civilisation du monde hispanophone. Développe une expertise linguistique et culturelle des pays espagnols et latino-américains.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur d'espagnol",
+      "Traducteur espagnol-français",
+      "Interprète",
+      "Attaché culturel",
+      "Chargé de relations internationales",
+      "Consultant en affaires hispaniques"
+    ],
+    "averageSalary": "280,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Maîtrise linguistique avancée",
+      "Culture hispanique",
+      "Traduction technique et littéraire",
+      "Communication interculturelle",
+      "Analyse littéraire",
+      "Pédagogie des langues",
+      "Adaptabilité culturelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "68",
+    "name": "Lettres Modernes",
+    "slug": "lettres-modernes",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en littérature française et francophone, linguistique et analyse textuelle. Développe l'excellence en expression écrite et orale, ainsi que l'analyse critique des œuvres littéraires.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur de lettres",
+      "Rédacteur professionnel",
+      "Correcteur",
+      "Attaché de presse",
+      "Bibliothécaire",
+      "Chargé de communication"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Excellence rédactionnelle",
+      "Analyse littéraire",
+      "Culture générale",
+      "Critique textuelle",
+      "Pédagogie du français",
+      "Créativité écrite",
+      "Synthèse documentaire"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "69",
+    "name": "Science du Langage et de la Communication",
+    "slug": "science-langage-communication",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en linguistique, sémiologie et sciences de la communication. Étude scientifique du langage et des processus de communication sous tous leurs aspects.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Linguiste",
+      "Spécialiste en communication",
+      "Orthophoniste (avec spécialisation)",
+      "Concepteur-rédacteur",
+      "Chargé d'études en communication",
+      "Enseignant-chercheur en sciences du langage"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Analyse linguistique",
+      "Sémiologie",
+      "Théories de la communication",
+      "Rédaction professionnelle",
+      "Analyse de discours",
+      "Méthodologie de recherche",
+      "Multilinguisme"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "70",
+    "name": "Arts dramatiques",
+    "slug": "arts-dramatiques",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation professionnelle en art dramatique, interprétation théâtrale et mise en scène. Développe les techniques du jeu d'acteur, de la direction d'acteurs et de la création scénique.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Comédien professionnel",
+      "Metteur en scène",
+      "Animateur d'ateliers théâtre",
+      "Professeur d'art dramatique",
+      "Directeur de troupe",
+      "Critique théâtral"
+    ],
+    "averageSalary": "250,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Expression corporelle",
+      "Interprétation dramatique",
+      "Improvisation",
+      "Direction d'acteurs",
+      "Culture théâtrale",
+      "Créativité scénique",
+      "Pédagogie théâtrale"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "71",
+    "name": "Arts Plastiques",
+    "slug": "arts-plastiques",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en création artistique visuelle, techniques plastiques et histoire de l'art. Développe l'expression artistique personnelle à travers divers médiums et supports.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Artiste plasticien",
+      "Professeur d'arts plastiques",
+      "Animateur d'ateliers artistiques",
+      "Directeur de galerie d'art",
+      "Critique d'art",
+      "Consultant en arts visuels"
+    ],
+    "averageSalary": "250,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Créativité artistique",
+      "Techniques plastiques diversifiées",
+      "Sens esthétique",
+      "Culture artistique",
+      "Expression personnelle",
+      "Innovation visuelle",
+      "Pédagogie artistique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "72",
+    "name": "Musique et Musicologie",
+    "slug": "musique-musicologie",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en pratique musicale, théorie musicale, histoire de la musique et analyse musicologique. Combine pratique instrumentale/vocale et étude scientifique de la musique.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Musicien professionnel",
+      "Professeur de musique",
+      "Compositeur",
+      "Musicologue",
+      "Critique musical",
+      "Programmateur culturel"
+    ],
+    "averageSalary": "250,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Pratique instrumentale ou vocale",
+      "Théorie musicale",
+      "Culture musicologique",
+      "Analyse musicale",
+      "Créativité sonore",
+      "Pédagogie musicale",
+      "Recherche en musicologie"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "73",
+    "name": "Administration Culturelle",
+    "slug": "administration-culturelle",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation en gestion des institutions culturelles, politiques culturelles et médiation culturelle. Préparation aux métiers de l'administration et du management culturel.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Administrateur culturel",
+      "Directeur de structure culturelle",
+      "Chargé de production",
+      "Responsable de programmation",
+      "Consultant en politiques culturelles",
+      "Médiateur culturel"
+    ],
+    "averageSalary": "300,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Gestion de projets culturels",
+      "Droit et économie de la culture",
+      "Politiques culturelles",
+      "Médiation culturelle",
+      "Fundraising culturel",
+      "Communication culturelle",
+      "Management d'équipe"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "74",
+    "name": "Cinéma et Audiovisuel",
+    "slug": "cinema-audiovisuel",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation aux métiers du cinéma et de l'audiovisuel : réalisation, production, scénario, image, son et montage. Approche à la fois technique et artistique de la création audiovisuelle.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Réalisateur",
+      "Cadreur",
+      "Monteur",
+      "Scénariste",
+      "Producteur",
+      "Technicien son"
+    ],
+    "averageSalary": "280,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Techniques audiovisuelles",
+      "Langage cinématographique",
+      "Créativité visuelle",
+      "Travail en équipe",
+      "Gestion de production",
+      "Culture cinématographique",
+      "Adaptabilité technique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "75",
+    "name": "Environnement, Hygiène et Santé publique",
+    "slug": "environnement-hygiene-sante-publique",
+    "category": "Sciences de la Santé",
+    "description": "Formation interdisciplinaire combinant sciences environnementales, hygiène et santé publique. Approche globale des interactions entre environnement et santé humaine.",
+    "duration": "4-5 ans",
+    "careerOpportunities": [
+      "Spécialiste en santé environnementale",
+      "Responsable hygiène et sécurité",
+      "Consultant en gestion des risques sanitaires",
+      "Chargé d'études en santé publique",
+      "Inspecteur d'hygiène",
+      "Épidémiologiste environnemental"
+    ],
+    "averageSalary": "350,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Analyse des risques sanitaires",
+      "Réglementation hygiène et sécurité",
+      "Évaluation environnementale",
+      "Gestion de crise sanitaire",
+      "Prévention des risques",
+      "Communication en santé environnementale",
+      "Expertise technique"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "76",
+    "name": "Gestion des cadres de vie",
+    "slug": "gestion-cadres-vie",
+    "category": "Sciences et Technologies",
+    "description": "Formation en aménagement et gestion des espaces de vie, urbanisme opérationnel et qualité du cadre de vie. Approche intégrée de l'habitat et des espaces quotidiens.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Gestionnaire de cadres de vie",
+      "Urbaniste opérationnel",
+      "Chargé de mission qualité de vie",
+      "Consultant en aménagement",
+      "Responsable de projets urbains",
+      "Coordinateur de services urbains"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Aménagement des espaces",
+      "Gestion de projet urbain",
+      "Concertation citoyenne",
+      "Diagnostic territorial",
+      "Développement durable",
+      "Management des services",
+      "Innovation urbaine"
+    ],
+    "image": "/images/filieres/genie-civil.jpg"
+  },
+  {
+    "id": "77",
+    "name": "Gestion des changements climatiques et des écosystèmes",
+    "slug": "gestion-changements-climatiques-ecosystemes",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation spécialisée en adaptation aux changements climatiques, gestion des écosystèmes et résilience environnementale. Approche scientifique et opérationnelle des défis climatiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Expert en changements climatiques",
+      "Gestionnaire d'écosystèmes",
+      "Consultant en adaptation climatique",
+      "Chargé de mission environnement",
+      "Responsable de projets climat",
+      "Analyste de vulnérabilités"
+    ],
+    "averageSalary": "350,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Analyse climatique",
+      "Gestion des écosystèmes",
+      "Modélisation environnementale",
+      "Stratégies d'adaptation",
+      "Évaluation des risques",
+      "Développement de projets",
+      "Expertise technique"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "78",
+    "name": "Géomatique et environnement",
+    "slug": "geomatique-environnement",
+    "category": "Sciences et Technologies",
+    "description": "Formation en technologies géomatiques appliquées à l'environnement : SIG, télédétection, cartographie numérique et analyse spatiale des données environnementales.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Géomaticien environnemental",
+      "Spécialiste SIG",
+      "Cartographe numérique",
+      "Analyste en télédétection",
+      "Consultant en géomatique",
+      "Chargé d'études environnementales"
+    ],
+    "averageSalary": "330,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Maîtrise des SIG",
+      "Télédétection",
+      "Cartographie numérique",
+      "Analyse spatiale",
+      "Traitement de données",
+      "Programmation géomatique",
+      "Expertise environnementale"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "79",
+    "name": "Planification et Gestion des espaces urbains et ruraux",
+    "slug": "planification-gestion-espaces-urbains-ruraux",
+    "category": "Sciences et Technologies",
+    "description": "Formation en planification territoriale, gestion des espaces urbains et ruraux, et développement local intégré. Approche comparative des dynamiques spatiales.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Urbaniste-planificateur",
+      "Aménageur territorial",
+      "Chargé de développement local",
+      "Consultant en planification",
+      "Gestionnaire de territoires",
+      "Expert en politiques spatiales"
+    ],
+    "averageSalary": "340,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Planification spatiale",
+      "Gestion de territoires",
+      "Développement local",
+      "Concertation territoriale",
+      "Analyse des dynamiques spatiales",
+      "Prospective territoriale",
+      "Management de projet"
+    ],
+    "image": "/images/filieres/genie-civil.jpg"
+  },
+  {
+    "id": "80",
+    "name": "Sciences Obstétricales",
+    "slug": "sciences-obstetricales",
+    "category": "Sciences de la Santé",
+    "description": "Formation spécialisée en obstétrique, suivi de grossesse, accouchement et santé reproductive. Développe l'expertise médicale en périnatalité et accompagnement des femmes.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Obstétricien",
+      "Sage-femme cadre",
+      "Enseignant en obstétrique",
+      "Chercheur en périnatalité",
+      "Consultant en santé reproductive",
+      "Responsable de maternité"
+    ],
+    "averageSalary": "400,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Expertise obstétricale",
+      "Suivi de grossesse",
+      "Techniques d'accouchement",
+      "Urgence périnatale",
+      "Relation patiente",
+      "Éthique médicale",
+      "Gestion de service"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  
+  {
+    "id": "81",
+    "name": "Sciences infirmières",
+    "slug": "sciences-infirmieres",
+    "category": "Sciences de la Santé",
+    "description": "Formation professionnelle en soins infirmiers, gestion des soins et santé communautaire. Développe les compétences cliniques, relationnelles et organisationnelles des infirmiers.",
+    "duration": "4 ans",
+    "careerOpportunities": [
+      "Infirmier diplômé d'État",
+      "Cadre de santé",
+      "Infirmier spécialisé",
+      "Formateur en soins infirmiers",
+      "Coordinateur de soins",
+      "Infirmier en santé publique"
+    ],
+    "averageSalary": "250,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Soins techniques",
+      "Relation d'aide",
+      "Gestion du stress",
+      "Travail en équipe pluridisciplinaire",
+      "Empathie professionnelle",
+      "Organisation des soins",
+      "Urgence médicale"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "82",
+    "name": "Hydrologie quantitative et Gestion intégrée des Ressources",
+    "slug": "hydrologie-quantitative-gestion-ressources",
+    "category": "Sciences et Technologies",
+    "description": "Formation spécialisée en hydrologie quantitative, modélisation des ressources en eau et gestion intégrée des bassins versants. Approche scientifique et technique de la gestion de l'eau.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Hydrologue",
+      "Gestionnaire de ressources en eau",
+      "Expert en modélisation hydrologique",
+      "Consultant en gestion de bassins",
+      "Chargé d'études hydrauliques",
+      "Responsable de projets hydriques"
+    ],
+    "averageSalary": "380,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Modélisation hydrologique",
+      "Hydraulique quantitative",
+      "Gestion intégrée des ressources",
+      "Analyse de données hydrologiques",
+      "Planification des ressources en eau",
+      "Expertise technique",
+      "Management de projet"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "83",
+    "name": "Hydrogéologie et Gestion intégrée des Ressources",
+    "slug": "hydrogeologie-gestion-ressources",
+    "category": "Sciences et Technologies",
+    "description": "Formation en hydrogéologie, gestion des eaux souterraines et gestion intégrée des ressources hydriques. Expertise scientifique des aquifères et des eaux profondes.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Hydrogéologue",
+      "Gestionnaire des eaux souterraines",
+      "Expert en ressources hydriques",
+      "Consultant en hydrogéologie",
+      "Chargé d'études hydrologiques",
+      "Responsable de projets d'eau souterraine"
+    ],
+    "averageSalary": "390,000 - 870,000 FCFA",
+    "requiredSkills": [
+      "Caractérisation des aquifères",
+      "Modélisation hydrogéologique",
+      "Gestion durable des eaux souterraines",
+      "Techniques de forage",
+      "Analyse de la qualité des eaux",
+      "Expertise technique",
+      "Planification des ressources"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "84",
+    "name": "Ecohydrologie et Gestion intégrée des Ressources",
+    "slug": "ecohydrologie-gestion-ressources",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation interdisciplinaire combinant écologie et hydrologie pour une gestion durable des ressources en eau. Approche écosystémique des interactions eau-environnement.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Écohydrologue",
+      "Gestionnaire de ressources naturelles",
+      "Expert en gestion écosystémique de l'eau",
+      "Consultant en environnement aquatique",
+      "Chargé d'études écohydrologiques",
+      "Responsable de projets écologiques"
+    ],
+    "averageSalary": "370,000 - 830,000 FCFA",
+    "requiredSkills": [
+      "Écologie des systèmes aquatiques",
+      "Hydrologie environnementale",
+      "Gestion écosystémique",
+      "Analyse des interactions eau-biote",
+      "Restoration écologique",
+      "Expertise technique",
+      "Management de projet environnemental"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "85",
+    "name": "Gestion des crises et risques liés à l'eau et au climat",
+    "slug": "gestion-crises-risques-eau-climat",
+    "category": "Sciences et Technologies",
+    "description": "Formation spécialisée en gestion des crises hydriques, risques climatiques et gestion des catastrophes naturelles liées à l'eau. Approche opérationnelle de la gestion des risques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Gestionnaire de crises hydriques",
+      "Expert en risques climatiques",
+      "Consultant en gestion des catastrophes",
+      "Chargé de mission sécurité civile",
+      "Responsable de plans d'urgence",
+      "Analyste de risques naturels"
+    ],
+    "averageSalary": "400,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Gestion de crise",
+      "Analyse des risques",
+      "Planification d'urgence",
+      "Coordination opérationnelle",
+      "Communication de crise",
+      "Expertise technique",
+      "Management de situations d'urgence"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "86",
+    "name": "Génie rural et Maîtrise de l'Eau",
+    "slug": "genie-rural-maitrise-eau",
+    "category": "Sciences et Technologies",
+    "description": "Formation en génie rural, hydraulique agricole et maîtrise de l'eau pour l'agriculture. Expertise technique en aménagements hydrauliques et irrigation.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Ingénieur en génie rural",
+      "Spécialiste en irrigation",
+      "Expert en aménagements hydrauliques",
+      "Consultant en hydraulique agricole",
+      "Chargé d'études en génie rural",
+      "Responsable de projets d'irrigation"
+    ],
+    "averageSalary": "380,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Hydraulique agricole",
+      "Conception d'aménagements",
+      "Techniques d'irrigation",
+      "Gestion de l'eau agricole",
+      "Dimensionnement d'ouvrages",
+      "Expertise technique",
+      "Management de projet"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "87",
+    "name": "Hydraulique et Assainissement",
+    "slug": "hydraulique-assainissement",
+    "category": "Sciences et Technologies",
+    "description": "Formation en hydraulique urbaine, réseaux d'assainissement et traitement des eaux usées. Expertise technique en infrastructures hydrauliques et assainissement.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Ingénieur en hydraulique urbaine",
+      "Spécialiste en assainissement",
+      "Expert en traitement des eaux",
+      "Consultant en infrastructures hydrauliques",
+      "Chargé d'études en assainissement",
+      "Responsable de stations d'épuration"
+    ],
+    "averageSalary": "390,000 - 880,000 FCFA",
+    "requiredSkills": [
+      "Hydraulique urbaine",
+      "Conception de réseaux",
+      "Traitement des eaux usées",
+      "Gestion des infrastructures",
+      "Dimensionnement d'ouvrages",
+      "Expertise technique",
+      "Management de projet"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "88",
+    "name": "Eau Hygiène et Assainissement (EHA)",
+    "slug": "eau-hygiene-assainissement",
+    "category": "Sciences de la Santé",
+    "description": "Formation spécialisée en eau, hygiène et assainissement dans les contextes de développement et d'urgence. Approche intégrée de la santé publique et de l'environnement.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Expert EHA",
+      "Responsable de programmes EHA",
+      "Consultant en eau et assainissement",
+      "Chargé de mission humanitaire",
+      "Coordinateur de projets EHA",
+      "Spécialiste en santé environnementale"
+    ],
+    "averageSalary": "350,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Gestion de projets EHA",
+      "Techniques d'assainissement",
+      "Promotion de l'hygiène",
+      "Intervention en contexte d'urgence",
+      "Coordination multisectorielle",
+      "Expertise technique",
+      "Management de programmes"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "89",
+    "name": "Administration des Réseaux informatiques",
+    "slug": "administration-reseaux-informatiques",
+    "category": "Sciences et Technologies",
+    "description": "Formation spécialisée en administration, configuration et sécurisation des réseaux informatiques. Expertise technique en infrastructures réseaux et télécommunications.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Administrateur réseau",
+      "Ingénieur systèmes et réseaux",
+      "Technicien réseau",
+      "Consultant en infrastructures IT",
+      "Responsable de parc informatique",
+      "Expert en sécurité réseau"
+    ],
+    "averageSalary": "380,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Configuration réseau",
+      "Sécurité informatique",
+      "Maintenance préventive",
+      "Résolution d'incidents",
+      "Virtualisation",
+      "Veille technologique",
+      "Gestion de projet IT"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "90",
+    "name": "Analyse Informatique et Programmation",
+    "slug": "analyse-informatique-programmation",
+    "category": "Sciences et Technologies",
+    "description": "Formation en analyse informatique, développement logiciel et programmation avancée. Expertise en conception d'applications et en méthodologies de développement.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Analyste-programmeur",
+      "Développeur logiciel",
+      "Concepteur d'applications",
+      "Chef de projet informatique",
+      "Consultant en développement",
+      "Architecte logiciel"
+    ],
+    "averageSalary": "400,000 - 1,000,000 FCFA",
+    "requiredSkills": [
+      "Programmation avancée",
+      "Analyse conceptuelle",
+      "Conception logicielle",
+      "Méthodologies de développement",
+      "Gestion de bases de données",
+      "Veille technologique",
+      "Résolution de problèmes"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "91",
+    "name": "Assurance",
+    "slug": "assurance",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en techniques d'assurance, gestion des risques et produits d'assurance. Expertise en actuariat, courtage et gestion de sinistres.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Courtier d'assurance",
+      "Actuaire",
+      "Gestionnaire de sinistres",
+      "Chargé d'affaires en assurance",
+      "Expert en risques",
+      "Responsable d'agence d'assurance"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Évaluation des risques",
+      "Techniques actuarielles",
+      "Négociation",
+      "Gestion de portefeuille",
+      "Réglementation assurance",
+      "Relation client",
+      "Analyse financière"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "92",
+    "name": "Banque",
+    "slug": "banque",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en techniques bancaires, gestion d'agence et produits financiers. Expertise en analyse crédit, marché financier et relation client bancaire.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Chargé de clientèle banque",
+      "Analyste crédit",
+      "Conseiller financier",
+      "Gestionnaire d'agence bancaire",
+      "Opérateur de marché",
+      "Responsable back-office"
+    ],
+    "averageSalary": "370,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Analyse financière",
+      "Techniques bancaires",
+      "Gestion de portefeuille",
+      "Relation client",
+      "Réglementation bancaire",
+      "Négociation",
+      "Veille financière"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "93",
+    "name": "Commerce International",
+    "slug": "commerce-international",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en commerce international, logistique globale et marketing international. Expertise en négociation internationale et gestion des opérations d'import-export.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable import-export",
+      "Chargé de développement international",
+      "Agent en douane",
+      "Consultant en commerce international",
+      "Responsable logistique internationale",
+      "Analyste de marchés étrangers"
+    ],
+    "averageSalary": "380,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Négociation internationale",
+      "Logistique globale",
+      "Douane et réglementation",
+      "Marketing international",
+      "Langues étrangères",
+      "Analyse de marchés",
+      "Gestion des risques"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "94",
+    "name": "Finance Comptabilité et Audit",
+    "slug": "finance-comptabilite-audit",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en finance d'entreprise, comptabilité approfondie et audit financier. Expertise en analyse financière, contrôle de gestion et commissariat aux comptes.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Expert-comptable",
+      "Auditeur financier",
+      "Contrôleur de gestion",
+      "Analyste financier",
+      "Commissaire aux comptes",
+      "Directeur administratif et financier"
+    ],
+    "averageSalary": "400,000 - 1,100,000 FCFA",
+    "requiredSkills": [
+      "Analyse financière",
+      "Comptabilité approfondie",
+      "Audit financier",
+      "Contrôle de gestion",
+      "Fiscalité",
+      "Réglementation comptable",
+      "Gestion stratégique"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "95",
+    "name": "Gestion des Entreprises et des Administrations",
+    "slug": "gestion-entreprises-administrations",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation en gestion d'entreprise, management des organisations et administration des affaires. Expertise en pilotage d'entreprise et gestion opérationnelle.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Chef d'entreprise",
+      "Responsable administratif",
+      "Consultant en gestion",
+      "Chargé de mission organisation",
+      "Gestionnaire de PME",
+      "Responsable de service administratif"
+    ],
+    "averageSalary": "350,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Management d'équipe",
+      "Gestion opérationnelle",
+      "Stratégie d'entreprise",
+      "Organisation du travail",
+      "Communication professionnelle",
+      "Analyse économique",
+      "Prise de décision"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "96",
+    "name": "Gestion des Ressources Humaines",
+    "slug": "gestion-ressources-humaines",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en gestion des ressources humaines, droit du travail et développement des compétences. Expertise en recrutement, formation et gestion des carrières.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable RH",
+      "Chargé de recrutement",
+      "Gestionnaire de paie",
+      "Consultant en RH",
+      "Responsable formation",
+      "Chargé de développement des compétences"
+    ],
+    "averageSalary": "370,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Recrutement et sélection",
+      "Gestion des carrières",
+      "Droit du travail",
+      "Communication interne",
+      "Gestion des conflits",
+      "Développement des compétences",
+      "Stratégie RH"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "97",
+    "name": "Management des Organisations",
+    "slug": "management-organisations",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation en management stratégique, gouvernance des organisations et leadership. Expertise en pilotage stratégique et management du changement.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Directeur d'organisation",
+      "Consultant en management",
+      "Chef de projet organisationnel",
+      "Responsable de département",
+      "Analyste stratégique",
+      "Manager opérationnel"
+    ],
+    "averageSalary": "400,000 - 1,000,000 FCFA",
+    "requiredSkills": [
+      "Leadership",
+      "Stratégie organisationnelle",
+      "Gouvernance d'entreprise",
+      "Management du changement",
+      "Pilotage de performance",
+      "Analyse décisionnelle",
+      "Communication managériale"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "98",
+    "name": "Marketing",
+    "slug": "marketing",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en marketing stratégique, études de marché et communication commerciale. Expertise en développement commercial et gestion de la relation client.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable marketing",
+      "Chargé d'études marché",
+      "Chef de produit",
+      "Responsable communication",
+      "Consultant en marketing",
+      "Responsable commercial"
+    ],
+    "averageSalary": "380,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Études de marché",
+      "Stratégie marketing",
+      "Communication commerciale",
+      "Gestion de produit",
+      "Analyse concurrentielle",
+      "Négociation commerciale",
+      "Créativité publicitaire"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "99",
+    "name": "Tourisme et Hôtellerie",
+    "slug": "tourism-hotellerie",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en management du tourisme, gestion hôtelière et valorisation du patrimoine touristique. Expertise en accueil, événementiel et développement touristique.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable d'établissement touristique",
+      "Directeur d'hôtel",
+      "Agent de développement touristique",
+      "Guide conférencier",
+      "Organisateur d'événements",
+      "Consultant en tourisme"
+    ],
+    "averageSalary": "320,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Gestion hôtelière",
+      "Développement touristique",
+      "Accueil et relation client",
+      "Organisation d'événements",
+      "Valorisation patrimoniale",
+      "Langues étrangères",
+      "Management d'équipe"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "100",
+    "name": "Transport et Logistique",
+    "slug": "transport-logistique",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en gestion des transports, logistique globale et supply chain management. Expertise en optimisation des flux et gestion des opérations logistiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Responsable logistique",
+      "Gestionnaire de flotte",
+      "Analyste supply chain",
+      "Consultant en transport",
+      "Chargé d'opérations logistiques",
+      "Responsable d'entrepôt"
+    ],
+    "averageSalary": "370,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Gestion des flux",
+      "Optimisation logistique",
+      "Gestion d'entrepôt",
+      "Transport multimodal",
+      "Gestion de flotte",
+      "Négociation transport",
+      "Management opérationnel"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "101",
+    "name": "Gestion du patrimoine Culturel",
+    "slug": "gestion-patrimoine-culturel",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation spécialisée en muséologie, conservation du patrimoine et valorisation des biens culturels. Expertise en gestion des musées, archives et traditions culturelles.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Conservateur de musée",
+      "Responsable de collections",
+      "Chargé de patrimoine",
+      "Médiateur culturel",
+      "Archiviste",
+      "Consultant en patrimoine"
+    ],
+    "averageSalary": "300,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Conservation préventive",
+      "Muséographie",
+      "Histoire de l'art",
+      "Valorisation patrimoniale",
+      "Gestion de collections",
+      "Recherche documentaire",
+      "Médiation culturelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "102",
+    "name": "Psychologie du travail et des Organisations",
+    "slug": "psychologie-travail-organisations",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation spécialisée en psychologie appliquée au monde du travail, comportement organisationnel et gestion des ressources humaines. Expertise en qualité de vie au travail et développement organisationnel.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Psychologue du travail",
+      "Consultant RH",
+      "Chargé de formation",
+      "Responsable QVT",
+      "Coach professionnel",
+      "Ergonome"
+    ],
+    "averageSalary": "350,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Analyse organisationnelle",
+      "Gestion des compétences",
+      "Conduite du changement",
+      "Évaluation psychologique",
+      "Communication professionnelle",
+      "Ergonomie cognitive",
+      "Développement des talents"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "103",
+    "name": "Métiers de l'Audiovisuel et du Multimédia",
+    "slug": "metiers-audiovisuel-multimedia",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation aux métiers techniques et créatifs de l'audiovisuel et du multimédia. Expertise en production, post-production et création numérique.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Technicien audiovisuel",
+      "Monteur vidéo",
+      "Motion designer",
+      "Régisseur",
+      "Infographiste",
+      "Webdesigner"
+    ],
+    "averageSalary": "320,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Techniques audiovisuelles",
+      "Logiciels de création",
+      "Design graphique",
+      "Production multimédia",
+      "Créativité numérique",
+      "Travail en équipe",
+      "Veille technologique"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "104",
+    "name": "Sciences et Techniques de Production Végétale",
+    "slug": "sciences-techniques-production-vegetale",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation spécialisée en agronomie végétale, amélioration des plantes et techniques de production agricole. Expertise en cultures vivrières et industrielles.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Ingénieur agronome",
+      "Technicien agricole",
+      "Conseiller en production végétale",
+      "Recherche en agronomie",
+      "Entrepreneur agricole",
+      "Responsable de coopérative"
+    ],
+    "averageSalary": "300,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Agronomie végétale",
+      "Phytotechnie",
+      "Protection des cultures",
+      "Génétique végétale",
+      "Gestion d'exploitation",
+      "Innovation agricole",
+      "Conseil technique"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "105",
+    "name": "Sciences et Techniques de Production Animale",
+    "slug": "sciences-techniques-production-animale",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation spécialisée en zootechnie, élevage et production animale. Expertise en nutrition animale, génétique et santé animale.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Zootechnicien",
+      "Éleveur spécialisé",
+      "Conseiller en élevage",
+      "Technicien vétérinaire",
+      "Responsable de ferme",
+      "Chercheur en production animale"
+    ],
+    "averageSalary": "320,000 - 780,000 FCFA",
+    "requiredSkills": [
+      "Zootechnie",
+      "Nutrition animale",
+      "Santé animale",
+      "Génétique animale",
+      "Gestion d'élevage",
+      "Bien-être animal",
+      "Conduite de troupeau"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "106",
+    "name": "Aménagement et Gestion des Forêts et Parcours Naturels",
+    "slug": "amenagement-gestion-forets-parcours",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation en sylviculture, gestion forestière durable et aménagement des espaces naturels. Expertise en conservation de la biodiversité et gestion des ressources forestières.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Ingénieur forestier",
+      "Gestionnaire d'espaces naturels",
+      "Technicien forestier",
+      "Expert en biodiversité",
+      "Consultant en environnement",
+      "Agent de développement rural"
+    ],
+    "averageSalary": "330,000 - 800,000 FCFA",
+    "requiredSkills": [
+      "Sylviculture",
+      "Aménagement forestier",
+      "Écologie forestière",
+      "Cartographie",
+      "Gestion durable",
+      "Conservation biodiversité",
+      "Droit forestier"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "107",
+    "name": "Génie Rural, Mécanisation Agricole, Pêche et Aquaculture",
+    "slug": "genie-rural-mecanisation-peche-aquaculture",
+    "category": "Sciences et Technologies",
+    "description": "Formation pluridisciplinaire en génie rural, machinisme agricole, pêche et aquaculture. Expertise en équipements agricoles et productions halieutiques.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Ingénieur en machinisme agricole",
+      "Technicien en aquaculture",
+      "Conseiller en pêche",
+      "Responsable de station aquacole",
+      "Expert en irrigation",
+      "Gestionnaire de projets ruraux"
+    ],
+    "averageSalary": "340,000 - 820,000 FCFA",
+    "requiredSkills": [
+      "Mécanisation agricole",
+      "Techniques aquacoles",
+      "Génie rural",
+      "Maintenance d'équipements",
+      "Gestion de projets",
+      "Innovation technique",
+      "Conseil agricole"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "108",
+    "name": "Nutrition et Technologie Alimentaires",
+    "slug": "nutrition-technologie-alimentaires",
+    "category": "Sciences de la Santé",
+    "description": "Formation en sciences alimentaires, nutrition humaine et technologies de transformation des aliments. Expertise en qualité nutritionnelle et sécurité alimentaire.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Nutritionniste",
+      "Technologue alimentaire",
+      "Responsable qualité agroalimentaire",
+      "Chercheur en nutrition",
+      "Consultant en sécurité alimentaire",
+      "Enseignant en sciences alimentaires"
+    ],
+    "averageSalary": "350,000 - 850,000 FCFA",
+    "requiredSkills": [
+      "Biochimie alimentaire",
+      "Nutrition humaine",
+      "Technologies alimentaires",
+      "Contrôle qualité",
+      "Réglementation alimentaire",
+      "Analyse sensorielle",
+      "Innovation produit"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "109",
+    "name": "Agroéconomie, Sociologie et Vulgarisation Rurales",
+    "slug": "agroeconomie-sociologie-vulgarisation-rurales",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation interdisciplinaire en économie agricole, sociologie rurale et techniques de vulgarisation. Expertise en développement rural et accompagnement des agriculteurs.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Agroéconomiste",
+      "Vulgarisateur agricole",
+      "Chargé de développement rural",
+      "Consultant en politiques agricoles",
+      "Animateur rural",
+      "Enseignant-chercheur"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Économie agricole",
+      "Sociologie rurale",
+      "Vulgarisation technique",
+      "Animation rurale",
+      "Analyse de filières",
+      "Conduite de projet",
+      "Communication interculturelle"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "110",
+    "name": "Entreprenariat Agricole",
+    "slug": "entreprenariat-agricole",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation spécialisée en création et gestion d'entreprises agricoles. Expertise en business planning, financement et management d'exploitations agricoles.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Entrepreneur agricole",
+      "Manager d'exploitation",
+      "Conseiller en création d'entreprise",
+      "Responsable de coopérative",
+      "Consultant en agribusiness",
+      "Formateur en entrepreneuriat"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Création d'entreprise",
+      "Business planning",
+      "Gestion financière",
+      "Marketing agricole",
+      "Management d'équipe",
+      "Innovation business",
+      "Résilience entrepreneuriale"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "111",
+    "name": "Kinésithérapie",
+    "slug": "kinesitherapie",
+    "category": "Sciences de la Santé",
+    "description": "Formation en rééducation fonctionnelle, massothérapie et thérapies manuelles. Expertise en réadaptation physique et traitement des troubles musculo-squelettiques.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Kinésithérapeute libéral",
+      "Kinésithérapeute hospitalier",
+      "Kinésithérapeute du sport",
+      "Ergothérapeute",
+      "Enseignant en kinésithérapie",
+      "Consultant en rééducation"
+    ],
+    "averageSalary": "400,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Techniques de rééducation",
+      "Anatomie fonctionnelle",
+      "Massothérapie",
+      "Évaluation physique",
+      "Relation thérapeutique",
+      "Créativité rééducative",
+      "Gestion de cabinet"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "112",
+    "name": "Assistance sociale",
+    "slug": "assistance-sociale",
+    "category": "Sciences de la Santé",
+    "description": "Formation en travail social, accompagnement des personnes vulnérables et intervention sociale. Expertise en médiation sociale et aide à l'insertion.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Assistant social",
+      "Éducateur spécialisé",
+      "Médiateur social",
+      "Conseiller en insertion",
+      "Responsable de service social",
+      "Intervenant psychosocial"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Écoute active",
+      "Accompagnement social",
+      "Médiation",
+      "Connaissance des dispositifs",
+      "Travail en réseau",
+      "Éthique professionnelle",
+      "Gestion de cas"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "113",
+    "name": "Nutrition et Diététique",
+    "slug": "nutrition-dietetique",
+    "category": "Sciences de la Santé",
+    "description": "Formation en sciences nutritionnelles, diététique thérapeutique et éducation nutritionnelle. Expertise en alimentation santé et prévention des maladies nutritionnelles.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Diététicien-nutritionniste",
+      "Consultant en nutrition",
+      "Educateur nutritionnel",
+      "Chargé de prévention santé",
+      "Recherche en nutrition",
+      "Responsable de restauration collective"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Biochimie nutritionnelle",
+      "Diététique thérapeutique",
+      "Éducation nutritionnelle",
+      "Bilan diététique",
+      "Communication santé",
+      "Veille scientifique",
+      "Cuisine thérapeutique"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "114",
+    "name": "Analyse Biomédicale",
+    "slug": "analyse-biomedicale",
+    "category": "Sciences de la Santé",
+    "description": "Formation en biologie médicale, analyses de laboratoire et diagnostic biologique. Expertise en techniques d'analyses médicales et interprétation des résultats.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Biologiste médical",
+      "Technicien de laboratoire",
+      "Responsable de labo",
+      "Chercheur en biologie médicale",
+      "Enseignant en biologie",
+      "Consultant en analyses médicales"
+    ],
+    "averageSalary": "380,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Techniques de laboratoire",
+      "Biologie moléculaire",
+      "Interprétation d'analyses",
+      "Contrôle qualité",
+      "Hygiène laboratoire",
+      "Veille scientifique",
+      "Gestion de laboratoire"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "115",
+    "name": "Génie de Technologie Alimentaire",
+    "slug": "genie-technologie-alimentaire",
+    "category": "Sciences et Technologies",
+    "description": "Formation en ingénierie des procédés alimentaires, transformation industrielle et qualité des produits alimentaires. Expertise en conception d'unités de production agroalimentaire.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur agroalimentaire",
+      "Responsable de production",
+      "Technologue alimentaire",
+      "Chercheur en technologie alimentaire",
+      "Consultant en industrie alimentaire",
+      "Responsable qualité"
+    ],
+    "averageSalary": "400,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Procédés alimentaires",
+      "Génie industriel",
+      "Contrôle qualité",
+      "Sécurité alimentaire",
+      "Innovation produit",
+      "Gestion de production",
+      "Réglementation alimentaire"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "116",
+    "name": "Production et Santé animale",
+    "slug": "production-sante-animale",
+    "category": "Sciences Agricoles et Environnementales",
+    "description": "Formation intégrée en production animale et santé vétérinaire. Expertise en élevage, prophylaxie et médecine vétérinaire préventive.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Zootechnicien",
+      "Assistant vétérinaire",
+      "Responsable d'élevage",
+      "Conseiller en santé animale",
+      "Technicien de recherche",
+      "Inspecteur sanitaire"
+    ],
+    "averageSalary": "330,000 - 780,000 FCFA",
+    "requiredSkills": [
+      "Production animale",
+      "Santé animale",
+      "Prophylaxie",
+      "Nutrition animale",
+      "Gestion d'élevage",
+      "Bien-être animal",
+      "Hygiène alimentaire"
+    ],
+    "image": "/images/filieres/agriculture.jpg"
+  },
+  {
+    "id": "117",
+    "name": "Génie de l'Environnement",
+    "slug": "genie-environnement",
+    "category": "Sciences et Technologies",
+    "description": "Formation en ingénierie environnementale, traitement des pollutions et gestion des ressources naturelles. Expertise en technologies propres et développement durable.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur environnement",
+      "Responsable QHSE",
+      "Consultant en environnement",
+      "Expert en traitement des déchets",
+      "Chargé de mission environnement",
+      "Enseignant-chercheur"
+    ],
+    "averageSalary": "380,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Traitement des pollutions",
+      "Gestion des déchets",
+      "Évaluation environnementale",
+      "Écoconception",
+      "Réglementation environnementale",
+      "Management environnemental",
+      "Innovation écologique"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "118",
+    "name": "Génie d'Imagerie médicale et de Radiothérapie",
+    "slug": "genie-imagerie-medicale-radiotherapie",
+    "category": "Sciences de la Santé",
+    "description": "Formation spécialisée en technologies d'imagerie médicale, radiologie et radiothérapie. Expertise en appareillage médical et radioprotection.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur en imagerie médicale",
+      "Manipulateur en radiologie",
+      "Technicien en radiothérapie",
+      "Responsable de service d'imagerie",
+      "Expert en radioprotection",
+      "Chercheur en technologies médicales"
+    ],
+    "averageSalary": "420,000 - 980,000 FCFA",
+    "requiredSkills": [
+      "Techniques d'imagerie",
+      "Radioprotection",
+      "Maintenance d'équipements",
+      "Anatomie médicale",
+      "Physique médicale",
+      "Gestion de service",
+      "Innovation technologique"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "119",
+    "name": "Génie Biomédical (Maintenance Biomédicale et Hospitalière)",
+    "slug": "genie-biomedical-maintenance",
+    "category": "Sciences et Technologies",
+    "description": "Formation en maintenance d'équipements médicaux, ingénierie biomédicale et gestion du parc médical. Expertise en technologies de santé et gestion technique hospitalière.",
+    "duration": "5 ans",
+    "careerOpportunities": [
+      "Ingénieur biomédical",
+      "Technicien de maintenance médicale",
+      "Responsable de parc biomédical",
+      "Consultant en technologies médicales",
+      "Expert en normes médicales",
+      "Chargé d'affaires médical"
+    ],
+    "averageSalary": "400,000 - 950,000 FCFA",
+    "requiredSkills": [
+      "Maintenance médicale",
+      "Électronique médicale",
+      "Gestion de parc",
+      "Normes et réglementation",
+      "Diagnostic technique",
+      "Innovation médicale",
+      "Management technique"
+    ],
+    "image": "/images/filieres/informatique.jpg"
+  },
+  {
+    "id": "120",
+    "name": "Dynamique de Population et Planification Régionale",
+    "slug": "dynamique-population-planification-regionale",
+    "category": "Sciences Humaines et Sociales",
+    "description": "Formation en démographie, analyse des populations et planification régionale. Expertise en études populationnelles et développement territorial.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Démographe",
+      "Chargé d'études populationnelles",
+      "Planificateur régional",
+      "Consultant en développement",
+      "Chercheur en démographie",
+      "Expert en politiques sociales"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Analyse démographique",
+      "Statistiques populationnelles",
+      "Planification territoriale",
+      "Enquêtes de population",
+      "Prospective démographique",
+      "Gestion de projets",
+      "Analyse des politiques"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "121",
+    "name": "Éducation Physique et Sportive",
+    "slug": "education-physique-sportive",
+    "category": "Sciences du Sport",
+    "description": "Formation en pédagogie du sport, enseignement de l'EPS et animation sportive. Expertise en didactique des activités physiques et sportives.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur d'EPS",
+      "Éducateur sportif",
+      "Animateur sportif",
+      "Conseiller en activités physiques",
+      "Formateur en sport",
+      "Coordinateur sportif"
+    ],
+    "averageSalary": "300,000 - 700,000 FCFA",
+    "requiredSkills": [
+      "Pédagogie sportive",
+      "Techniques d'animation",
+      "Connaissance des sports",
+      "Sécurité en APS",
+      "Physiologie de l'exercice",
+      "Communication pédagogique",
+      "Gestion de groupe"
+    ],
+    "image": "/images/filieres/medecine.jpg"
+  },
+  {
+    "id": "123",
+    "name": "Développement Communautaire",
+    "slug": "developpement-communautaire",
+    "category": "Sciences Humaines et Sociales",
+    "description": "Formation en animation communautaire, développement local et mobilisation sociale. Expertise en accompagnement des communautés et gestion de projets de développement.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Animateur communautaire",
+      "Agent de développement local",
+      "Coordinateur de projets",
+      "Consultant en développement",
+      "Médiateur social",
+      "Chargé de mission associative"
+    ],
+    "averageSalary": "280,000 - 650,000 FCFA",
+    "requiredSkills": [
+      "Animation sociale",
+      "Conduite de projet",
+      "Mobilisation communautaire",
+      "Communication sociale",
+      "Diagnostic territorial",
+      "Partnership building",
+      "Évaluation d'impact"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "124",
+    "name": "Andragogie",
+    "slug": "andragogie",
+    "category": "Sciences de l'Éducation",
+    "description": "Formation en pédagogie des adultes, formation professionnelle et ingénierie de formation. Expertise en apprentissage tout au long de la vie et développement des compétences adultes.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Formateur d'adultes",
+      "Concepteur de formation",
+      "Responsable de formation",
+      "Consultant en andragogie",
+      "Coordinateur pédagogique",
+      "Expert en ingénierie de formation"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Pédagogie des adultes",
+      "Ingénierie de formation",
+      "Animation de groupe",
+      "Évaluation des apprentissages",
+      "Conception pédagogique",
+      "Gestion de projet formation",
+      "Accompagnement professionnel"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "125",
+    "name": "Récréologie",
+    "slug": "recreologie",
+    "category": "Sciences Humaines et Sociales",
+    "description": "Formation en animation socioculturelle, loisirs éducatifs et gestion des activités récréatives. Expertise en conception d'activités ludiques et éducatives.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Animateur socioculturel",
+      "Coordinateur de loisirs",
+      "Concepteur d'activités récréatives",
+      "Responsable de centre de loisirs",
+      "Éducateur spécialisé",
+      "Consultant en animation"
+    ],
+    "averageSalary": "250,000 - 600,000 FCFA",
+    "requiredSkills": [
+      "Animation socioculturelle",
+      "Conception d'activités",
+      "Gestion de groupes",
+      "Créativité ludique",
+      "Pédagogie du jeu",
+      "Sécurité des activités",
+      "Communication festive"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "126",
+    "name": "Entrepreneuriat Social",
+    "slug": "entrepreneuriat-social",
+    "category": "Sciences Économiques et de Gestion",
+    "description": "Formation en création d'entreprises sociales, innovation sociale et économie solidaire. Expertise en business models à impact social et gestion d'organisations à but social.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Entrepreneur social",
+      "Manager d'organisation sociale",
+      "Consultant en innovation sociale",
+      "Responsable RSE",
+      "Chargé de mission solidaire",
+      "Expert en économie sociale"
+    ],
+    "averageSalary": "300,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Création d'entreprise sociale",
+      "Business model social",
+      "Finance solidaire",
+      "Impact social",
+      "Management participatif",
+      "Innovation sociale",
+      "Partnership building"
+    ],
+    "image": "/images/filieres/economie.jpg"
+  },
+  {
+    "id": "127",
+    "name": "Langue Chinoise",
+    "slug": "langue-chinoise",
+    "category": "Lettres, Arts et Sciences Humaines",
+    "description": "Formation approfondie en langue chinoise, civilisation sinophone et relations sino-africaines. Développe une maîtrise experte du mandarin et une compréhension interculturelle de la Chine.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Professeur de chinois",
+      "Traducteur français-chinois",
+      "Interprète",
+      "Chargé de relations sino-africaines",
+      "Guide touristique sinophone",
+      "Consultant interculturel"
+    ],
+    "averageSalary": "350,000 - 900,000 FCFA",
+    "requiredSkills": [
+      "Maîtrise du mandarin",
+      "Culture chinoise",
+      "Traduction technique",
+      "Communication interculturelle",
+      "Négociation internationale",
+      "Pédagogie des langues",
+      "Adaptabilité culturelle"
+    ],
+    "image": "/images/filieres/droit.jpg"
+  },
+  {
+    "id": "128",
+    "name": "Didactique du Chinois",
+    "slug": "didactique-chinois",
+    "category": "Sciences de l'Éducation",
+    "description": "Formation spécialisée en pédagogie du chinois langue étrangère, méthodologie d'enseignement et conception de matériel pédagogique pour l'enseignement du chinois.",
+    "duration": "3-5 ans",
+    "careerOpportunities": [
+      "Formateur de professeurs de chinois",
+      "Concepteur de méthodes d'enseignement",
+      "Expert en didactique du chinois",
+      "Responsable pédagogique",
+      "Chercheur en linguistique chinoise",
+      "Consultant en enseignement des langues"
+    ],
+    "averageSalary": "320,000 - 750,000 FCFA",
+    "requiredSkills": [
+      "Didactique des langues",
+      "Pédagogie du chinois",
+      "Conception pédagogique",
+      "Linguistique chinoise",
+      "Évaluation des apprentissages",
+      "Innovation pédagogique",
+      "Recherche en didactique"
+    ],
+    "image": "/images/filieres/droit.jpg"
   }
 ]
