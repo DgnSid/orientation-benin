@@ -63,6 +63,51 @@ const Index = () => {
     { label: 'Taux de réussite', value: '85%', icon: TrendingUp },
   ];
 
+  const features = [
+    {
+      title: "Universités",
+      description: "Explorez toutes les universités du Bénin avec leurs filières et conditions d'admission",
+      icon: Building2,
+      link: "/universities",
+      buttonText: "Explorer"
+    },
+    {
+      title: "Filières & Débouchés",
+      description: "Découvrez les formations disponibles et leurs perspectives d'emploi",
+      icon: GraduationCap,
+      link: "/filieres",
+      buttonText: "Découvrir"
+    },
+    {
+      title: "Stages & Opportunités",
+      description: "Trouvez des stages et développez votre expérience professionnelle",
+      icon: Briefcase,
+      link: "/stages",
+      buttonText: "Voir les stages"
+    },
+    {
+      title: "Concours & Hackathons",
+      description: "Participez aux concours et challenges pour vous démarquer",
+      icon: Trophy,
+      link: "/concours",
+      buttonText: "Participer"
+    },
+    {
+      title: "Formations Pratiques",
+      description: "Développez vos compétences avec nos formations spécialisées",
+      icon: BookOpen,
+      link: "/formations",
+      buttonText: "Se former"
+    },
+    {
+      title: "Conseils",
+      description: "Guides et conseils d'orientation pour réussir vos études",
+      icon: Users,
+      link: "/conseils",
+      buttonText: "Lire nos conseils"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background overflow-hidden">
       {/* Hero Section */}
@@ -137,105 +182,27 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <Building2 className="h-7 w-7 text-primary" />
+            {features.map((feature, index) => (
+              <div key={index} className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
+                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+                  <feature.icon className="h-7 w-7 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-foreground">{feature.title}</h3>
+                <p className="text-muted-foreground mb-4 text-sm">
+                  {feature.description}
+                </p>
+                <Link to={feature.link}>
+                  <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    {feature.buttonText}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Universités</h3>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Explorez toutes les universités du Bénin avec leurs filières et conditions d'admission
-              </p>
-              <Link to="/universities">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Explorer
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-
-            <div className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <GraduationCap className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Filières & Débouchés</h3>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Découvrez les formations disponibles et leurs perspectives d'emploi
-              </p>
-              <Link to="/filieres">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Découvrir
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-
-            <div className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <Briefcase className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Stages & Opportunités</h3>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Trouvez des stages et développez votre expérience professionnelle
-              </p>
-              <Link to="/stages">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Voir les stages
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-
-            <div className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <Trophy className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Concours & Hackathons</h3>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Participez aux concours et challenges pour vous démarquer
-              </p>
-              <Link to="/concours">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Participer
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-      
-            <div className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <BookOpen className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Formations Pratiques</h3>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Développez vos compétences avec nos formations spécialisées
-              </p>
-              <Link to="/formations">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Se former
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-
-            <div className="bg-background rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-border">
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <Users className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Conseils</h3>
-              <p className="text-muted-foreground mb-4 text-sm">
-                Guides et conseils d'orientation pour réussir vos études
-              </p>
-              <Link to="/conseils">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Lire nos conseils
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-
+      
       {/* Test d'Orientation CTA Section */}
       <section className="py-20 bg-primary relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
@@ -319,133 +286,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-card border-t border-border">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <img 
-                  src="/lovable-uploads/885f13f1-a25a-4445-9468-2fb37844853b.png" 
-                  alt="Après mon Bac" 
-                  className="h-10 mr-2"
-                  onError={(e) => {
-                    e.currentTarget.src = '/placeholder.svg';
-                  }}
-                />
-                <span className="text-xl font-bold text-foreground">Après mon Bac</span>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                Votre guide complet pour choisir la meilleure filière après le baccalauréat au Bénin.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Facebook size={20} />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Twitter size={20} />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Instagram size={20} />
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Linkedin size={20} />
-                </a>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground">Explorer</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link to="/universities" className="text-muted-foreground hover:text-primary transition-colors">
-                    Universités
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/filieres" className="text-muted-foreground hover:text-primary transition-colors">
-                    Filières & Débouchés
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/stages" className="text-muted-foreground hover:text-primary transition-colors">
-                    Stages & Opportunités
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/concours" className="text-muted-foreground hover:text-primary transition-colors">
-                    Concours & Hackathons
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/formations" className="text-muted-foreground hover:text-primary transition-colors">
-                    Formations Pratiques
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground">Ressources</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link to="/conseils" className="text-muted-foreground hover:text-primary transition-colors">
-                    Conseils d'orientation
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground">Contact</h3>
-              <ul className="space-y-3 text-sm">
-                <li className="flex items-start">
-                  <MapPin className="h-4 w-4 mt-0.5 mr-2 text-primary" />
-                  <span className="text-muted-foreground">Cotonou, Bénin</span>
-                </li>
-                <li className="flex items-start">
-                  <Phone className="h-4 w-4 mt-0.5 mr-2 text-primary" />
-                  <span className="text-muted-foreground">+229 XX XX XX XX</span>
-                </li>
-                <li className="flex items-start">
-                  <Mail className="h-4 w-4 mt-0.5 mr-2 text-primary" />
-                  <span className="text-muted-foreground">contact@apresmonbac.bj</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              © {new Date().getFullYear()} Après mon Bac. Tous droits réservés.
-            </p>
-            <div className="flex space-x-6 text-sm text-muted-foreground">
-              <Link to="/privacy" className="hover:text-primary transition-colors">
-                Confidentialité
-              </Link>
-              <Link to="/terms" className="hover:text-primary transition-colors">
-                Conditions d'utilisation
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
