@@ -156,30 +156,38 @@ const Formations = () => {
                 className="group hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0 overflow-hidden animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardHeader className="space-y-4">
-                  <div className="flex items-start justify-between">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={formation.image} 
+                    alt={formation.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
+                  <div className="absolute top-4 left-4">
                     <Badge 
-                      variant="secondary" 
-                      className="bg-secondary/10 text-secondary border-secondary/20"
+                      variant="outline"
+                      className="bg-white/90 backdrop-blur-sm text-primary border-primary/20"
                     >
                       {formation.category}
                     </Badge>
+                  </div>
+                  <div className="absolute top-4 right-4">
                     <Badge 
-                      variant="outline"
-                      className={getLevelColor(formation.level)}
+                      variant="secondary"
+                      className="bg-white/90 backdrop-blur-sm text-secondary border-secondary/20"
                     >
                       {formation.level}
                     </Badge>
                   </div>
-                  
-                  <div>
-                    <h3 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors duration-300">
-                      {formation.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Par {formation.instructor}
-                    </p>
-                  </div>
+                </div>
+
+                <CardHeader className="space-y-3">
+                  <h3 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                    {formation.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Par {formation.instructor}
+                  </p>
                 </CardHeader>
 
                 <CardContent className="space-y-4">
