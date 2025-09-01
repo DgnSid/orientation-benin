@@ -64,13 +64,14 @@ export const generateAllFilieres = (): Filiere[] => {
 };
 
 // Get schools offering a specific filiere
-export const getSchoolsOfferingFiliere = (filiereSlug: string): University[] => {
-  const universities: University[] = [];
+export const getSchoolsOfferingFiliere = (filiereName: string): Array<{name: string, location: string}> => {
+  const schools: Array<{name: string, location: string}> = [];
   
   (universitiesData as University[]).forEach((university) => {
-    const hasFiliere = university.schools.some((school) => {
-      return school.programs.some((program) => {
-        const slug = program.toLowerCase()
+    university.schools.forEach((school) => {
+      const hasFiliere = school.programs.some((program) => {
+        // Create slug for program name
+        const programSlug = program.toLowerCase()
           .replace(/[àáâãäå]/g, 'a')
           .replace(/[èéêë]/g, 'e')
           .replace(/[ìíîï]/g, 'i')
@@ -79,16 +80,32 @@ export const getSchoolsOfferingFiliere = (filiereSlug: string): University[] => 
           .replace(/[ç]/g, 'c')
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/^-+|-+$/g, '');
-        return slug === filiereSlug;
+        
+        // Create slug for filiere name
+        const filiereSlug = filiereName.toLowerCase()
+          .replace(/[àáâãäå]/g, 'a')
+          .replace(/[èéêë]/g, 'e')
+          .replace(/[ìíîï]/g, 'i')
+          .replace(/[òóôõö]/g, 'o')
+          .replace(/[ùúûü]/g, 'u')
+          .replace(/[ç]/g, 'c')
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+        
+        // Match by slug or exact name (case insensitive)
+        return programSlug === filiereSlug || program.toLowerCase() === filiereName.toLowerCase();
       });
+      
+      if (hasFiliere) {
+        schools.push({
+          name: school.name,
+          location: `${school.location}, ${university.location}`
+        });
+      }
     });
-    
-    if (hasFiliere) {
-      universities.push(university);
-    }
   });
   
-  return universities;
+  return schools;
 };
 
 // Helper function to create slug from filiere name
@@ -108,4 +125,46 @@ export const createSlug = (name: string): string => {
 export const getFiliereBySlug = (slug: string): Filiere | undefined => {
   const allFilieres = generateAllFilieres();
   return allFilieres.find(f => f.slug === slug);
+};
+
+// Get all universities offering a specific filiere
+export const getUniversitiesOfferingFiliere = (filiereName: string): University[] => {
+  const universities: University[] = [];
+  
+  (universitiesData as University[]).forEach((university) => {
+    const hasFiliere = university.schools.some((school) => {
+      return school.programs.some((program) => {
+        // Create slug for program name
+        const programSlug = program.toLowerCase()
+          .replace(/[àáâãäå]/g, 'a')
+          .replace(/[èéêë]/g, 'e')
+          .replace(/[ìíîï]/g, 'i')
+          .replace(/[òóôõö]/g, 'o')
+          .replace(/[ùúûü]/g, 'u')
+          .replace(/[ç]/g, 'c')
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+        
+        // Create slug for filiere name
+        const filiereSlug = filiereName.toLowerCase()
+          .replace(/[àáâãäå]/g, 'a')
+          .replace(/[èéêë]/g, 'e')
+          .replace(/[ìíîï]/g, 'i')
+          .replace(/[òóôõö]/g, 'o')
+          .replace(/[ùúûü]/g, 'u')
+          .replace(/[ç]/g, 'c')
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+        
+        // Match by slug or exact name (case insensitive)
+        return programSlug === filiereSlug || program.toLowerCase() === filiereName.toLowerCase();
+      });
+    });
+    
+    if (hasFiliere) {
+      universities.push(university);
+    }
+  });
+  
+  return universities;
 };
