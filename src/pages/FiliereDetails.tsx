@@ -153,8 +153,8 @@ const FiliereDetails = () => {
                 <div className="grid gap-3">
                   {schoolsOffering.map((school, index) => (
                     <div key={index} className="border rounded-lg p-3 bg-muted/30">
-                      <h4 className="font-medium text-sm mb-1">{school.schoolName}</h4>
-                      <p className="text-xs text-muted-foreground">{school.universityName}</p>
+                      <h4 className="font-medium text-sm mb-1">{school.name}</h4>
+                      <p className="text-xs text-muted-foreground">{school.location}</p>
                     </div>
                   ))}
                 </div>
