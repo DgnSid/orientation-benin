@@ -51,14 +51,9 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <img 
-              src="/lovable-uploads/885f13f1-a25a-4445-9468-2fb37844853b.png" 
-              alt="Après Mon Bac" 
-              className="h-10 w-10 group-hover:scale-105 transition-transform duration-300"
-              onError={(e) => {
-                e.currentTarget.src = '/placeholder.svg';
-              }}
-            />
+            <div className="bg-gradient-primary p-2 rounded-lg group-hover:shadow-elegant-md transition-all duration-300">
+              <GraduationCap className="h-6 w-6 text-primary-foreground" />
+            </div>
             <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
               Après Mon Bac
             </span>

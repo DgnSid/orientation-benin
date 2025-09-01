@@ -139,29 +139,21 @@ const Stages = () => {
                 className="group hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0 overflow-hidden animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-48 overflow-hidden bg-gradient-secondary">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                    <Briefcase className="h-16 w-16 text-white/80" />
-                  </div>
-                  <div className="absolute top-4 left-4">
+                <CardHeader className="space-y-4">
+                  <div className="flex items-start justify-between">
                     <Badge 
-                      variant="outline"
-                      className="bg-white/90 backdrop-blur-sm text-secondary border-secondary/20"
+                      variant="secondary" 
+                      className="bg-secondary/10 text-secondary border-secondary/20"
                     >
                       {stage.domain}
                     </Badge>
-                  </div>
-                  <div className="absolute top-4 right-4">
                     <Badge 
                       variant={stage.type === 'Rémunéré' ? 'default' : 'outline'}
-                      className={stage.type === 'Rémunéré' ? 'bg-primary/90 text-white' : 'bg-white/90 backdrop-blur-sm'}
+                      className={stage.type === 'Rémunéré' ? 'bg-primary/10 text-primary border-primary/20' : ''}
                     >
                       {stage.type}
                     </Badge>
                   </div>
-                </div>
-
-                <CardHeader className="space-y-3">
                   
                   <div>
                     <h3 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors duration-300">
