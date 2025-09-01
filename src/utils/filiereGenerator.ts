@@ -1,8 +1,8 @@
 import { Filiere, University } from '@/types/data';
 import universitiesData from '@/data/universities.json';
-import filieresUniqueData from '@/data/filieres-unique.json';
+import filieresDetailsData from '@/data/filieres-details.json';
 
-// Generate all unique filieres from universities data and filieres-unique data
+// Generate all unique filieres from universities data and filieres-details data
 export const generateAllFilieres = (): Filiere[] => {
   const uniqueFilieres = new Map<string, Filiere>();
 
@@ -21,14 +21,17 @@ export const generateAllFilieres = (): Filiere[] => {
           .replace(/^-+|-+$/g, '');
 
         if (!uniqueFilieres.has(slug)) {
-          // Check if we have unique data for this filiere
-          const uniqueData = (filieresUniqueData as Filiere[]).find(f => f.slug === slug);
+          // Check if we have detailed data for this filiere
+          const detailedData = (filieresDetailsData as Filiere[]).find(f => 
+            f.slug === slug || f.name.toLowerCase() === programName.toLowerCase()
+          );
           
-          if (uniqueData) {
-            // Use unique data if available
+          if (detailedData) {
+            // Use detailed data if available
             uniqueFilieres.set(slug, {
-              ...uniqueData,
-              name: programName
+              ...detailedData,
+              name: programName, // Keep the original program name
+              universities: [university.id]
             });
           } else {
             // Create basic filiere data
