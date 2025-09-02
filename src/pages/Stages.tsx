@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Search, MapPin, Clock, Briefcase, Mail, DollarSign } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
@@ -218,8 +219,10 @@ const Stages = () => {
                 </CardContent>
 
                 <CardFooter className="pt-0 flex gap-2">
-                  <Button className="flex-1 group-hover:bg-primary-dark transition-colors duration-300">
-                    Postuler
+                  <Button className="flex-1 group-hover:bg-primary-dark transition-colors duration-300" asChild>
+                    <Link to={`/stages/${stage.id}/apply`}>
+                      Postuler
+                    </Link>
                   </Button>
                   <Button variant="outline" size="sm" asChild>
                     <a href={`mailto:${stage.contactEmail}`}>

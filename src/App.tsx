@@ -12,6 +12,7 @@ import Filieres from "./pages/Filieres";
 import FiliereDetails from "./pages/FiliereDetails";
 import Concours from "./pages/Concours";
 import Stages from "./pages/Stages";
+import StageApplication from "./pages/StageApplication";
 import Formations from "./pages/Formations";
 import Conseils from "./pages/Conseils";
 import NotFound from "./pages/NotFound";
@@ -35,6 +36,7 @@ const App = () => (
               <Route path="/filieres/:slug" element={<FiliereDetails />} />
               <Route path="/concours" element={<Concours />} />
               <Route path="/stages" element={<Stages />} />
+              <Route path="/stages/:stageId/apply" element={<StageApplication />} />
               <Route path="/formations" element={<Formations />} />
               <Route path="/conseils" element={<Conseils />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
