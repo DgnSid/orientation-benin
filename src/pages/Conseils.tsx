@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import conseilsData from '@/data/conseils.json';
+import conseilsHero from '@/assets/conseils-hero.jpg';
 
 interface Conseil {
   id: string;
@@ -61,14 +62,22 @@ const Conseils = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-muted/30">
       {/* Hero Section */}
-      <section className="bg-gradient-hero text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-hero text-white py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={conseilsHero} 
+            alt="Étudiants étudiant ensemble dans une bibliothèque moderne" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/60" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
-            <Lightbulb className="h-16 w-16 mx-auto mb-6 animate-bounce-in" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <Lightbulb className="h-16 w-16 mx-auto mb-6 animate-bounce-in drop-shadow-lg" />
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
               Conseils et Guides
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
               Des conseils d'experts pour réussir votre orientation et vos études
             </p>
           </div>
