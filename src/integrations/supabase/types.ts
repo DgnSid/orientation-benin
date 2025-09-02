@@ -14,7 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      applications: {
+        Row: {
+          annee_etude: string
+          created_at: string
+          date_debut: string
+          ecole: string
+          email: string
+          filiere: string
+          id: string
+          lettre_demande_url: string | null
+          lettre_motivation: string
+          nom: string
+          prenoms: string
+          sexe: string
+          stage_id: string
+          telephone: string
+          temps_stage: string
+          universite: string | null
+          updated_at: string
+        }
+        Insert: {
+          annee_etude: string
+          created_at?: string
+          date_debut: string
+          ecole: string
+          email: string
+          filiere: string
+          id?: string
+          lettre_demande_url?: string | null
+          lettre_motivation: string
+          nom: string
+          prenoms: string
+          sexe: string
+          stage_id: string
+          telephone: string
+          temps_stage: string
+          universite?: string | null
+          updated_at?: string
+        }
+        Update: {
+          annee_etude?: string
+          created_at?: string
+          date_debut?: string
+          ecole?: string
+          email?: string
+          filiere?: string
+          id?: string
+          lettre_demande_url?: string | null
+          lettre_motivation?: string
+          nom?: string
+          prenoms?: string
+          sexe?: string
+          stage_id?: string
+          telephone?: string
+          temps_stage?: string
+          universite?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
