@@ -28,6 +28,7 @@ All colors MUST be HSL.
     --secondary: 24 95% 53%; /* #EA580C - Orange énergique */
     --secondary-foreground: 0 0% 98%;
     --secondary-light: 34 92% 70%; /* #FDBA74 - Orange clair */
+    --secondary-dark: 16 84% 40%; /* #CC4F00 - Orange foncé pour footer */
 
     /* Accent (bleu clair) */
     --accent: 213 93% 78%; /* #93C5FD - Bleu clair */
