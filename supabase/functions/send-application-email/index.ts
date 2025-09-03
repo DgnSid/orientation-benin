@@ -51,9 +51,10 @@ const handler = async (req: Request): Promise<Response> => {
   try {
     const { application, stage }: RequestBody = await req.json();
 
-    console.log("Sending application email for:", application.id);
+    console.log("Sending application emails for:", application.id);
 
-    const emailResponse = await resend.emails.send({
+    // 1. Email à l'entreprise
+    const companyEmailResponse = await resend.emails.send({
       from: "Après Mon Bac <onboarding@resend.dev>",
       to: [stage.contactEmail],
       subject: `Nouvelle candidature de stage - ${application.prenoms} ${application.nom}`,
@@ -115,9 +116,96 @@ const handler = async (req: Request): Promise<Response> => {
       `,
     });
 
-    console.log("Email sent successfully:", emailResponse);
+    console.log("Company email sent:", companyEmailResponse);
 
-    return new Response(JSON.stringify(emailResponse), {
+    // 2. Email de confirmation au candidat
+    const candidateEmailResponse = await resend.emails.send({
+      from: "Après Mon Bac <onboarding@resend.dev>",
+      to: [application.email],
+      subject: "Confirmation de votre candidature de stage",
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h1 style="color: #e97316; border-bottom: 2px solid #e97316; padding-bottom: 10px;">
+            Candidature envoyée avec succès !
+          </h1>
+          
+          <p>Bonjour ${application.prenoms} ${application.nom},</p>
+          
+          <p>Nous avons bien reçu votre candidature pour le stage suivant :</p>
+          
+          <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <p><strong>Poste:</strong> ${stage.title}</p>
+            <p><strong>Entreprise:</strong> ${stage.company}</p>
+            <p><strong>Lieu:</strong> ${stage.location}</p>
+            <p><strong>Durée souhaitée:</strong> ${application.temps_stage}</p>
+            <p><strong>Date de début:</strong> ${new Date(application.date_debut).toLocaleDateString('fr-FR')}</p>
+          </div>
+          
+          <p>Votre candidature a été transmise à l'entreprise. Ils vous contacteront directement si votre profil correspond à leurs attentes.</p>
+          
+          <p style="margin-top: 30px;">
+            Bonne chance pour votre recherche de stage !<br>
+            L'équipe Après Mon Bac
+          </p>
+          
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <p style="color: #666; font-size: 14px;">
+              Candidature envoyée le ${new Date(application.created_at).toLocaleDateString('fr-FR')} à ${new Date(application.created_at).toLocaleTimeString('fr-FR')}.
+            </p>
+          </div>
+        </div>
+      `,
+    });
+
+    console.log("Candidate confirmation email sent:", candidateEmailResponse);
+
+    // 3. Email de notification à l'admin
+    const adminEmailResponse = await resend.emails.send({
+      from: "Après Mon Bac <onboarding@resend.dev>",
+      to: ["randolphekm27@gmail.com"],
+      subject: `Nouvelle candidature reçue - ${application.prenoms} ${application.nom}`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h1 style="color: #e97316; border-bottom: 2px solid #e97316; padding-bottom: 10px;">
+            Nouvelle candidature sur Après Mon Bac
+          </h1>
+          
+          <p>Une nouvelle candidature de stage vient d'être soumise sur la plateforme.</p>
+          
+          <h2 style="color: #333;">Détails du candidat</h2>
+          <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <p><strong>Nom:</strong> ${application.prenoms} ${application.nom}</p>
+            <p><strong>Email:</strong> ${application.email}</p>
+            <p><strong>École:</strong> ${application.ecole}</p>
+            <p><strong>Filière:</strong> ${application.filiere}</p>
+            <p><strong>Année:</strong> ${application.annee_etude}</p>
+          </div>
+          
+          <h2 style="color: #333;">Stage visé</h2>
+          <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <p><strong>Poste:</strong> ${stage.title}</p>
+            <p><strong>Entreprise:</strong> ${stage.company}</p>
+            <p><strong>Lieu:</strong> ${stage.location}</p>
+            <p><strong>Email entreprise:</strong> ${stage.contactEmail}</p>
+          </div>
+          
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <p style="color: #666; font-size: 14px;">
+              Candidature reçue le ${new Date(application.created_at).toLocaleDateString('fr-FR')} à ${new Date(application.created_at).toLocaleTimeString('fr-FR')}.
+            </p>
+          </div>
+        </div>
+      `,
+    });
+
+    console.log("Admin notification email sent:", adminEmailResponse);
+
+    return new Response(JSON.stringify({
+      success: true,
+      company_email: companyEmailResponse,
+      candidate_email: candidateEmailResponse,
+      admin_email: adminEmailResponse
+    }), {
       status: 200,
       headers: {
         "Content-Type": "application/json",
