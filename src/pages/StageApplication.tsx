@@ -189,14 +189,21 @@ export default function StageApplication() {
 
         console.log('Application updated successfully with file path');
 
-        // Send email notification
+        // Send email notification - CORRECTION ICI
         try {
           console.log('Calling email function...');
           
           const { data: emailData, error: emailError } = await supabase.functions.invoke('send-application-email', {
-            body: {
-              application: { ...application, lettre_demande_url: filePath },
+            body: JSON.stringify({
+              application: { 
+                ...application, 
+                lettre_demande_url: filePath,
+                created_at: new Date().toISOString()
+              },
               stage: stage,
+            }),
+            headers: {
+              'Content-Type': 'application/json',
             },
           });
 
@@ -374,7 +381,7 @@ export default function StageApplication() {
                     )}
                   />
                 </div>
-
+  
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <FormField
                     control={form.control}
@@ -549,4 +556,4 @@ export default function StageApplication() {
       </div>
     </div>
   );
-}
+                                  }
