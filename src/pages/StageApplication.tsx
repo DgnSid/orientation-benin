@@ -82,21 +82,39 @@ export default function StageApplication() {
   };
 
   const uploadFile = async (file: File, applicationId: string): Promise<string | null> => {
-    const fileName = `${applicationId}/${file.name}`;
-    const { data, error } = await supabase.storage
-      .from('stage-documents')
-      .upload(fileName, file);
+    try {
+      console.log('Attempting to upload file:', file.name, 'for application:', applicationId);
+      
+      const fileName = `${applicationId}/${file.name}`;
+      const { data, error } = await supabase.storage
+        .from('stage-documents')
+        .upload(fileName, file);
 
-    if (error) {
-      console.error('Upload error:', error);
-      return null;
+      if (error) {
+        console.error('Upload error details:', {
+          message: error.message,
+          error: error
+        });
+        throw new Error(`Erreur d'upload: ${error.message}`);
+      }
+
+      if (!data?.path) {
+        throw new Error('Aucun chemin de fichier retourné après upload');
+      }
+
+      console.log('File uploaded successfully:', data.path);
+      return data.path;
+    } catch (error) {
+      console.error('Upload function error:', error);
+      throw error;
     }
-
-    return data.path;
   };
 
   const onSubmit = async (data: ApplicationForm) => {
+    console.log('Starting form submission...');
+    
     if (!stageId || !stage) {
+      console.error('Stage not found:', { stageId, stage });
       toast({
         title: "Erreur",
         description: "Stage non trouvé",
@@ -106,6 +124,7 @@ export default function StageApplication() {
     }
 
     if (!lettreDemandeFile) {
+      console.error('No file selected');
       toast({
         title: "Erreur",
         description: "La lettre de demande de stage est requise",
@@ -117,6 +136,8 @@ export default function StageApplication() {
     setIsSubmitting(true);
 
     try {
+      console.log('Creating application record...');
+      
       // First create the application to get an ID
       const { data: application, error: insertError } = await supabase
         .from('applications')
@@ -138,51 +159,97 @@ export default function StageApplication() {
         .select()
         .single();
 
-      if (insertError) throw insertError;
+      if (insertError) {
+        console.error('Insert error:', insertError);
+        throw new Error(`Erreur lors de la création de la candidature: ${insertError.message}`);
+      }
+
+      if (!application) {
+        throw new Error('Aucune candidature créée');
+      }
+
+      console.log('Application created successfully:', application.id);
 
       // Upload the file
-      const filePath = await uploadFile(lettreDemandeFile, application.id);
+      try {
+        const filePath = await uploadFile(lettreDemandeFile, application.id);
+        
+        console.log('Updating application with file path:', filePath);
+        
+        // Update the application with the file path
+        const { error: updateError } = await supabase
+          .from('applications')
+          .update({ lettre_demande_url: filePath })
+          .eq('id', application.id);
+
+        if (updateError) {
+          console.error('Update error:', updateError);
+          throw new Error(`Erreur lors de la mise à jour: ${updateError.message}`);
+        }
+
+        console.log('Application updated successfully with file path');
+
+        // Send email notification
+        try {
+          console.log('Calling email function...');
+          
+          const { data: emailData, error: emailError } = await supabase.functions.invoke('send-application-email', {
+            body: {
+              application: { ...application, lettre_demande_url: filePath },
+              stage: stage,
+            },
+          });
+
+          if (emailError) {
+            console.error('Email function error:', {
+              message: emailError.message,
+              details: emailError,
+              data: emailData
+            });
+            // Don't block the application if email fails, but inform user
+            toast({
+              title: "Candidature enregistrée",
+              description: "Votre candidature a été enregistrée mais l'email de notification n'a pas pu être envoyé.",
+              variant: "default",
+            });
+          } else {
+            console.log('Email sent successfully:', emailData);
+            toast({
+              title: "Candidature envoyée !",
+              description: "Votre candidature a été envoyée avec succès à l'entreprise.",
+            });
+          }
+        } catch (emailErr) {
+          console.error('Email function call failed:', emailErr);
+          toast({
+            title: "Candidature enregistrée",
+            description: "Votre candidature a été enregistrée mais l'email de notification n'a pas pu être envoyé.",
+            variant: "default",
+          });
+        }
+
+        navigate('/stages');
+      } catch (uploadErr) {
+        console.error('Upload failed, rolling back application...');
+        // Rollback: delete the application if upload fails
+        await supabase.from('applications').delete().eq('id', application.id);
+        throw uploadErr;
+      }
+    } catch (error: any) {
+      console.error('Error submitting application:', {
+        message: error.message,
+        error: error,
+        stack: error.stack
+      });
       
-      if (!filePath) {
-        throw new Error("Erreur lors de l'upload du fichier");
-      }
-
-      // Update the application with the file path
-      const { error: updateError } = await supabase
-        .from('applications')
-        .update({ lettre_demande_url: filePath })
-        .eq('id', application.id);
-
-      if (updateError) throw updateError;
-
-      // Send email notification
-      const { error: emailError } = await supabase.functions.invoke('send-application-email', {
-        body: {
-          application: { ...application, lettre_demande_url: filePath },
-          stage: stage,
-        },
-      });
-
-      if (emailError) {
-        console.error('Email error:', emailError);
-        // Don't block the application if email fails
-      }
-
-      toast({
-        title: "Candidature envoyée !",
-        description: "Votre candidature a été envoyée avec succès à l'entreprise.",
-      });
-
-      navigate('/stages');
-    } catch (error) {
-      console.error('Error submitting application:', error);
       toast({
         title: "Erreur",
-        description: "Une erreur s'est produite lors de l'envoi de votre candidature",
+        description: error.message || "Une erreur s'est produite lors de l'envoi de votre candidature",
         variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
+      console.log('Form submission completed');
     }
   };
 
