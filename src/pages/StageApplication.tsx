@@ -87,11 +87,11 @@ export default function StageApplication() {
       
       // Nettoyer le nom de fichier pour éviter les erreurs InvalidKey
       const sanitizedFileName = file.name
-        .normalize("NFD") // Décompose les caractères accentués
-        .replace(/[\u0300-\u036f]/g, "") // Supprime les accents
-        .replace(/[^a-zA-Z0-9.-]/g, "_") // Remplace les caractères spéciaux par _
-        .replace(/_+/g, "_") // Évite les underscores multiples
-        .replace(/^_|_$/g, ""); // Supprime les underscores au début/fin
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-zA-Z0-9.-]/g, "_")
+        .replace(/_+/g, "_")
+        .replace(/^_|_$/g, "");
       
       const fileName = `${applicationId}/${sanitizedFileName}`;
       console.log('Sanitized filename:', fileName);
@@ -101,10 +101,7 @@ export default function StageApplication() {
         .upload(fileName, file);
 
       if (error) {
-        console.error('Upload error details:', {
-          message: error.message,
-          error: error
-        });
+        console.error('Upload error details:', error);
         throw new Error(`Erreur d'upload: ${error.message}`);
       }
 
@@ -148,6 +145,9 @@ export default function StageApplication() {
     try {
       console.log('Creating application record...');
       
+      // Formatage de la date pour la base de données
+      const formattedDate = data.date_debut ? new Date(data.date_debut).toISOString() : null;
+
       // First create the application to get an ID
       const { data: application, error: insertError } = await supabase
         .from('applications')
@@ -163,8 +163,9 @@ export default function StageApplication() {
           filiere: data.filiere,
           annee_etude: data.annee_etude,
           temps_stage: data.temps_stage,
-          date_debut: data.date_debut,
+          date_debut: formattedDate,
           lettre_motivation: data.lettre_motivation,
+          created_at: new Date().toISOString(),
         })
         .select()
         .single();
@@ -199,38 +200,39 @@ export default function StageApplication() {
 
         console.log('Application updated successfully with file path');
 
-        // Send email notification - CORRECTION ICI
+        // Send email notification
         try {
           console.log('Calling email function...');
           
-          const { data: emailData, error: emailError } = await supabase.functions.invoke('send-application-email', {
-            body: JSON.stringify({
-              application: { 
-                ...application, 
-                lettre_demande_url: filePath,
-                created_at: new Date().toISOString()
-              },
-              stage: stage,
-            }),
+          // Préparer les données pour l'email
+          const emailData = {
+            application: {
+              ...application,
+              lettre_demande_url: filePath,
+              date_debut: data.date_debut, // Garder le format original pour l'email
+              created_at: new Date().toISOString()
+            },
+            stage: stage
+          };
+
+          console.log('Sending email with data:', emailData);
+
+          const { data: emailResponse, error: emailError } = await supabase.functions.invoke('send-application-email', {
+            body: JSON.stringify(emailData),
             headers: {
               'Content-Type': 'application/json',
             },
           });
 
           if (emailError) {
-            console.error('Email function error:', {
-              message: emailError.message,
-              details: emailError,
-              data: emailData
-            });
-            // Don't block the application if email fails, but inform user
+            console.error('Email function error:', emailError);
             toast({
               title: "Candidature enregistrée",
               description: "Votre candidature a été enregistrée mais l'email de notification n'a pas pu être envoyé.",
               variant: "default",
             });
           } else {
-            console.log('Email sent successfully:', emailData);
+            console.log('Email sent successfully:', emailResponse);
             toast({
               title: "Candidature envoyée !",
               description: "Votre candidature a été envoyée avec succès à l'entreprise.",
@@ -253,11 +255,7 @@ export default function StageApplication() {
         throw uploadErr;
       }
     } catch (error: any) {
-      console.error('Error submitting application:', {
-        message: error.message,
-        error: error,
-        stack: error.stack
-      });
+      console.error('Error submitting application:', error);
       
       toast({
         title: "Erreur",
@@ -328,7 +326,7 @@ export default function StageApplication() {
                         <FormLabel>Prénoms *</FormLabel>
                         <FormControl>
                           <Input {...field} />
-                        </FormControl>
+                        <FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -391,7 +389,7 @@ export default function StageApplication() {
                     )}
                   />
                 </div>
-  
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <FormField
                     control={form.control}
@@ -539,7 +537,7 @@ export default function StageApplication() {
                       </FormControl>
                       <FormMessage />
                     </FormItem>
-                  )}
+            )}
                 />
 
                 <div className="flex gap-4">
@@ -566,4 +564,4 @@ export default function StageApplication() {
       </div>
     </div>
   );
-                                  }
+                    }
