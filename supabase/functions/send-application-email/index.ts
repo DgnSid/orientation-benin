@@ -64,7 +64,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // 1. Email à l'entreprise
     const companyEmailResponse = await resend.emails.send({
-      from: "Après Mon Bac <onboarding@resend.dev>",
+      from: "Après Mon Bac <noreply@resend.dev>",
       to: [stage.contactEmail],
       subject: `Nouvelle candidature de stage - ${application.prenoms} ${application.nom}`,
       html: `
@@ -129,7 +129,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // 2. Email de confirmation au candidat
     const candidateEmailResponse = await resend.emails.send({
-      from: "Après Mon Bac <onboarding@resend.dev>",
+      from: "Après Mon Bac <noreply@resend.dev>",
       to: [application.email],
       subject: "Confirmation de votre candidature de stage",
       html: `
@@ -170,7 +170,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // 3. Email de notification à l'admin
     const adminEmailResponse = await resend.emails.send({
-      from: "Après Mon Bac <onboarding@resend.dev>",
+      from: "Après Mon Bac <noreply@resend.dev>",
       to: ["randolphekm27@gmail.com"],
       subject: `Nouvelle candidature reçue - ${application.prenoms} ${application.nom}`,
       html: `
@@ -223,8 +223,18 @@ const handler = async (req: Request): Promise<Response> => {
     });
   } catch (error: any) {
     console.error("Error in send-application-email function:", error);
+    console.error("Error details:", JSON.stringify(error, null, 2));
+    
+    // Log specific email sending errors
+    if (error.name === 'validation_error' || error.message?.includes('validation_error')) {
+      console.error("RESEND VALIDATION ERROR - Vérifiez la clé API et le domaine validé");
+    }
+    
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ 
+        error: error.message,
+        details: error.name || "Unknown error type"
+      }),
       {
         status: 500,
         headers: { "Content-Type": "application/json", ...corsHeaders },
