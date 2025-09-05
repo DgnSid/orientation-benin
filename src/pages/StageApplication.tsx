@@ -85,7 +85,17 @@ export default function StageApplication() {
     try {
       console.log('Attempting to upload file:', file.name, 'for application:', applicationId);
       
-      const fileName = `${applicationId}/${file.name}`;
+      // Nettoyer le nom de fichier pour éviter les erreurs InvalidKey
+      const sanitizedFileName = file.name
+        .normalize("NFD") // Décompose les caractères accentués
+        .replace(/[\u0300-\u036f]/g, "") // Supprime les accents
+        .replace(/[^a-zA-Z0-9.-]/g, "_") // Remplace les caractères spéciaux par _
+        .replace(/_+/g, "_") // Évite les underscores multiples
+        .replace(/^_|_$/g, ""); // Supprime les underscores au début/fin
+      
+      const fileName = `${applicationId}/${sanitizedFileName}`;
+      console.log('Sanitized filename:', fileName);
+      
       const { data, error } = await supabase.storage
         .from('stage-documents')
         .upload(fileName, file);
