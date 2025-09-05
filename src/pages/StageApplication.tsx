@@ -326,7 +326,7 @@ export default function StageApplication() {
                         <FormLabel>Prénoms *</FormLabel>
                         <FormControl>
                           <Input {...field} />
-                        <FormControl>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -537,31 +537,31 @@ export default function StageApplication() {
                       </FormControl>
                       <FormMessage />
                     </FormItem>
-            )}
-                />
+                    )}
+                 />
 
-                <div className="flex gap-4">
-                  <Button
-                    type="button"
-                    variant="outline"
-                    onClick={() => navigate('/stages')}
-                    className="flex-1"
-                  >
-                    Annuler
-                  </Button>
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="flex-1"
-                  >
-                    {isSubmitting ? "Envoi en cours..." : "Envoyer la candidature"}
-                  </Button>
-                </div>
-              </form>
-            </Form>
-          </CardContent>
-        </Card>
-      </div>
-    </div>
-  );
-                    }
+                 <div className="flex gap-4">
+                   <Button
+                     type="button"
+                     variant="outline"
+                     onClick={() => navigate('/stages')}
+                     className="flex-1"
+                   >
+                     Annuler
+                   </Button>
+                   <Button
+                     type="submit"
+                     disabled={isSubmitting}
+                     className="flex-1"
+                   >
+                     {isSubmitting ? "Envoi en cours..." : "Envoyer la candidature"}
+                   </Button>
+                 </div>
+               </form>
+             </Form>
+           </CardContent>
+         </Card>
+       </div>
+     </div>
+   );
+ }
