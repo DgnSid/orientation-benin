@@ -218,11 +218,10 @@ export default function StageApplication() {
           console.log('Sending email with data:', emailData);
 
           const { data: emailResponse, error: emailError } = await supabase.functions.invoke('send-application-email', {
-            body: JSON.stringify(emailData),
-            headers: {
-              'Content-Type': 'application/json',
-            },
+            body: emailData
           });
+
+          console.log('Email function response:', { emailResponse, emailError });
 
           if (emailError) {
             console.error('Email function error:', emailError);
@@ -231,11 +230,25 @@ export default function StageApplication() {
               description: "Votre candidature a été enregistrée mais l'email de notification n'a pas pu être envoyé.",
               variant: "default",
             });
-          } else {
-            console.log('Email sent successfully:', emailResponse);
+          } else if (emailResponse?.successful_emails === 3) {
+            console.log('All emails sent successfully:', emailResponse);
             toast({
               title: "Candidature envoyée !",
-              description: "Votre candidature a été envoyée avec succès à l'entreprise.",
+              description: "Votre candidature a été envoyée avec succès à l'entreprise et les notifications ont été envoyées.",
+            });
+          } else if (emailResponse?.successful_emails > 0) {
+            console.log('Partial email success:', emailResponse);
+            toast({
+              title: "Candidature enregistrée",
+              description: `Votre candidature a été enregistrée. ${emailResponse.successful_emails}/${emailResponse.total_emails} emails envoyés avec succès.`,
+              variant: "default",
+            });
+          } else {
+            console.log('No emails sent:', emailResponse);
+            toast({
+              title: "Candidature enregistrée",
+              description: "Votre candidature a été enregistrée mais aucun email n'a pu être envoyé. Veuillez contacter l'entreprise directement.",
+              variant: "default",
             });
           }
         } catch (emailErr) {
